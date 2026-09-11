@@ -1,0 +1,5 @@
+08:24:54.245    (INFO)     Trx.Start: [84]**** VISPRO_ModIns639085118944938972System.Random
+08:24:54.245    (INFO)     Trx.Commit: [84]**C** VISPRO_ModIns639085118944938972System.Random
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [30]42703: column "ishashed" does not exist
+
+POSITION: 8[Query SLR]SELECT IsHashed FROM AD_COLUMN WHERE  AD_TABLE_ID=114 AND ColumnName = 'Password' AND EXPORT_ID = 'VIS_417' AND ISACTIVE='Y'

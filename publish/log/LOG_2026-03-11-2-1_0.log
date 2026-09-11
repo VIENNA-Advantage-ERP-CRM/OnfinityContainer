@@ -1,0 +1,104 @@
+*** 3/11/2026 2:01:23 AM VAdvantage Log  ***
+02:01:23.123    (INFO)     MSession.Logout: [95]-05:23:52.993
+02:21:06.216    (INFO)     MRole.Get: [37]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:21:06.216    (INFO)     MRole.Get: [37]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:21:06.216    (INFO)     MTree.Load: [37]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [37]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [37]PushNotif - No tokens found to send notification to.
+02:22:33.223    (INFO)     MChangeLog.FillChangeLog: [40]#11
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [40]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 282
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [40]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 283
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   UserPassword.DoIt: [40]UserPassword Change Log=>100
+===========>     (SEVERE)   UserPassword.DoIt: [40]UserPassword Change Log Step Check for valid user=>100
+===========>     (SEVERE)   UserPassword.DoIt: [40]UserPassword Change Log Step Password Change=>100
+===========>     (SEVERE)   UserPassword.DoIt: [40]UserPassword Change Log=>UPDATE AD_User SET Updated=SYSDATE, LastPwdUpdatedOn=SYSDATE, FailedloginCount=0, UpdatedBy=100 WHERE AD_User_ID=100
+02:22:34.223    (INFO)     Trx.Start: [40]**** SvrProcess
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [40]PushNotif - No tokens found to send notification to.
+02:22:34.223    (INFO)     Trx.Commit: [40]**C** SvrProcess
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [40]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 284
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+02:22:34.223    (INFO)     CacheMgt.Reset: [40]AD_Process: #1 (1)
+02:22:40.224    (INFO)     MSession.Logout: [34]-07:58:25.496
+02:22:49.224    (INFO)     MRole.Get: [40]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:22:49.224    (INFO)     MRole.Get: [40]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:22:49.224    (INFO)     MTree.Load: [40]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [40]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [40]PushNotif - No tokens found to send notification to.
+02:22:56.225    (INFO)     MSession.Logout: [75]-07:60:53.455
+02:24:39.243    (INFO)     MRole.Get: [95]AD_Role_ID=102, AD_User_ID=100, reload=True
+02:24:39.243    (INFO)     MRole.Get: [95]MRole[102,IdeasInc Admin,UserLevel= CO,AD_Client_ID IN (0,11),]
+02:24:39.243    (INFO)     MRole.Get: [95]AD_Role_ID=102, AD_User_ID=100, reload=True
+02:24:39.243    (INFO)     MRole.Get: [95]MRole[102,IdeasInc Admin,UserLevel= CO,AD_Client_ID IN (0,11),]
+02:24:39.243    (INFO)     MTree.Load: [95]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [95]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [95]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=11 AND a.AD_Alert_ID NOT IN ( SELECT Record_ID FROM AD_Private_Access WHERE AD_Table_ID = 594 AND AD_User_ID <> 100 AND IsActive = 'Y' ) AND r.AD_AlertRule_ID NOT IN ( SELECT Record_ID FROM AD_Private_Access WHERE AD_Table_ID = 593 AND AD_User_ID <> 100 AND IsActive = 'Y' ) ORDER BY a.AD_Client_ID
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [95]PushNotif - No tokens found to send notification to.
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [81]More than one FROM clause - SELECT so_next.VAMFG_StdOperation FROM VAMFG_M_WorkOrderOperation o_next JOIN VAMFG_M_StandardOperation so_next ON so_next.VAMFG_M_StandardOperation_ID = o_next.VAMFG_M_StandardOperation_ID WHERE o_next.VAMFG_M_WorkOrderOperation_ID  = ( SELECT MIN(o_next_inner.VAMFG_M_WorkOrderOperation_ID) FROM VAMFG_M_WorkOrderOperation o_next_inner WHERE o_next_inner.VAMFG_M_WorkOrderOperation_ID > t1.OperationTo_ID  AND o_next_inner.VAMFG_M_WorkOrder_ID = t1.VAMFG_M_WorkOrder_ID ) AND  o_next.VAMFG_M_WorkOrder_ID = t1.VAMFG_M_WorkOrder_ID)
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [81]Could not remove ON VAMFG_M_WorkOrderOperation o_next JOIN VAMFG_M_StandardOperation so_next ON so_next.VAMFG_M_StandardOperation_ID = o_next.VAMFG_M_StandardOperation_ID
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [81]More than one FROM clause - SELECT   t1.DocumentNo AS TranDocNo,w.DocumentNo AS WODocumentNo,w.M_Product_ID,p.Name,  Row_Number() Over (partition by  t1.VAMFG_M_WrkOdrTransaction_ID Order by tline.VAMFG_M_WrkOdrTrnsctionLine_ID) AS Transacline , t1.VAMFG_M_WorkOrder_ID,  t1.VAMFG_M_WrkOdrTransaction_ID, t1.OperationTo_ID, t1.VAMFG_QtyEntered AS ExecQty, w.VAMFG_QtyEntered AS ProdQTy,s.VAMFG_StdOperation AS StdOpName, (##) AS Next_OperationTo_ID ,  (##) AS Next_Operation_Name, NVL(t1.OperationFrom_ID, tline.VAMFG_M_WorkOrderOperation_ID) AS OperationFromID,NVL(s1.VAMFG_StdOperation,s2.VAMFG_StdOperation) AS FromOpName , w.VAMFG_QtyAssembled,w.VAMFG_QtyScrapped, w.VAMFG_QtyEntered,w.VAMFG_QtyAvailable, t1.VAMFG_WorkOrderTxnType,NVL(t1.VAMFG_StepTo,'N') AS VAMFG_StepTo FROM VAMFG_M_WrkOdrTransaction t1  INNER JOIN VAMFG_M_WorkOrder w ON w.VAMFG_M_WorkOrder_ID=t1.VAMFG_M_WorkOrder_ID  LEFT JOIN VAMFG_M_WorkOrderOperation o ON o.VAMFG_M_WorkOrderOperation_ID = t1.OperationTo_ID  LEFT JOIN VAMFG_M_StandardOperation s ON s.VAMFG_M_StandardOperation_ID=o.VAMFG_M_StandardOperation_ID   LEFT JOIN VAMFG_M_WorkOrderOperation o1  ON o1.VAMFG_M_WorkOrderOperation_ID = t1.OperationFrom_ID LEFT JOIN VAMFG_M_StandardOperation s1 ON s1.VAMFG_M_StandardOperation_ID=o1.VAMFG_M_StandardOperation_ID  INNER JOIN M_Product p ON p.M_Product_ID=w.M_Product_ID LEFT JOIN VAMFG_M_WrkOdrTrnsctionLine  tline ON tline.VAMFG_M_WrkOdrTransaction_ID=t1.VAMFG_M_WrkOdrTransaction_ID  LEFT JOIN VAMFG_M_WorkOrderOperation o2 ON o2.VAMFG_M_WorkOrderOperation_ID = tline.VAMFG_M_WorkOrderOperation_ID LEFT JOIN VAMFG_M_StandardOperation s2 ON  s2.VAMFG_M_StandardOperation_ID=o2.VAMFG_M_StandardOperation_ID WHERE t1.DocStatus = 'CO' AND t1.VAMFG_WorkOrderTxnType != 'RU' AND VAMFG_WOTxnSource!='G'   AND ((w.VAMFG_QtyAssembled+w.VAMFG_QtyScrapped)!=w.VAMFG_QtyEntered OR  w.VAMFG_QtyAvailable!=0) AND t1.VAMFG_M_WrkOdrTransaction_ID = ( SELECT MAX(t2.VAMFG_M_WrkOdrTransaction_ID)  FROM VAMFG_M_WrkOdrTransaction t2  WHERE t2.VAMFG_M_WorkOrder_ID = t1.VAMFG_M_WorkOrder_ID AND t2.VAMFG_WorkOrderTxnType != 'RU' AND t2.DocStatus = 'CO'  AND VAMFG_WOTxnSource!='G')
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [81]Could not remove ON VAMFG_M_WrkOdrTransaction t1 , VAMFG_M_WorkOrder w ON w.VAMFG_M_WorkOrder_ID=t1.VAMFG_M_WorkOrder_ID  LEFT JOIN VAMFG_M_WorkOrderOperation o ON o.VAMFG_M_WorkOrderOperation_ID = t1.OperationTo_ID  LEFT JOIN VAMFG_M_StandardOperation s ON s.VAMFG_M_StandardOperation_ID=o.VAMFG_M_StandardOperation_ID   LEFT JOIN VAMFG_M_WorkOrderOperation o1  ON o1.VAMFG_M_WorkOrderOperation_ID = t1.OperationFrom_ID LEFT JOIN VAMFG_M_StandardOperation s1 ON s1.VAMFG_M_StandardOperation_ID=o1.VAMFG_M_StandardOperation_ID , M_Product p ON p.M_Product_ID=w.M_Product_ID LEFT JOIN VAMFG_M_WrkOdrTrnsctionLine  tline ON tline.VAMFG_M_WrkOdrTransaction_ID=t1.VAMFG_M_WrkOdrTransaction_ID  LEFT JOIN VAMFG_M_WorkOrderOperation o2 ON o2.VAMFG_M_WorkOrderOperation_ID = tline.VAMFG_M_WorkOrderOperation_ID LEFT JOIN VAMFG_M_StandardOperation s2 ON  s2.VAMFG_M_StandardOperation_ID=o2.VAMFG_M_StandardOperation_ID
+===========>     (SEVERE)   MRole.AddAccessSQL: [81]TableName not correctly parsed - TableNameIn=w - VAdvantage.Classes.AccessSqlParser - #1 VAMFG_M_WrkOdrTransaction=t1
+ =  SELECT   t1.DocumentNo AS TranDocNo,w.DocumentNo AS WODocumentNo,w.M_Product_ID,p.Name,  Row_Number() Over (partition by  t1.VAMFG_M_WrkOdrTransaction_ID Order by tline.VAMFG_M_WrkOdrTrnsctionLine_ID) AS Transacline , t1.VAMFG_M_WorkOrder_ID,  t1.VAMFG_M_WrkOdrTransaction_ID, t1.OperationTo_ID, t1.VAMFG_QtyEntered AS ExecQty, w.VAMFG_QtyEntered AS ProdQTy,s.VAMFG_StdOperation AS StdOpName, (SELECT MIN(o_next.VAMFG_M_WorkOrderOperation_ID) FROM VAMFG_M_WorkOrderOperation o_next WHERE o_next.VAMFG_M_WorkOrderOperation_ID > t1.OperationTo_ID  AND  o_next.VAMFG_M_WorkOrder_ID = t1.VAMFG_M_WorkOrder_ID) AS Next_OperationTo_ID ,  (SELECT so_next.VAMFG_StdOperation FROM VAMFG_M_WorkOrderOperation o_next JOIN VAMFG_M_StandardOperation so_next ON so_next.VAMFG_M_StandardOperation_ID = o_next.VAMFG_M_StandardOperation_ID WHERE o_next.VAMFG_M_WorkOrderOperation_ID  = ( SELECT MIN(o_next_inner.VAMFG_M_WorkOrderOperation_ID) FROM VAMFG_M_WorkOrderOperation o_next_inner WHERE o_next_inner.VAMFG_M_WorkOrderOperation_ID > t1.OperationTo_ID  AND o_next_inner.VAMFG_M_WorkOrder_ID = t1.VAMFG_M_WorkOrder_ID ) AND  o_next.VAMFG_M_WorkOrder_ID = t1.VAMFG_M_WorkOrder_ID) AS Next_Operation_Name, NVL(t1.OperationFrom_ID, tline.VAMFG_M_WorkOrderOperation_ID) AS OperationFromID,NVL(s1.VAMFG_StdOperation,s2.VAMFG_StdOperation) AS FromOpName , w.VAMFG_QtyAssembled,w.VAMFG_QtyScrapped, w.VAMFG_QtyEntered,w.VAMFG_QtyAvailable, t1.VAMFG_WorkOrderTxnType,NVL(t1.VAMFG_StepTo,'N') AS VAMFG_StepTo FROM VAMFG_M_WrkOdrTransaction t1  INNER JOIN VAMFG_M_WorkOrder w ON w.VAMFG_M_WorkOrder_ID=t1.VAMFG_M_WorkOrder_ID  LEFT JOIN VAMFG_M_WorkOrderOperation o ON o.VAMFG_M_WorkOrderOperation_ID = t1.OperationTo_ID  LEFT JOIN VAMFG_M_StandardOperation s ON s.VAMFG_M_StandardOperation_ID=o.VAMFG_M_StandardOperation_ID   LEFT JOIN VAMFG_M_WorkOrderOperation o1  ON o1.VAMFG_M_WorkOrderOperation_ID = t1.OperationFrom_ID LEFT JOIN VAMFG_M_StandardOperation s1 ON s1.VAMFG_M_StandardOperation_ID=o1.VAMFG_M_StandardOperation_ID  INNER JOIN M_Product p ON p.M_Product_ID=w.M_Product_ID LEFT JOIN VAMFG_M_WrkOdrTrnsctionLine  tline ON tline.VAMFG_M_WrkOdrTransaction_ID=t1.VAMFG_M_WrkOdrTransaction_ID  LEFT JOIN VAMFG_M_WorkOrderOperation o2 ON o2.VAMFG_M_WorkOrderOperation_ID = tline.VAMFG_M_WorkOrderOperation_ID LEFT JOIN VAMFG_M_StandardOperation s2 ON  s2.VAMFG_M_StandardOperation_ID=o2.VAMFG_M_StandardOperation_ID WHERE t1.DocStatus = 'CO' AND t1.VAMFG_WorkOrderTxnType != 'RU' AND VAMFG_WOTxnSource!='G'   AND ((w.VAMFG_QtyAssembled+w.VAMFG_QtyScrapped)!=w.VAMFG_QtyEntered OR  w.VAMFG_QtyAvailable!=0) AND t1.VAMFG_M_WrkOdrTransaction_ID = ( SELECT MAX(t2.VAMFG_M_WrkOdrTransaction_ID)  FROM VAMFG_M_WrkOdrTransaction t2  WHERE t2.VAMFG_M_WorkOrder_ID = t1.VAMFG_M_WorkOrder_ID AND t2.VAMFG_WorkOrderTxnType != 'RU' AND t2.DocStatus = 'CO'  AND VAMFG_WOTxnSource!='G')
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [81]42601: syntax error at or near ")"
+
+POSITION: 99 [Query D] =>SELECT VAMFG_M_WrkOdrTransaction_ID FROM VAMFG_M_WrkOdrTransaction WHERE VAMFG_M_WorkOrder_ID IN () AND VAMFG_WorkOrderTxnType ='AI' AND DocStatus='CO'
+===========>     (SEVERE)   MRole.AddAccessSQL: [75]TableName not correctly parsed - TableNameIn=ci - VAdvantage.Classes.AccessSqlParser
+ = SELECT
+                             cb.Name,
+                             cd.DocBaseType,
+                             cb.Pic,
+                             custimg.ImageExtension AS custImgExtension,
+                             ci.AD_Client_ID,
+                             ci.DateInvoiced,
+                             currencyConvert(ci.grandtotalafterwithholding,ci.C_Currency_ID ,100,ci.DateAcct ,ci.C_ConversionType_ID ,ci.AD_Client_ID ,ci.AD_Org_ID) AS DueAmt
+                             FROM
+                             C_Invoice ci
+                             INNER JOIN C_BPartner cb ON (cb.C_BPartner_ID=ci.C_BPartner_ID)
+                             INNER JOIN C_DocType cd ON (cd.C_DocType_ID=ci.C_DocTypeTarget_ID)
+                             LEFT OUTER JOIN AD_Image custimg ON (custimg.AD_Image_ID = CAST(cb.Pic AS INT))
+                             WHERE cd.DocBaseType IN ('API','APC') AND ci.DocStatus IN ('CO','CL') AND cb.IsVendor='Y'
+02:24:56.245    (INFO)     MSession.Logout: [75]-07:60:43.969
+02:25:03.253    (INFO)     MRole.Get: [81]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:25:03.253    (INFO)     MRole.Get: [81]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:25:03.253    (INFO)     MRole.Get: [81]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:25:03.253    (INFO)     MRole.Get: [81]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:25:03.253    (INFO)     MTree.Load: [81]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [81]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [81]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [81]PushNotif - No tokens found to send notification to.
+02:25:18.251    (INFO)     MSession.Logout: [81]-07:60:44.192
+*** 3/11/2026 3:24:37 AM VAdvantage Log ***

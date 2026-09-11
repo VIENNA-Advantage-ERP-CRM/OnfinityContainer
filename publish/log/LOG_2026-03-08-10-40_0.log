@@ -1,0 +1,22 @@
+10:41:08.418    (INFO)     Trx.Start: [37]**** VISPRO_ModIns639085632684443827System.Random
+10:41:08.418    (INFO)     Trx.Commit: [37]**C** VISPRO_ModIns639085632684443827System.Random
+10:41:11.411    (INFO)     Env.Reset: [66]finalCall=False
+10:41:11.411    (INFO)     CacheMgt.Reset: [66]#18 (6990)
+10:41:11.411    (INFO)     Trx.Start: [66]**** VISPRO_ModIns639085632717686777System.Random
+10:41:11.411    (INFO)     Trx.Commit: [66]**C** VISPRO_ModIns639085632717686777System.Random
+10:41:36.413    (INFO)     MRole.Get: [66]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:41:36.413    (INFO)     MRole.Get: [66]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+10:41:36.413    (INFO)     MRole.Get: [66]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:41:36.413    (INFO)     MRole.Get: [66]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+10:41:36.413    (INFO)     MTree.Load: [66]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [66]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+10:41:36.413    (INFO)     Msg.InitMsg: [66]Records=6665 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [66]PushNotif - No tokens found to send notification to.
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [88]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

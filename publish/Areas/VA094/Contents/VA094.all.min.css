@@ -1,0 +1,79 @@
+﻿/**version 2.0.1.0*/
+.VA094-Distribution-leftcontainer {
+    height: 100%;
+    padding-top: 5px;
+    overflow: auto;
+}
+
+.VA094-Distribution-rightcontainer {
+    width: calc(100% - 250px);
+    height: 100%;
+    float: left;
+    /*padding: 10px 15px;*/
+    padding: 0px 0 0px 10px;
+}
+
+.VA094-Font-Btn {
+    font-weight: normal;
+}
+
+.VA094-createGlSec {
+    border-top: 1px solid rgba(var(--v-c-on-secondary), .2);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.VA094-BudgetDetail-div {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.VA094-BudgetDetails-grid {
+    height: 100%;
+    flex: 1;
+}
+
+.VA094-Distribution-root {
+    width: 100%;
+    float: left;
+    /*position: absolute;*/
+    height: 100%;
+    background-color: #fff;
+}
+
+.VA094-VD-Margin {
+    margin-top: 3px !important;
+}
+
+.VA094-labelMsg {
+    font-style: italic;
+    color: green;
+    position: absolute;
+    width: auto;
+    top: 4px;
+    right: 1px;
+    -webkit-box-shadow: 5px 6px 7px -1px #CCCCCC;
+    box-shadow: 4px 2px 8px -2px #CCCCCC;
+    z-index: 10;
+    border: 1px solid #b8db8a;
+}
+
+.VA094-imgFormat {
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.VA094-popform-content {
+    min-height: 450px !important;
+}
+/*Added new classes*/
+/*-------------------*/
+@media (max-height: 767px) {
+    .VA094-Distribution-root {
+        height: 100%;
+    }
+}
+

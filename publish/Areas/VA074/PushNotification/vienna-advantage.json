@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "vienna-advantage",
+  "private_key_id": "031c0d40e76269c50696cb3dfcb05992f27536e6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDJOAHyM7aTKPVn\nzZUYSzUIM5vfp/kbRzAixmFUoMjQdxB1Geqy8UlAi6TqlJN1pttEYJsJfV6xxBdg\nV1p3MCrbeVJkWlGUy2bj2pZkbK3fAqU2plYwsOsrMqWSTAv3X9j+68DXqiPkvRBA\n9TuFhhRENWYt3orOdT8UuMpa5pwHhUM5E5wfY1VhqlEbs3DFd9RuF5/AbkiuE0yM\neWUeJvnHLiu+Wa8sUTvF3l2cF6hVt11v09mXkChCcU0nFeUV5Cb2OjMb1glHoNXH\nfbNeWr7/BlLAgJT5fCSorJF6dd1eYL3QROo+basEWFiqvXb1mNOfN20LFjCxllWb\nWHd0cheLAgMBAAECggEADhIaD2dEBEy6wxxSVDq8xcriGATle7MB2ooCeAoERjua\njYMXRpXD2GfLdlHscS+OqVyTYC8BplmphCWnoFULHNeCMPKgk3tDwc7hHGWoekNI\n7VDlZGNCwVMPK/NLFOyBaUDFdpn3B5bxojE5N9A/7jhztuUXJ3J1y6D+btaDIQK2\nAfbl1kshisnxswG/xibZ6KDR3ygy3KEj6+r3CYzEbgQfUyeP093n8tcszRSe6JWv\nFho8aE2clV1rfQukM60ykWQ3O3e61jvEBh4KVE6RiYaUNFQIMzwaWUR/p6sSqljv\nR8AdOBWRC9p7nyz69VfO3SAexkaDfYaJ9la6VXXuzQKBgQDtZBXrpqfdHP1HZ81N\nU9+n7tt9o1B7zIucDgrLyMvODQ1rkhtybHXbT+BOVb2/FM+OvraVR4lRML599nRS\nJ09763n5aXbi9MwBW7Kge9kJjLorEPniZmyVTuxWcHL2iTsh9jPFOTRPm1Ax5pwR\nueU9w+67xEwvZ9IMtxvSU3N5DQKBgQDY/gag+myCul2h9oQDSsrO4C/YCzfsZV7O\nT5cEQli0a7vickx20hBTCmN8QQL29LJ10fhl9QdXAoqbb+BzLREE1T+b0KZ3e1fd\nTNVkcMe1+y/SIYZG6oWIcL7/KA+ZxJtICozzvYBsUmgaT0YKtiueS5VWwDkr5fhW\nlZCv4X589wKBgGjOVTcy3s2qLNBHrcZED2xO8iyn27Ksfb6qHG4X+pLABHrHiMKd\ny/LFcxxikmE4SOKWpHmHmcJ0qMVn97cFj/v/3FwXCdvtg9vdpiFgTFQBA3hcCFbC\nLZJFw+Xtw3PA5pB56CVcuhGjWmaNj73rup/oTxAq/A+54GyosunK2iJJAoGAVJiE\nYRIAZ97cTh5bTSVFd+2y+Vk2TjUfBvPEfmaXSo+NyjShVtmCf71XF8QIsdqoEILx\ngl5KpENbYkn1iTGSpv20NLzdiUtO7/naX7QQSARLmnJzdQZNVOoPrE4j9uDNYQKr\n/QJuJMzjxQ4O0nI/AxGYgR+jqleXv7nDlK4mr/UCgYEA69zXIDZK5hINX12rsaA5\ndeGVc3Zwck3D0eoJ5n0+GJKBmH5Xxg66O8NwICMd5PSswYIhmbTTRzkvpjuqf44k\nDAtnl9wKH2OSMMhDzSgpNoYYuu3XHaKAtV4yJ5FA+Ba20XAChAxKyvmwabtIvq+c\n8IhnYV1Ebq2ZjRj6bmaceAg=\n-----END PRIVATE KEY-----\n",
+  "client_email": "firebase-adminsdk-7mzvt@vienna-advantage.iam.gserviceaccount.com",
+  "client_id": "100652041541036961985",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firebase-adminsdk-7mzvt%40vienna-advantage.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

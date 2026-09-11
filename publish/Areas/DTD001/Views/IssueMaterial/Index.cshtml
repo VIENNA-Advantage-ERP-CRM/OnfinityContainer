@@ -1,0 +1,121 @@
+﻿<div id="DTD001_MainDiv" style="width: 100%; background-color: white;">
+    <div id="@("DTD001_BusyIndic_" + ViewBag.WindowNumber)" ></div>
+    <div class="dtd001-mi-div-left vis-leftsidebarouterwrap">
+        <div class="dtd001-mi-div-left-top">
+            <div class="dtd001-leftdatawrap input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("DTD001_CmbOrg_" + ViewBag.WindowNumber)" class="dtd001-mi-cmb-width100"></select>
+                    <label id="@("DTD001_LblOrg_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top"></label>
+                </div>
+            </div>
+
+            <div class="dtd001-leftdatawrap input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("DTD001_CmbWh_" + ViewBag.WindowNumber)" class="dtd001-mi-cmb-width100"></select>
+                    <label id="@("DTD001_LblWh_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top">Warehouse</label>
+                </div>
+            </div>
+
+            <div class="dtd001-leftdatawrap input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("DTD001_CmbToWh_" + ViewBag.WindowNumber)" class="dtd001-mi-cmb-width100"></select>
+                    <label id="@("DTD001_LblToWh_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top">To Warehouse</label>
+                </div>
+            </div>
+
+            <div id="@("DTD001_ReqContrl_" + ViewBag.WindowNumber)" class="dtd001-leftdatawrap input-group vis-input-wrap">
+                    @*<label id="@("DTD001_LblReq_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top">Requisition</label>*@
+
+                    @*<div class="dtd001-mi-cmb-width100"></div>*@
+            </div>
+
+            <div class="dtd001-leftdatawrap input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <input id="@("DTD001_MovDate_" + ViewBag.WindowNumber)" type="date" class="dtd001-mi-date-ctrl">
+                    <label id="@("DTD001_LblMovDate_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top">Movement Date</label>
+                </div>
+            </div>
+
+            <div class="dtd001-leftdatawrap input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("DTD001_CmbChrg_" + ViewBag.WindowNumber)" class="dtd001-mi-cmb-width100"></select>
+                    <label id="@("DTD001_LblChrg_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top">Charge</label>
+                </div>
+            </div>
+
+            <div class="dtd001-leftdatawrap">
+                    <input id="@("DTD001_MoveConsumable_" + ViewBag.WindowNumber)" type="checkbox" disabled="disabled" />
+                    <label id="@("DTD001_LblMoveConsumable_" + ViewBag.WindowNumber)">Move Consumable</label>
+            </div>
+        </div>
+
+                <div class="dtd001-mi-div-left-bottom">
+                    <button id="@("DTD001_RefreshButton_" + ViewBag.WindowNumber)" class="VIS_Pref_btn-2 dtd001-mi-btn-refresh">Refresh</button>
+                </div>
+                <div></div>
+            </div>
+            <div class="dtd001-mi-div-right vis-formouterwrpdiv">
+                <div class="dtd001-mi-div-right-top">
+                    <div class="dtd001-mi-div-non-consume">
+                        @*<label id="@("DTD001_LblNonConsm_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top">Non Consumable Item</label>*@
+                        <div class="dtd001-mi-div-left-width50">
+
+                            <div class="dtd001-mi-div-width100 d-flex">
+                                <div id="@("DTD001_NonConsmControl_" + ViewBag.WindowNumber)" class="dtd001-mi-srch-cntrol-with100 input-group vis-input-wrap"></div>
+                                <input id="@("DTD001_PrintNonConRep_" + ViewBag.WindowNumber)" type="button" name="Print Report" class="dtd001-mi-print-button" value="Print Report" />
+                            </div>
+
+                        </div>
+                        <div class="dtd001-mi-div-right-width50">
+                            <div class="dtd001-mi-div-right-width60">
+                                <input type="button" id="@("DTD001_DeleteNonConsumeLine_" + ViewBag.WindowNumber)" name="Delete" class="dtd001-mi-btn-delete-line" value="Delete" />
+                                <input type="button" id="@("DTD001_AddNonConsumeLine_" + ViewBag.WindowNumber)" name="Add New Line" class="dtd001-mi-btn-add-newline" value="Add New Line" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dtd001-mi-outer-div-grids">
+                        <div class="dtd001-mi-div-grid-Consume">
+                            <div id="@("DTD001_NonConsmGrid_" + ViewBag.WindowNumber)" class="dtd001-mi-grid">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="dtd001-mi-div-consume">
+                        @*<label id="@("DTD001_LblConsm_" + ViewBag.WindowNumber)" class="dtd001-mi-label-top">Consumable Item</label>*@
+                        <div class="dtd001-mi-div-left-width50">
+
+                            <div class="dtd001-mi-div-width100 d-flex">
+
+                                <div id="@("DTD001_ConsmControl_" + ViewBag.WindowNumber)" class="dtd001-mi-srch-cntrol-with100 input-group vis-input-wrap"></div>
+                                <input id="@("DTD001_PrintConRep_" + ViewBag.WindowNumber)" type="button" name="Print Report" class="dtd001-mi-print-button" value="Print Report" />
+                            </div>
+
+                        </div>
+                        <div class="dtd001-mi-div-right-width50">
+                            <div class="dtd001-mi-div-right-width60">
+
+                                <input type="button" id="@("DTD001_DeleteConsumeLine_" + ViewBag.WindowNumber)" name="Delete" class="dtd001-mi-btn-delete-line" value="Delete" />
+                                <input type="button" id="@("DTD001_AddConsumeLine_" + ViewBag.WindowNumber)" name="Add New Line" class="dtd001-mi-btn-add-newline" value="Add New Line" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dtd001-mi-outer-div-grids">
+                        <div class="dtd001-mi-div-grid-Consume">
+                            <div id="@("DTD001_GridConsm_" + ViewBag.WindowNumber)" class="dtd001-mi-grid">
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="dtd001-mi-div-right-bottom">
+                    <button id="@("DTD001_CancelButton_" + ViewBag.WindowNumber)" class="VIS_Pref_btn-2 dtd001-mi-btn-cancel">Cancel</button>
+                    <button id="@("DTD001_OkButton_" + ViewBag.WindowNumber)" class="VIS_Pref_btn-2 dtd001-mi-btn-ok">OK</button>
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,1224 @@
+﻿/* Version 1.0.17.0*/
+
+.vaicnt-divMainHeader {
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.vaicnt-btnScanAttribute {
+    width: 200px !Important;
+    margin-left: 40px;
+}
+
+.vaicnt-tableScanDetail {
+}
+
+.vaicnt-divfield {
+    margin-top: 20px;
+    float: left;
+    margin-right: 50px;
+}
+
+    .vaicnt-divfield input {
+        width: 400px;
+    }
+
+    .vaicnt-divfield select {
+        width: 400px;
+    }
+
+    .vaicnt-divfield p {
+        margin-right: 50px;
+    }
+
+    .vaicnt-divfield table {
+        border: 1px solid lightgray;
+        width: 1300px;
+        margin-right: 100px;
+    }
+
+    .vaicnt-divfield th {
+        background-color: lightgray;
+        border: 1px solid lightgray;
+        height: 25px;
+    }
+
+    .vaicnt-divfield tr {
+        height: 25px;
+    }
+
+    .vaicnt-divfield td {
+        border: 1px solid lightgray;
+    }
+
+    .vaicnt-divfield tr:hover {
+        background: #E0F5FF !important;
+    }
+
+.vaicnt-deleterow {
+    /*width: 19px;
+    height: 20px;
+    margin-right: 10px;*/
+    /*background:url(../Images/del.png) top right;*/
+    font-size: 1rem;
+}
+
+.vaicnt-add-quantity {
+    background-image: url("../Images/plus.png");
+    height: 20px;
+    width: 20px;
+}
+
+.vaicnt-subtract-quantity {
+    background-image: url("../Images/minus.png");
+    height: 20px;
+    width: 20px;
+}
+
+.vaicnt-action-colstyle {
+    text-align: center;
+}
+
+.vaicnt-button {
+    margin-left: 2%;
+    background-color: #616364;
+    color: white;
+    font-weight: 200;
+    font-family: helvetica;
+    font-size: 14px;
+    padding: 10px 15px;
+    float: left;
+    width: auto !Important;
+}
+
+.vaicnt-tablebackdiv {
+    width: 1300px;
+    margin-right: 100px;
+    height: 500px;
+    border: 1px solid lightgray;
+}
+
+/*****Step 1 ***********/
+
+.vaicnt-inventory-main-wrap {
+    width: 100%;
+    float: left;
+    height: 100%;
+}
+
+.vaicnt-inventory-header h3 {
+    margin: 0;
+    font-size: 22px;
+    /*font-family: helvetica;*/
+    font-weight: 400;
+    color: white;
+}
+
+.vaicnt-inventory-header {
+    width: 97%;
+    background: #3892DA;
+    padding: 10px 0px 10px 0px;
+    float: left;
+    padding-left: 10px;
+}
+
+.vaicnt-inventory-tittle {
+    width: 40%;
+    float: left;
+}
+
+.vaicnt-btn-close {
+    width: 3%;
+    background: url('../img/close.png');
+    background-color: #616364;
+    float: right;
+    background-repeat: no-repeat;
+    padding-top: 25px;
+    padding-bottom: 19px;
+    cursor: pointer;
+    background-position: center;
+    border: 0px;
+    margin: 0;
+}
+
+.vaicnt-clear-both {
+    clear: both;
+}
+
+.vaicnt-inventory-content-wrap {
+    max-width: 480px;
+    margin: auto;
+    height: 340px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.vaicnt-inventory-step1,
+.vaicnt-inventory-step1-data,
+.vaicnt-inventory-fields,
+.vaicnt-inventory-inner-space {
+    width: 100%;
+    float: left;
+}
+
+.vaicnt-inventory-inner-space {
+    padding: 10px;
+}
+
+.vaicnt-inventory-fields {
+    padding: 10px 0;
+}
+
+.vaicnt-inventory-step1 {
+    /*margin-top: 10px;*/
+}
+
+    .vaicnt-inventory-step1 > p {
+        font-size: 16px;
+        color: #666;
+        text-align: left;
+    }
+
+.vaicnt-inventory-step1-data {
+    /* background: rgba(var(--v-c-secondary), 1); */
+    border: 1px solid rgba(var(--v-c-on-secondary), .2);
+    border-radius: .25rem;
+    padding: 2px 0 0;
+}
+
+.vaicnt-inventory-field-data {
+    float: left;
+    /*margin-bottom: 15px;*/
+    width: 100%;
+}
+
+    .vaicnt-inventory-field-data label {
+        /* font-size: 14px; */
+        /* font-weight: normal; */
+        /*width: 100%;
+    float: left;*/
+    }
+
+    .vaicnt-inventory-field-data select,
+    .vaicnt-inventory-field-data input {
+        /* border: 1px solid #e8e8e8; */
+        /*outline: none;*/
+    }
+
+    .vaicnt-inventory-field-data select {
+        /*width: 100%;*/
+    }
+
+    .vaicnt-inventory-field-data input {
+        /*width: calc(100% - 37px);
+    padding: 5px 10px;*/
+    }
+
+    .vaicnt-inventory-field-data > img {
+        margin-left: 10px;
+    }
+
+.vaicnt-inventory-step1-btn {
+    float: right;
+    margin-bottom: 0;
+    /* margin-right: 10px; */
+    margin-top: 10px;
+}
+
+.vaicnt-inventory-btn {
+    background: rgba(var(--v-c-on-secondary), 1);
+    color: rgba(var(--v-c-on-primary), 1);
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-left: 10px;
+    border: none;
+}
+
+    .vaicnt-inventory-btn:hover {
+        /* color: #fff; */
+    }
+
+.vaicnt-inventory-btn1 {
+    background: #626365;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-right: 3px;
+}
+
+    .vaicnt-inventory-btn1:hover {
+        color: #fff;
+    }
+
+.vaicnt-scanner-icon {
+    float: right;
+    width: 56px;
+    height: 56px;
+    background: url(../Images/scanner.png) top right;
+}
+
+.vaicnt-key-pan-icon-ref,
+.vaicnt-key-pan-icon-name {
+    float: right;
+    width: 22px;
+    height: 27px;
+    /* margin-right: 10px; */
+    background: url(../Images/down-keypan.png) top right;
+    z-index: 999;
+    position: relative;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.vaicnt-key-pan-icon-scan {
+    float: right;
+    width: 22px;
+    height: 28px;
+    margin-right: 10px;
+    background: url(../Images/down-keypan.png) top right;
+    z-index: 999;
+    position: relative;
+    margin-top: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.vaicnt-key-pan-icon-att {
+    float: right;
+    width: 22px;
+    height: 27px;
+    margin-right: 10px;
+    background: url(../Images/down-keypan.png) top right;
+    z-index: 999;
+    position: relative;
+    margin-top: 5px;
+}
+
+.vaicnt-inventory-inner-space > img {
+    float: right;
+    position: relative;
+    bottom: -33px;
+}
+
+
+
+.vaicnt-inventory-content-wrap2 {
+    width: 100%;
+    /*margin:5% auto;*/
+    height: 100%;
+    float: left;
+}
+
+.vaicnt-inventory-step2-data {
+    /*background: rgba(var(--v-c-secondary), 1);*/
+    float: left;
+    width: 100%;
+    height: 100%;
+    /*margin-top:20px;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.vaicnt-inventory-field-data2 {
+    float: left;
+    margin-right: 20px;
+    width: 32%;
+    position: relative;
+    z-index: 0;
+}
+
+    .vaicnt-inventory-field-data2 label, .vaicnt-inventory-bottom-field label {
+        /*font-size: 14px;
+    font-weight: normal;
+    width: 100%;
+    float: left;*/
+    }
+
+    .vaicnt-inventory-field-data2 input {
+        /*padding: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+    padding-right: 10px;
+    width: calc(100% - 40px);
+    position: relative;
+    z-index: 999;
+    height: 36px;*/
+    }
+
+    .vaicnt-inventory-field-data2 > img {
+        margin-left: 10px;
+    }
+
+.vaicnt-inventory-step2-top {
+    float: left;
+    width: 100%;
+}
+
+    .vaicnt-inventory-step2-top > p {
+        float: left;
+    }
+
+    .vaicnt-inventory-step2-top > span {
+        font-size: 16px;
+        color: #666;
+        text-align: right;
+        float: right;
+    }
+
+.vaicnt-inventory-step2-btn {
+    float: right;
+    /*margin-top: 15px;*/
+    /*margin-right: 15px;*/
+}
+
+.vaicnt-inventory-step2-button {
+    float: right;
+    margin-top: 30px;
+}
+/*.vaicnt-inventory-table-wrap{
+	float:left;
+	width:100%;
+	padding:10px;	
+}*/
+.vaicnt-inventory-table {
+    width: 100%;
+    height: 400px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    white-space: nowrap;
+    border-collapse: collapse;
+    display: block;
+}
+
+.vaicnt-inventory-table-head {
+    background-color: #e8eef0;
+    border: 1px solid #ddd;
+}
+
+.vaicnt-inventory-table-row, .vaicnt-inventory-table-head {
+    height: 40px;
+    width: 100%;
+}
+
+    .vaicnt-inventory-table-head > th, .vaicnt-inventory-table-row > td {
+        color: #666;
+        font-size: 14px;
+        padding: 10px;
+        font-weight: normal;
+        width: 100%;
+        border: 1px solid #dee2e6;
+    }
+
+.vaicnt-inventory-td {
+    text-align: center;
+}
+
+    .vaicnt-inventory-td > img {
+        cursor: pointer;
+    }
+
+.vaicnt-inventory-step2-bottom {
+    /*padding-bottom: 15px;*/
+    float: left;
+    width: 100%;
+    padding-top: 15px;
+}
+
+.vaicnt-inventory-bottom-field {
+    width: 25%;
+    float: left;
+    /*margin-left: 15px;*/
+    /*margin-top: 10px;*/
+}
+
+    .vaicnt-inventory-bottom-field p {
+        margin-bottom: 0;
+    }
+
+    .vaicnt-inventory-bottom-field input {
+        font-size: 20px;
+        font-weight: bold;
+        color: #666;
+        outline: none;
+        border: 1px solid #e8e8e8;
+        text-align: right;
+        padding-right: 5px;
+        pointer-events: none;
+    }
+
+.vaicnt-inventory-step2-labels {
+    float: left;
+    width: 100%;
+}
+
+    .vaicnt-inventory-step2-labels > p.vaicnt-inventory-transaction, .vaicnt-inventory-step2-labels > p.vaicnt-inventory-ref, .vaicnt-inventory-step2-labels > p.vaicnt-inventory-scan {
+        float: left;
+        /* font-size: 14px; */
+        /* color: #666; */
+        width: 33.3%;
+        /*padding-top: 10px;*/
+    }
+
+    .vaicnt-inventory-step2-labels > p > span {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .vaicnt-inventory-step2-labels > p.vaicnt-inventory-transaction {
+        /* padding-left: 15px; */
+    }
+
+    .vaicnt-inventory-step2-labels > p.vaicnt-inventory-ref {
+        text-align: center;
+    }
+
+    .vaicnt-inventory-step2-labels > p.vaicnt-inventory-scan {
+        text-align: right;
+        /* padding-right: 15px; */
+    }
+
+.vaicnt-btn-blue {
+    background: rgba(var(--v-c-primary), 1);
+    color: rgba(var(--v-c-on-primary), 1);
+    border-radius: 0;
+    /* margin-top: 22px; */
+    cursor: pointer;
+    padding: 8px 12px;
+    display: flex;
+    align-items: center;
+}
+
+.vaicnt-change-picture-ico {
+    /* width: 25px; */
+    /* height: 20px; */
+    /* float: left; */
+    /* margin-top: 0px; */
+    /* margin-right: 0px; */
+    /* margin-left: 0px; */
+    /* background: transparent url(../Images/upload-ico.png) no-repeat scroll 0% 0%; */
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+.vaicnt-file-upload {
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    height: 40px;
+    left: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.vaicnt-file-import-div {
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+/**********************/
+
+/***KeyPad*******/
+.vaicnt-scan-no {
+    background: rgba(var(--v-c-secondary), 1);
+    border-radius: 5px;
+    padding: 0 5px 5px 5px;
+    position: absolute;
+    width: 100%;
+    z-index: 0;
+    float: left;
+    /* top: 276px; */
+    margin-top: -42px;
+    margin-left: -5px;
+    border: 1px solid rgba(var(--v-c-on-secondary), .2);
+}
+
+    .vaicnt-scan-no .line {
+        width: 100%;
+        border-top: 1px solid rgba(var(--v-c-on-secondary), .2);
+        margin: 50px 0 5px;
+    }
+
+    .vaicnt-scan-no .calculator {
+        width: 100%;
+        overflow: hidden;
+        margin-top: 5px;
+        display: flex;
+    }
+
+        .vaicnt-scan-no .calculator .left {
+            background: rgba(var(--v-c-on-secondary), .6);
+            border-radius: 3px;
+            color: rgba(var(--v-c-on-primary), 1);
+            /* float: left; */
+            font-size: 23px;
+            padding: 8px 0;
+            text-align: center;
+            /* width: 31%; */
+            margin-left: 3px;
+            flex: 1;
+            cursor: pointer;
+        }
+
+            .vaicnt-scan-no .calculator .left:hover {
+                background: rgba(var(--v-c-on-secondary), 1);
+                /* cursor: pointer; */
+            }
+
+            .vaicnt-scan-no .calculator .left:last-child {
+                margin-right: 0;
+            }
+/*New design changes*/
+.vaicnt-plp-head-flex {
+    display: flex;
+}
+
+.vaicnt-plp-table-head {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(var(--v-c-on-secondary), .2);
+    background: rgba(var(--v-c-on-secondary), .1);
+}
+
+    .vaicnt-plp-table-head.vaicnt-plp-head-flex h3.vaicnt_plp-flex-2, .vaicnt-plp-head-flex {
+        flex: 2 !important;
+    }
+
+.vaicnt-inventory-table-wrap {
+    float: left;
+    width: 100%;
+    /*padding: 0 15px;*/
+    height: calc(100vh - 266px);
+    flex: 1;
+}
+
+.vaicnt-plp-table-wrap {
+    float: left;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(var(--v-c-on-secondary), .2);
+}
+
+.vaicnt-plp-head-flex {
+    display: flex;
+}
+
+.vaicnt-plp-nest-table-row {
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid rgba(var(--v-c-on-secondary), .2);
+    display: flex;
+}
+
+.vaicnt-plp-nest-table-col {
+    float: left;
+    padding: 10px 10px;
+    border-right: 1px solid rgba(var(--v-c-on-secondary), .2);
+    display: flex;
+    align-items: center;
+}
+
+.vaicnt-plp-head-flex .vaicnt-plp-nest-table-col.vaicnt_plp-flex-2 {
+    flex: 2 !important;
+}
+
+/*a {
+    color: #428bca;
+    text-decoration: none;
+}*/
+
+.vaicnt-deleterow {
+    /*width: 19px;
+    height: 20px;
+    margin-right: 10px;*/
+}
+
+.vaicnt-plp-table-head h3 {
+    float: left;
+    width: 20%;
+    font-size: 15px;
+    margin: 0;
+    padding: 0 10px;
+    text-align: left;
+    /*line-height: 24px;*/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 10px 10px;
+    border-right: 1px solid rgba(var(--v-c-on-secondary), .2);
+}
+
+    .vaicnt-plp-table-head h3:last-child {
+        border-right: none;
+    }
+
+.vaicnt_plp-width-7 {
+    width: 5% !important;
+}
+
+.vaicnt_plp-width-10 {
+    width: 10% !important;
+}
+
+.vaicnt-plp-nest-table-col select {
+    width: 100%;
+    border-radius: 3px;
+    padding: 4px;
+}
+
+.vaicnt-plp-table-body {
+    float: left;
+    width: 100%;
+    /*position: relative; Commented by Kanwal...Scan No control was transparent*/
+    overflow: overlay;
+}
+
+.vaicnt-inventory-tbl-inner-wrap {
+    width: 100%;
+    overflow: auto;
+    height: 100%;
+}
+
+.vaicnt-mainroot {
+    overflow: auto;
+    height: 100%;
+    background-color: white;
+    overflow-x: hidden;
+}
+/*End*/
+/*****************/
+
+
+/*****************************@media Starts here******************************************/
+
+@media (max-width:1024px) {
+    /*.inventory-field-data2{
+		width:25%;	
+	}*/
+    .vaicnt-inventory-field-data2 input {
+        /*width: 87%;*/
+    }
+}
+
+@media (max-width:999px) {
+    .vaicnt-inventory-field-data2 {
+        width: 48%;
+    }
+
+        .vaicnt-inventory-field-data2 input {
+            /*width: 87%;*/
+        }
+
+    .margin-ryt {
+        margin-right: 0;
+    }
+
+    .vaicnt-scan-no {
+        /*width: 45% !important;*/
+    }
+}
+
+
+@media (max-width:640px) {
+    .vaicnt-inventory-field-data2 {
+        width: 100%;
+        /*margin-bottom: 20px*/
+    }
+
+        .vaicnt-inventory-field-data2 input {
+            /*width: 85%;*/
+        }
+
+    .vaicnt-inventory-step2-btn {
+        display: flex;
+        justify-content: flex-end;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .vaicnt-inventory-step2-button {
+        float: initial;
+    }
+
+    .vaicnt-inventory-btn1 {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+
+    .vaicnt-inventory-step2-labels > p.vaicnt-inventory-transaction,
+    .vaicnt-inventory-step2-labels > p.vaicnt-inventory-ref,
+    .vaicnt-inventory-step2-labels > p.vaicnt-inventory-scan {
+        width: 100%;
+        text-align: left;
+        /* padding-left: 15px; */
+    }
+
+    .vaicnt-scan-no {
+        /*width: 92% !important;*/
+    }
+
+        .vaicnt-scan-no .calculator .left {
+            /*width: 32% !important;*/
+        }
+
+    .vaicnt-file-import-div {
+        display: none;
+    }
+
+    .vaicnt-plp-table-wrap {
+        overflow: auto;
+        /*display: table;
+        table-layout: fixed;*/
+        /*border: none;*/
+        width: 95vw;
+    }
+
+    .vaicnt_plp-width-10, .vaicnt_plp-width-7 {
+        flex: 2 !important;
+    }
+
+    .vaicnt-inventory-step2-bottom {
+        flex-direction: column;
+    }
+
+    .vaicnt-inventory-field-data input {
+        /*width: 100%;*/
+    }
+
+    .vaicnt-inventory-table-wrap {
+        height: calc(100vh - 400px);
+    }
+}
+
+@media (max-width:625px) {
+    .vaicnt-inventory-bottom-field {
+        width: 100%;
+        /*padding: 0 15px;*/
+    }
+
+    .vaicnt-inventory-table {
+        overflow-x: auto;
+        white-space: normal !important;
+        display: block;
+    }
+
+    .vaicnt-file-import-div {
+        display: none;
+    }
+
+    .vaicnt-plp-table-head h3, .vaicnt-plp-nest-table-col {
+        min-width: 100px;
+        word-break: break-word;
+    }
+
+    .vaicnt-plp-table-head {
+        background: transparent;
+        border-bottom: none;
+    }
+
+        .vaicnt-plp-table-head h3 {
+            background: rgba(var(--v-c-on-secondary), .1);
+            border-bottom: 1px solid rgba(var(--v-c-on-secondary), .2);
+        }
+
+    .vaicnt-plp-table-body {
+        overflow: unset;
+    }
+
+    .vaicnt-plp-nest-table-col {
+        border-bottom: 1px solid rgba(var(--v-c-on-secondary), .2);
+    }
+
+    .vaicnt-plp-nest-table-row {
+        border-bottom: none;
+    }
+}
+
+
+@media (max-width:400px) {
+    .vaicnt-inventory-content-wrap {
+        /*width: 300px;*/
+    }
+
+    .vaicnt-inventory-field-data > input {
+        /*width: 85%;*/
+    }
+
+    .vaicnt-scan-no .calculator .left {
+        /*width: 31% !important;*/
+    }
+
+    .vaicnt-inventory-table-row > td {
+        max-width: 80px;
+        word-wrap: break-word;
+    }
+
+    .vaicnt-inventory-td input[type="number"] {
+        width: 100%;
+    }
+
+    .vis-awindow {
+        table-layout: fixed;
+    }
+
+    .vaicnt-file-import-div {
+        display: none;
+    }
+}
+
+.vaicnt-inventory-step2 {
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.vaicnt-inventory-inner-space {
+    height: 100%;
+}
+
+.vaicnt-inventory-fields p {
+    margin-bottom: 0;
+}
+
+.vaicnt-plp-nest-table-col a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vaicnt-inventory-field-data2 > .vis-input-wrap {
+    margin-bottom: 0;
+}
+
+.vaicnt-inventory-step2-data input {
+    background: transparent;
+}
+
+.vaicnt-plp-nest-table-col:last-child {
+    border-right: 0;
+}
+
+.vaicnt-inventory-step2-bottom .vis-input-wrap {
+    margin-bottom: 0;
+}
+
+.vaicnt-inventory-step1-data > .vaicnt-inventory-fields {
+    padding: 15px;
+}
+
+
+/* keyboard - jQuery UI Widget */
+.ui-keyboard {
+    padding: .3em;
+    z-index: 16000;
+    top: 38%;
+    left: 29%;
+}
+
+.ui-keyboard-has-focus {
+    z-index: 16001;
+}
+
+.ui-keyboard div {
+    font-size: 1.1em;
+}
+
+.ui-keyboard-button {
+    min-height: 3em;
+    width: 3em;
+    min-width: 3em;
+    margin: .1em;
+    cursor: pointer;
+    overflow: hidden;
+    line-height: 2em;
+    -moz-user-focus: ignore;
+}
+
+    .ui-keyboard-button span {
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        display: inline-block;
+    }
+
+.ui-keyboard-button-endrow {
+    clear: left;
+}
+
+.ui-keyboard-widekey {
+    min-width: 4em;
+    width: auto;
+}
+
+.ui-keyboard-space {
+    width: 15em;
+}
+
+    .ui-keyboard-space span, .ui-keyboard-empty span {
+        font: 0/0 a;
+        text-shadow: none;
+        color: transparent;
+    }
+/* see http://nicolasgallagher.com/another-css-image-replacement-technique/ */
+.ui-keyboard-preview-wrapper {
+    text-align: center;
+}
+
+.ui-keyboard-preview {
+    text-align: left;
+    margin: 0 0 3px 0;
+    display: inline;
+    width: 99%;
+}
+/* width is calculated in IE, since 99% = 99% full browser width =( */
+.ui-keyboard-keyset {
+    text-align: center;
+    white-space: nowrap;
+    float: left
+}
+
+.ui-keyboard-input {
+    text-align: left;
+}
+
+.ui-keyboard-input-current {
+    -moz-box-shadow: 1px 1px 10px #5e9ed6;
+    -webkit-box-shadow: 1px 1px 10px #5e9ed6;
+    box-shadow: 1px 1px 10px #5e9ed6;
+}
+
+.ui-keyboard-placeholder {
+    color: #888;
+}
+
+.ui-keyboard-nokeyboard {
+    color: #888;
+    border-color: #888;
+}
+/* disabled or readonly inputs, or use input[disabled='disabled'] { color: #f00; } */
+.ui-keyboard-button.disabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+/* used by the acceptValid option to make the accept button appear faded */
+.ui-keyboard-spacer {
+    display: inline-block;
+    width: 1px;
+    height: 0;
+}
+
+/* combo key styling - toggles diacritics on/off */
+.ui-keyboard-button.ui-keyboard-combo.ui-state-default {
+    border-color: #ffaf0f;
+}
+
+/* (in)valid inputs */
+button.ui-keyboard-accept.ui-keyboard-valid-input {
+    border-color: #0c0;
+    background: #080;
+    color: #fff;
+}
+
+    button.ui-keyboard-accept.ui-keyboard-valid-input:hover {
+        background: #0a0;
+    }
+
+button.ui-keyboard-accept.ui-keyboard-invalid-input {
+    border-color: #c00;
+    background: #800;
+    color: #fff;
+}
+
+    button.ui-keyboard-accept.ui-keyboard-invalid-input:hover {
+        background: #a00;
+    }
+
+/*** jQuery Mobile definitions ***/
+/* jQuery Mobile styles - need wider buttons because of font size and text-overflow:ellipsis */
+.ui-body .ui-keyboard-button {
+    width: 3em;
+    display: inline-block;
+}
+
+.ui-body .ui-keyboard-widekey {
+    width: 5.5em;
+}
+
+.ui-body .ui-keyboard-space {
+    width: 15em;
+}
+
+    .ui-body .ui-keyboard-space span {
+        visibility: hidden;
+    }
+/* hides the ellipsis */
+.ui-body .ui-keyboard-keyset {
+    line-height: 0.5em;
+    float: left;
+}
+
+.ui-body input.ui-input-text, .ui-body textarea.ui-input-text {
+    width: 95%;
+}
+
+/* over-ride padding set by mobile ui theme - needed because the mobile script wraps button text with several more spans */
+.ui-body .ui-btn-inner {
+    height: 2em;
+    padding: 0.2em 0;
+    margin: 0;
+}
+
+.ui-body .ui-btn {
+    margin: 0;
+    font-size: 13px;
+}
+/* mobile default size is 13px */
+
+/* Media Queries (optimized for jQuery UI themes; may be slightly off in jQuery Mobile themes) */
+/* 240 x 320 (small phone)  */
+@media all and (max-width: 319px) {
+    .ui-keyboard div {
+        font-size: 9px;
+        float: left;
+    }
+
+    .ui-keyboard .ui-keyboard-input {
+        font-size: 12px;
+    }
+    /* I don't own an iPhone so I have no idea how small this really is... is it even clickable with your finger? */
+    .ui-body .ui-btn {
+        margin: 0;
+        font-size: 9px;
+    }
+    /*.ui-body .ui-keyboard-button { width: 1.8em; height: 2.5em; }*/
+    .ui-body .ui-keyboard-button {
+        width: 3em;
+        height: 3em;
+    }
+
+    .ui-body .ui-keyboard-widekey {
+        width: 4em;
+    }
+
+    .ui-body .ui-keyboard-space {
+        width: 8em;
+    }
+
+    .ui-body .ui-btn-inner {
+        height: 2.5em;
+        padding: 0.3em 0;
+    }
+}
+
+/* 320 x 480 (iPhone)  */
+@media all and (min-width: 320px) and (max-width: 479px) {
+    .ui-keyboard div {
+        font-size: 9px;
+        float: left;
+    }
+
+    .ui-keyboard .ui-keyboard-input {
+        font-size: 14px;
+    }
+    /* I don't own an iPhone so I have no idea how small this really is... is it even clickable with your finger? */
+    .ui-body .ui-btn {
+        margin: 0;
+        font-size: 11px;
+    }
+    /*.ui-body .ui-keyboard-button { width: 1.8em; height: 3em; }*/
+    .ui-body .ui-keyboard-button {
+        width: 3em;
+        height: 3em;
+    }
+
+    .ui-body .ui-keyboard-widekey {
+        width: 4.5em;
+    }
+
+    .ui-body .ui-keyboard-space {
+        width: 10em;
+    }
+
+    .ui-body .ui-btn-inner {
+        height: 3em;
+        padding: 0.7em 0;
+    }
+}
+
+/* 480 x 640 (small tablet) */
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .ui-keyboard div {
+        font-size: 13px;
+        float: left;
+    }
+
+    .ui-keyboard .ui-keyboard-input {
+        font-size: 14px;
+    }
+
+    .ui-body .ui-btn {
+        margin: 0;
+        font-size: 10px;
+    }
+    /*.ui-body .ui-keyboard-button { height: 2.5em; }*/
+    .ui-body .ui-keyboard-button {
+        height: 2.5em;
+    }
+
+    .ui-body .ui-btn-inner {
+        height: 2.5em;
+        padding: 0.5em 0;
+    }
+}
+/* RTL CSS*/
+html[dir="rtl"] .vaicnt-inventory-step1-btn,
+html[dir="rtl"] .vaicnt-inventory-step2-btn {
+    float: left;
+}
+
+html[dir="rtl"] .vaicnt-inventory-step2-labels > p.vaicnt-inventory-transaction,
+html[dir="rtl"] .vaicnt-inventory-step2-labels > p.vaicnt-inventory-ref,
+html[dir="rtl"] .vaicnt-inventory-step2-labels > p.vaicnt-inventory-scan,
+html[dir="rtl"] .vaicnt-inventory-field-data2,
+html[dir="rtl"] .vaicnt-file-import-div,
+html[dir="rtl"] .vaicnt-inventory-bottom-field {
+    float: right;
+}
+
+html[dir="rtl"] .vaicnt-key-pan-icon-ref,
+html[dir="rtl"] .vaicnt-key-pan-icon-name,
+html[dir="rtl"] .vaicnt-inventory-step1-btn,
+html[dir="rtl"] .vaicnt-inventory-btn {
+    margin-left: 0;
+    margin-right: 10px;
+}
+
+html[dir="rtl"] .vaicnt-plp-table-head h3,
+html[dir="rtl"] .vaicnt-plp-nest-table-col {
+    text-align: right;
+    border-right: none;
+    border-left: 1px solid rgba(var(--v-c-on-secondary), .2);
+}
+
+    html[dir="rtl"] .vaicnt-plp-table-head h3:last-child,
+    html[dir="rtl"] .vaicnt-plp-nest-table-col:last-child {
+        border-left: none;
+    }
+
+html[dir="rtl"] .vaicnt-inventory-field-data2 {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+html[dir="rtl"] .vaicnt-change-picture-ico {
+    margin-right: 0;
+    margin-left: 10px;
+}
+

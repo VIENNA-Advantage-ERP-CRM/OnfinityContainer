@@ -1,0 +1,74 @@
+﻿@model VAdvantage.Utility.Ctx
+
+@{
+    var windowNo = ViewBag.WindowNo;
+    var isRTL = Model.GetIsRightToLeft();
+    var dStyle = "";
+}
+
+@functions{
+    public string GetText(string msg, bool isTrans = false)
+    {
+        if (isTrans)
+            return VAdvantage.Utility.Msg.Translate(Model, msg);
+        return VAdvantage.Utility.Util.CleanMnemonic(VAdvantage.Utility.Msg.GetMsg(Model, msg, true));
+    }
+}
+@*<div class="vis-apanel-busy vis-advancedSearchbusy" id="VA005_divBusy_@windowNo" >
+    <p style="text-align: center">@GetText("Loading")</p>
+</div>*@
+<div style="width: 100%; height: 100%;">
+    <div>        
+        <div class="vis-advanedSearch-InputsWrap vis-pull-left VA005-poplblchkbefore">            
+            <div class="vis-form-group vis-advancedSearchInput vis-advancedSearchInput-v">
+                <label id="VA005_lblColumn_@windowNo"  for="Column">@GetText("Column")</label>
+                <select id="VA005_drpColumn_@windowNo">
+                </select>
+            </div>
+
+            <div class="vis-form-group vis-advancedSearchInput vis-advancedSearchInput-v" id="VA005_divValue1_@windowNo">
+                <label  id="VA005_lblQryValue_@windowNo" for="QueryValue">@GetText("VA005_Value")</label>
+                <input  id="VA005_txtQryValue_@windowNo" type="text" name="QueryValue">
+            </div>
+
+            <div class="vis-advancedSearch-calender-Icon vis-pull-left">
+                <ul>
+                    <li class="vis-pull-left">
+                        <button id="VA005_btnSave_@windowNo" disabled class="vis-ads-icon">
+                            <i class="vis vis-save"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div style="height: 65%;">
+        <div class="vis-advancedSearchTableWrap vis-table-responsive vis-pull-left">
+            <!--<div class="advancedSearchTableHead">
+                        	<p>Column</p>
+                            <p>Operator Name</p>
+                            <p>Query Value</p>
+                            <p>Query Value</p>
+                            <p>To Query Value</p>
+                            <p>Action</p>
+                        </div>-->
+            <table id="VA005_tblQry_@windowNo" class="vis-advancedSearchTable">
+                <thead>
+                    <tr class="vis-advancedSearchTableHead">
+                        <th>@GetText("AD_Column_ID", true)</th>
+                        <th style="display: none">@GetText("KEYVALUE", true)</th>
+                        <th>@GetText("VA005_Value", true)</th>
+                        <th style="display: none">@GetText("VALUE1VALUE", true)</th>
+                        <th>@GetText("Action", true)</th>
+                    </tr>
+                </thead>
+
+                <tbody class="vis-advancedSearchTableBody">
+                    @*<tr class="advancedSearchTableRow">
+                        </tr>*@
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

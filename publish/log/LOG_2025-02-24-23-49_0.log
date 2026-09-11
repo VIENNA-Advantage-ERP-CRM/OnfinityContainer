@@ -1,0 +1,88 @@
+*** 2/24/2025 11:49:27 PM VAdvantage Log  ***
+11:49:27.492    (INFO)     MRole.Get: [70]AD_Role_ID=0, AD_User_ID=100, reload=True
+11:49:27.492    (INFO)     MRole.Get: [70]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+11:49:27.492    (INFO)     MTree.Load: [70]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [70]PushNotif - Module VA074_ is not installed!
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [21]42703: column ad_widgetsize.d_chart_id does not exist
+
+POSITION: 375 [Query D] =>SELECT D_Chart.chartType, D_Chart.d_chart_id, D_Chart.Name, colspan,rowspan,'C' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence, IsDefault,AD_IMAGE.BINARYDATA,D_Chart.AD_Window_ID FROM D_Chart INNER JOIN 
+                            D_ChartAccess ON (D_Chart.D_Chart_ID=D_ChartAccess.D_Chart_ID)
+                            INNER JOIN AD_WidgetSize ON (D_Chart.D_Chart_ID=AD_WidgetSize.D_Chart_ID)LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                           
+                            WHERE D_Chart.isActive='Y' AND AD_WidgetSize.isActive='Y' AND  D_ChartAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT RC_KPI.KPIType AS chartType, RC_KPI.RC_KPI_ID AS d_chart_id,  RC_KPI.Name, colspan,rowspan,'K' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA,RC_KPI.AD_Window_ID FROM RC_KPI INNER JOIN 
+                            RC_KPIAccess ON (RC_KPI.RC_KPI_ID=RC_KPIAccess.RC_KPI_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_KPI.RC_KPI_ID=AD_WidgetSize.RC_KPI_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_KPI.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_KPIAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT 'V' AS chartType, RC_View.RC_View_ID AS d_chart_id, RC_View.Name, colspan,rowspan,'V' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA, RC_View.AD_Window_ID FROM RC_View INNER JOIN 
+                            RC_ViewAccess ON (RC_View.RC_View_ID=RC_ViewAccess.RC_View_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_View.RC_View_ID=AD_WidgetSize.RC_View_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_View.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_ViewAccess.AD_Role_ID=0 AND Homepage='Y'
+11:50:08.508    (INFO)     Trx.Start: [21]**** VISPRO_ModIns638760378082587522System.Random
+11:50:08.508    (INFO)     Trx.Commit: [21]**C** VISPRO_ModIns638760378082587522System.Random
+11:50:11.501    (INFO)     Env.Reset: [13]finalCall=False
+11:50:11.501    (INFO)     CacheMgt.Reset: [13]#18 (4966)
+11:50:11.501    (INFO)     Trx.Start: [13]**** VISPRO_ModIns638760378118305732System.Random
+11:50:11.501    (INFO)     Trx.Commit: [13]**C** VISPRO_ModIns638760378118305732System.Random
+11:50:49.504    (INFO)     MRole.Get: [79]AD_Role_ID=0, AD_User_ID=100, reload=True
+11:50:49.504    (INFO)     MRole.Get: [79]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+11:50:49.504    (INFO)     MRole.Get: [79]AD_Role_ID=0, AD_User_ID=100, reload=True
+11:50:49.504    (INFO)     MRole.Get: [79]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+11:50:49.504    (INFO)     MTree.Load: [79]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+11:50:49.504    (INFO)     Msg.InitMsg: [79]Records=4663 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [79]PushNotif - Module VA074_ is not installed!
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [66]42703: column ad_widgetsize.d_chart_id does not exist
+
+POSITION: 375 [Query D] =>SELECT D_Chart.chartType, D_Chart.d_chart_id, D_Chart.Name, colspan,rowspan,'C' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence, IsDefault,AD_IMAGE.BINARYDATA,D_Chart.AD_Window_ID FROM D_Chart INNER JOIN 
+                            D_ChartAccess ON (D_Chart.D_Chart_ID=D_ChartAccess.D_Chart_ID)
+                            INNER JOIN AD_WidgetSize ON (D_Chart.D_Chart_ID=AD_WidgetSize.D_Chart_ID)LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                           
+                            WHERE D_Chart.isActive='Y' AND AD_WidgetSize.isActive='Y' AND  D_ChartAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT RC_KPI.KPIType AS chartType, RC_KPI.RC_KPI_ID AS d_chart_id,  RC_KPI.Name, colspan,rowspan,'K' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA,RC_KPI.AD_Window_ID FROM RC_KPI INNER JOIN 
+                            RC_KPIAccess ON (RC_KPI.RC_KPI_ID=RC_KPIAccess.RC_KPI_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_KPI.RC_KPI_ID=AD_WidgetSize.RC_KPI_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_KPI.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_KPIAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT 'V' AS chartType, RC_View.RC_View_ID AS d_chart_id, RC_View.Name, colspan,rowspan,'V' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA, RC_View.AD_Window_ID FROM RC_View INNER JOIN 
+                            RC_ViewAccess ON (RC_View.RC_View_ID=RC_ViewAccess.RC_View_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_View.RC_View_ID=AD_WidgetSize.RC_View_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_View.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_ViewAccess.AD_Role_ID=0 AND Homepage='Y'
+11:51:17.511    (INFO)     Trx.Start: [21]**** VISPRO_ModIns638760378773143005System.Random
+11:51:17.511    (INFO)     Trx.Commit: [21]**C** VISPRO_ModIns638760378773143005System.Random
+11:51:20.512    (INFO)     MChangeLog.FillChangeLog: [13]#9
+11:51:21.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:21.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:21.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:22.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:22.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:24.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:25.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:26.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:26.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:29.512    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:30.513    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:30.513    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:31.513    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:31.513    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:32.513    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:32.513    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:32.513    (INFO)     CacheMgt.Reset: [13]AD_Image: #1 (0)
+11:51:45.514    (INFO)     Env.Reset: [13]finalCall=False
+11:51:45.514    (INFO)     CacheMgt.Reset: [13]#19 (4977)
+11:51:45.514    (INFO)     Trx.Start: [13]**** VISPRO_ModIns638760379054048536System.Random
+11:51:45.514    (INFO)     Trx.Commit: [13]**C** VISPRO_ModIns638760379054048536System.Random
+11:52:07.527    (INFO)     MRole.Get: [65]AD_Role_ID=0, AD_User_ID=100, reload=True
+11:52:07.527    (INFO)     MRole.Get: [65]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+11:52:07.527    (INFO)     MRole.Get: [65]AD_Role_ID=0, AD_User_ID=100, reload=True
+11:52:07.527    (INFO)     MRole.Get: [65]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+11:52:07.527    (INFO)     MTree.Load: [65]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [65]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+11:52:07.527    (INFO)     Msg.InitMsg: [65]Records=4663 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [65]PushNotif - Module VA074_ is not installed!
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [79]42703: column ad_widgetsize.d_chart_id does not exist
+
+POSITION: 375 [Query D] =>SELECT D_Chart.chartType, D_Chart.d_chart_id, D_Chart.Name, colspan,rowspan,'C' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence, IsDefault,AD_IMAGE.BINARYDATA,D_Chart.AD_Window_ID FROM D_Chart INNER JOIN 
+                            D_ChartAccess ON (D_Chart.D_Chart_ID=D_ChartAccess.D_Chart_ID)
+                            INNER JOIN AD_WidgetSize ON (D_Chart.D_Chart_ID=AD_WidgetSize.D_Chart_ID)LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                           
+                            WHERE D_Chart.isActive='Y' AND AD_WidgetSize.isActive='Y' AND  D_ChartAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT RC_KPI.KPIType AS chartType, RC_KPI.RC_KPI_ID AS d_chart_id,  RC_KPI.Name, colspan,rowspan,'K' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA,RC_KPI.AD_Window_ID FROM RC_KPI INNER JOIN 
+                            RC_KPIAccess ON (RC_KPI.RC_KPI_ID=RC_KPIAccess.RC_KPI_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_KPI.RC_KPI_ID=AD_WidgetSize.RC_KPI_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_KPI.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_KPIAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT 'V' AS chartType, RC_View.RC_View_ID AS d_chart_id, RC_View.Name, colspan,rowspan,'V' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA, RC_View.AD_Window_ID FROM RC_View INNER JOIN 
+                            RC_ViewAccess ON (RC_View.RC_View_ID=RC_ViewAccess.RC_View_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_View.RC_View_ID=AD_WidgetSize.RC_View_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_View.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_ViewAccess.AD_Role_ID=0 AND Homepage='Y'
+11:52:13.521    (INFO)     MSession.Logout: [66]-08:57:14.525
+----------->     (WARNING)  MSession.Get: [21]Session already Processed=X_AD_Session[1000975]

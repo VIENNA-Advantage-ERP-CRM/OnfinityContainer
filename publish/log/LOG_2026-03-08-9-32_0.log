@@ -1,0 +1,53 @@
+09:34:09.349    (INFO)     Trx.Start: [22]**** VISPRO_ModIns639085592496201298System.Random
+09:34:09.349    (INFO)     Trx.Commit: [22]**C** VISPRO_ModIns639085592496201298System.Random
+09:34:13.341    (INFO)     MChangeLog.FillChangeLog: [93]#10
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [93]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [93] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [93]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [93]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [93] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [93]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [93]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [93] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [93]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [93]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [93] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [93]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [93]Not insertedAD_Form_Access
+09:34:17.341    (INFO)     Env.Reset: [93]finalCall=False
+09:34:17.341    (INFO)     CacheMgt.Reset: [93]#22 (7026)
+09:34:17.341    (INFO)     Trx.Start: [93]**** VISPRO_ModIns639085592579513833System.Random
+09:34:17.341    (INFO)     Trx.Commit: [93]**C** VISPRO_ModIns639085592579513833System.Random
+09:34:21.342    (INFO)     MRole.Get: [10]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:34:21.342    (INFO)     MRole.Get: [10]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [10]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

@@ -1,0 +1,3 @@
+02:37:09.379    (INFO)     MSession.Logout: [10]-08:59:12.346
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [21]SessionEventHandler  - Object reference not set to an instance of an object.
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [81]SessionEventHandler  - Object reference not set to an instance of an object.

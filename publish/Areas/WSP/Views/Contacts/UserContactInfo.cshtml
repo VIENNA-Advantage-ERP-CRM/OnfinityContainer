@@ -1,0 +1,538 @@
+﻿<div class="wsp-view_left_part">
+    <input type="hidden" value=@Model[0].UserID id="userID_@ViewBag.WindowNumber" />
+    @{bool isTeamExist = false;}
+    @{bool isContactDetails = false;}
+    @{bool isRole = false;}
+
+
+    @if (@Model[0].FirstName.Length > 15)
+    {
+        <p id="hduserName_@ViewBag.WindowNumber">@Model[0].FirstName</p>
+        <p id="greeting_@ViewBag.WindowNumber" class="wsp-view_profile_name">@Model[0].Greeting</p>
+        <p id="userName_@ViewBag.WindowNumber" title="" class="wsp-view_profile_name">@Model[0].FirstName.Substring(0, 15)<a id="dotImg_@ViewBag.WindowNumber" href="javascript:void(0)">...</a>  </p>
+    }
+    else
+    {
+        <p id="hduserName_@ViewBag.WindowNumber"></p>
+        <p id="greeting_@ViewBag.WindowNumber" class="wsp-view_profile_name">@Model[0].Greeting</p>
+        <p id="userName_@ViewBag.WindowNumber" class="wsp-view_profile_name">@Model[0].FirstName</p> <a id="dotImg_@ViewBag.WindowNumber" href="javascript:void(0)"></a>
+    }
+    <div id="popUpDiv_@ViewBag.WindowNumber"></div>
+    @*<p class="wsp-view_profile_possession">@Model[0].Role</p>*@
+    @*<input type="hidden" value=@Model[0].BPartnerID id="BPID_@ViewBag.WindowNumber" />
+        <input type="hidden" value=@Model[0].BPGroupID id="BPGroupID_@ViewBag.WindowNumber" />*@
+
+    <input type="hidden" value="0" id="BPID_@ViewBag.WindowNumber" />
+    <input type="hidden" value="0" id="BPGroupID_@ViewBag.WindowNumber" />
+    <input type="hidden" value=@Model[0].TableID id="userTableID_@ViewBag.WindowNumber" />
+    @if (@Model[0].CompanyName.Length > 25)
+    {
+        <p id="companyName_@ViewBag.WindowNumber" class="wsp-view_profile_possession" style="word-break: break-all;">@Model[0].CompanyName</p>
+        <p class="wsp-view_profile_possession" style="border-bottom: 1px solid #DFDFDF; padding-bottom: 20px;" id="pContactTypeCategory_@ViewBag.WindowNumber"></p>
+    }
+    else
+    {
+        <p id="companyName_@ViewBag.WindowNumber" class="wsp-view_profile_possession">@Model[0].CompanyName</p>
+        <p class="wsp-view_profile_possession" style="border-bottom: 1px solid #DFDFDF; padding-bottom: 20px;" id="pContactTypeCategory_@ViewBag.WindowNumber"></p>
+    }
+
+    <div class="wsp-profile_big_img_mobile">
+
+        <span id="editMobileImage_@ViewBag.WindowNumber" class="mobilespan" style="width:24px;float:right;">
+            <input type="file" id="wsp-fileinput_@ViewBag.WindowNumber" class="wsp-file-input" value="Add Pic">
+            <img src="~/Areas/WSP/Images/Edit-icon.png" style="z-index: 100; position: absolute;">
+        </span>
+        @if (@Model[0].Image.Contains("defaultUser"))
+        {
+            <img id="mobileImg_@ViewBag.WindowNumber" width="100%" alt="Image is not available" src=@Url.Content("~/" + @Model[0].Image)>
+        }
+        else
+        {
+            <img id="mobileImg_@ViewBag.WindowNumber" width="100%" alt="Image is not available" src=@Model[0].Image>
+        }
+
+
+    </div>
+
+    <div id="divTeam_@ViewBag.WindowNumber" class="wsp-view_team">
+        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Teams")</p>
+        @foreach (var person in Model)
+        {
+            if (@person.Team != string.Empty && @person.Team != null)
+            {
+                isTeamExist = true;
+                <p id="team_@ViewBag.WindowNumber" style="word-break: break-all">@person.Team</p>
+            }
+        }
+        @if (!isTeamExist)
+        {
+            <p id="teamNotFound_@ViewBag.WindowNumber" style="word-break: break-all; font-style: italic;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "NotFound")</p>
+        }
+
+    </div>
+
+    <div id="divContactDetails_@ViewBag.WindowNumber" class="wsp-view_team">
+        <p style="word-break: break-all;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "ContactDetails")<img id="showAddressOnGoogleMap_@ViewBag.WindowNumber" src="/ViennaAdvantageWeb1/Areas/VIS/Images/base/ToLink20.png"></p>
+
+        @foreach (var person in Model)
+        {
+            if (@person.FirstName != "")
+            {
+                continue;
+            }
+            if (@person.Address != string.Empty && @person.Address != null)
+            {
+                isContactDetails = true;
+                <p id="address_@ViewBag.WindowNumber" style="word-break: break-all">@person.Address</p>
+            }
+
+
+        }
+
+        @{string countryName = string.Empty;}
+        @if (@Model[0].CountryName != string.Empty && @Model[0].CountryName != null)
+        {
+            isContactDetails = true;
+            countryName = " (" + @Model[0].CountryName + ")";
+        }
+        @if (@Model[0].CountryName != string.Empty && @Model[0].CountryName != null)
+        {
+            isContactDetails = true;
+            <p id="country_@ViewBag.WindowNumber" style="word-break: break-all">@Model[0].City @countryName</p>
+        }
+        @if (@Model[0].Postal != string.Empty && @Model[0].Postal != null)
+        {
+            isContactDetails = true;
+            <p id="postal_@ViewBag.WindowNumber" style="word-break: break-all">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "ZipCode"): @Model[0].Postal </p>
+        }
+        @foreach (var person in Model)
+        {
+            if (@person.FirstName != "")
+            {
+                continue;
+            }
+            if (@person.PhoneNo != string.Empty && @person.PhoneNo != null)
+            {
+                isContactDetails = true;
+                <p id="phone_@ViewBag.WindowNumber" style="word-break: break-all">
+                    <span class="wsp-caller">
+                        <img src="~/Areas/WSP/Images/caller.png">
+                    </span>@person.PhoneNo
+                </p>
+            }
+        }
+        @if (@Model[0].Email != "" && @Model[0].Email != null)
+        {
+            isContactDetails = true;
+            @*<div style="width: 100%; float: left">*@
+            @*<span class="wsp-caller" style="width: 8%; margin-right: 8px">*@
+            @*<span class="wsp-caller" >
+                <img src="~/Areas/WSP/Images/sms.png"></span>*@
+            @*<p style="word-break: break-all; width: 87%; float: left; margin-top: 5px">*@
+            <p id="userEmail_@ViewBag.WindowNumber" style="word-break: break-all; display: inline-flexbox;">
+                <span class="wsp-caller">
+                    <img src="~/Areas/WSP/Images/sms.png">
+                </span>  @Model[0].Email
+
+            </p>
+            @*</div>*@
+        }
+        @if (!isContactDetails)
+        {
+            <p id="emailNotFound_@ViewBag.WindowNumber" style="word-break: break-all; font-style: italic;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "NotFound")</p>
+        }
+    </div>
+
+    <div id="divcompanyDetails_@ViewBag.WindowNumber" class="wsp-view_team">
+
+        <p style="word-break: break-all;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Company") </p>
+        @if (@Model[0].CompanyName != string.Empty && @Model[0].CompanyName != null)
+        {
+            if (@Model[0].CompanyName.Length > 25)
+            {
+                <p id="companyDetails_@ViewBag.WindowNumber" style="word-break: break-all">@Model[0].CompanyName</p>
+            }
+            else
+            {
+                <p id="companyDetails_@ViewBag.WindowNumber">@Model[0].CompanyName</p>
+            }
+        }
+        else
+        {
+            <p id="companyNotFound_@ViewBag.WindowNumber" style="word-break: break-all; font-style: italic;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "NotFound")</p>
+        }
+
+
+    </div>
+
+    <div id="divRole_@ViewBag.WindowNumber" class="wsp-view_team">
+        <p style="word-break: break-all;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "RoleAssign")</p>
+        @foreach (var person in Model)
+        {
+            if (@person.Role != string.Empty && @person.Role != null)
+            {
+                isRole = true;
+                <p id="role_@ViewBag.WindowNumber" style="word-break: break-all">@person.Role</p>
+            }
+
+        }
+        @if (!isRole)
+        {
+            <p id="roleNotFound_@ViewBag.WindowNumber" style="word-break: break-all; font-style: italic;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "NotFound")</p>
+        }
+    </div>
+
+
+</div>
+
+<div class="wsp-view_right_part" id="WSP_view_right_part_@ViewBag.WindowNumber">
+    @*<div id="userBigImg_@ViewBag.WindowNumber" class="wsp-profile_big_img" style="width: 320px; background: none repeat scroll 0% 0% #EEE; height: 240px; ">*@
+    <div id="userBigImg_@ViewBag.WindowNumber" class="wsp-profile_big_img">
+
+        <div class="image-upload" style="float: right; position: absolute; z-index: 999; width: 100%">
+            <label for="file-input" class="wsp-file-label">
+                <span class="wsp-change-picture-ico vis vis-pencil"></span>
+            </label>
+
+            <input type="file" id="wsp-file-input_@ViewBag.WindowNumber" accept="image/*" class="wsp-file-input" value="Add Pic">
+            @* <input type="file" id="wsp-file-input_@ViewBag.WindowNumber" style="margin-top:-24px;opacity:0;width:15%;float:right;z-index:999;position:absolute;right:0;cursor:pointer" class="wsp-file-input" value="Add Pic">*@
+        </div>
+        @*<span id="editImage_@ViewBag.WindowNumber" style="width:24px;float:right;cursor: pointer">
+                <input type="file" id="wsp-file-input_@ViewBag.WindowNumber" class="wsp-file-input" value="Add Pic">
+                <img src="~/Areas/WSP/Images/Edit-icon.png" style="z-index: 100; position: absolute;margin-left: 10px;">
+            </span>*@
+    <div class="wsp-bigimg">
+        @*<img id="bigUserImage_@ViewBag.WindowNumber"   alt="Image is not available" src=@Url.Content("~/" + @Model[0].Image)  >*@
+        @if (@Model[0].Image.Contains("defaultUser"))
+        {
+            <i class='fa fa-user' id='bigUserImagei_@ViewBag.WindowNumber'></i>
+            <img style="display:none" id="bigUserImage_@ViewBag.WindowNumber" alt="Image is not available" src=@Url.Content("~/" + @Model[0].Image)>
+        }
+        else
+        {
+            <i class='fa fa-user' id='bigUserImagei_@ViewBag.WindowNumber'></i>
+            <img style="display:none" id="bigUserImage_@ViewBag.WindowNumber" alt="Image is not available" src=@Model[0].Image>
+        }
+    </div>
+    </div>
+    @*< class="wsp-action">*@
+    @* <ul style="list-style-type: none; width: 100%">
+
+                   <li id="edit_@ViewBag.WindowNumber" class="wsp-first_row"><a href="javascript:void(0)"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/edit_2.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Edit")</a></li>
+        <li id="sendSMS_@ViewBag.WindowNumber" class="wsp-second_row"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/send_sms.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "SendSMS")</li>
+                   <li id="email_@ViewBag.WindowNumber" class="wsp-third_row"><a><span class="wsp-left_icon email_icon">
+                       <img src="~/Areas/WSP/Images/message.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Email")</a> </li>
+
+
+
+                   <li id="appointment_@ViewBag.WindowNumber" class="wsp-first_row"><a href="javascript:void(0)"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/appointment.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Appointment")</a> </li>
+                   <li id="activity_@ViewBag.WindowNumber" class="wsp-second_row"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/activity.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Activity")</li>
+                   <li id="createOrder_@ViewBag.WindowNumber" class="wsp-third_row"><a href="javascript:void(0)"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/create_order.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "CreateOrder")</a></li>
+
+
+
+                   <li id="BPInfo_@ViewBag.WindowNumber" class="wsp-first_row"><a href="javascript:void(0)"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/bp_info.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "BPInfo")</a></li>
+                   <li id="addBPartner_@ViewBag.WindowNumber" class="wsp-second_row"><a href="javascript:void(0)"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/activity.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "AddBPartner")</a></li>
+                   <li id="ImportContacts_@ViewBag.WindowNumber" class="wsp-third_row"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/import_contact.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "ImportContacts")</li>
+
+
+
+                   <li id="settings_@ViewBag.WindowNumber" class="wsp-first_row"><span class="wsp-left_icon">
+                       <img src="~/Areas/WSP/Images/setting.png"></span>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Settings")</li>
+
+
+
+
+
+
+
+
+
+               </ul>*@
+    @* <div class="wsp-action">
+            <table id="actionTable_@ViewBag.WindowNumber" class="wsp-tableRightContent">
+                <tr>
+                    <td style="width: 22px"><a id="ImgEdit_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/edit_2.png"></span></a>
+                    </td>
+                    <td class="tdactionlist">
+                        <p><a id="edit_@ViewBag.WindowNumber"  class="wsp-tableaction" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Edit")</a> </p>
+
+                    </td>
+
+
+                    <td style="width: 22px">
+
+                        <a id="ImgsendSMS_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                            <img src="~/Areas/WSP/Images/send_sms.png"></span></a>
+
+                    </td>
+                    <td class="tdactionlist">
+                        <p style="float: left; width: 87%">
+                            <a id="sendSMS_@ViewBag.WindowNumber" class="wsp-tableaction" >@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "SendSMS")
+
+                            </a>
+                        </p>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td><a id="Imgemail_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon email_icon">
+                        <img src="~/Areas/WSP/Images/message.png"></span></a> </td>
+                    <td class="tdactionlist">
+                        <p><a id="email_@ViewBag.WindowNumber" class="wsp-tableaction">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Email")</a> </p>
+                    </td>
+
+
+
+                    <td><a id="Imgappointment_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/appointment.png"></span></a></td>
+                    <td class="tdactionlist">
+                        <p><a id="appointment_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Appointment")</a> </p>
+                    </td>
+
+                </tr>
+
+                <tr>
+
+                    <td><a id="Imgactivity_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/activity.png"></span></a>
+
+                    </td>
+                    <td class="tdactionlist">
+                        <p><a id="activity_@ViewBag.WindowNumber" class="wsp-tableaction">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Activity")</a></p>
+
+                    </td>
+
+
+
+                    <td><a id="ImgcreateOrder_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/create_order.png"></span></a> </td>
+                    <td class="tdactionlist">
+                        <p><a id="createOrder_@ViewBag.WindowNumber" href="javascript:void(0)" class="wsp-tableaction">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "CreateOrder")</a></p>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><a id="ImgBPInfo_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/bp_info.png"></span> </a></td>
+                    <td class="tdactionlist">
+                        <p><a id="BPInfo_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "BPInfo")</a></p>
+                    </td>
+
+                    <td><a id="ImgaddBPartner_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/activity.png"></span></a> </td>
+                    <td class="tdactionlist">
+                        <p><a id="addBPartner_@ViewBag.WindowNumber" href="javascript:void(0)" class="wsp-tableaction">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "AddBPartner")</a> </p>
+                    </td>
+                </tr>
+
+                <tr>
+
+                    <td><a id="Imgsettings_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/setting.png"></span></a> </td>
+                    <td class="tdactionlist">
+                        <p><a id="settings_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Settings")</a></p>
+                    </td>
+
+                    <td><a id="ImgImportContacts_@ViewBag.WindowNumber" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/setting.png"></span></a> </td>
+                    <td class="tdactionlist">
+                        <p><a id="ImportContacts_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "ImportContacts")</a></p>
+                    </td>
+                </tr>
+            </table>
+        </div>*@
+
+
+
+
+
+
+
+    <div class="wsp-action">
+        <table id="actionTable_@ViewBag.WindowNumber" class="wsp-tableRightContent">
+            <tr style="height:30px">
+                <td class="tdactionlist">
+                    <a id="edit_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon">
+                            @*<img src="~/Areas/WSP/Images/edit_2.png">*@
+                            <i class='vis vis-edit'></i>
+                        </span>
+                        <p>@VAdvantage.Utility.Util.CleanMnemonic(VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Edit")) </p>
+                    </a>
+                </td>
+
+
+                <!--///////////-->
+                <td class="tdactionlist">
+
+                    <a id="editContact_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-contacts'></i>
+                        </span>
+                        <p>
+                            @VAdvantage.Utility.Util.CleanMnemonic(VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "EditContact"))
+                        </p>
+                    </a>
+                </td>
+
+
+
+            </tr>
+
+            <tr style="height:30px">
+                <td class="tdactionlist">
+                    <a id="email_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon email_icon">
+                            <i class='vis vis-email'></i>
+</span>
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "EMail") </p>
+                    </a>
+
+
+                </td>
+
+                <td class="tdactionlist">
+
+                    <a id="sendSMS_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-sms'></i>
+                        </span>
+                        <p>
+                            @VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "SendSms")
+
+
+                        </p>
+                    </a>
+                </td>
+
+            </tr>
+
+            <tr style="height:30px">
+
+                <td class="tdactionlist">
+                    <a id="activity_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-cog'></i>
+                        </span>
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Activity")</p>
+                    </a>
+                </td>
+
+                <td class="tdactionlist">
+                    <a id="createOrder_@ViewBag.WindowNumber" href="javascript:void(0)" class="wsp-tableaction">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-createdocument'></i>
+                        </span>
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "CreateOrder")</p>
+                    </a>
+
+                </td>
+
+            </tr>
+
+            <tr style="height:30px">
+                <td class="tdactionlist">
+                    <a id="BPInfo_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-info'></i>
+                        </span>
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "BPInfo")</p>
+                    </a>
+
+                </td>
+
+                <td class="tdactionlist">
+                    <a id="addBPartner_@ViewBag.WindowNumber" href="javascript:void(0)" class="wsp-tableaction">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-addbp'></i>
+                        </span>
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "AddBPartner") </p>
+                    </a>
+
+                </td>
+
+            </tr>
+
+            <tr style="height:30px">
+                <td class="tdactionlist">
+                    <a id="History_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-history'></i>
+                        </span>
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "History")</p>
+                    </a>
+
+                </td>
+                <td class="tdactionlist">
+                    <a id="appointment_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)">
+                        <span class="wsp-left_icon">
+                            <i class='vis vis-appointment'></i>
+                        </span>
+
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Appointment") </p>
+                    </a>
+
+                </td>
+
+            </tr>
+
+
+
+            <tr>
+
+                @* <td class="tdactionlist"><a id="settings_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/setting.png"></span>
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Settings")</p>
+                    </a>
+
+                    </td>*@
+
+
+                @*     <td class="tdactionlist"><a id="ImportContacts_@ViewBag.WindowNumber" class="wsp-tableaction" href="javascript:void(0)"><span class="wsp-left_icon">
+                        <img src="~/Areas/WSP/Images/import_contact.png"></span>
+
+                        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "ImportContacts")</p>
+                    </a>
+                    </td>*@
+
+            </tr>
+        </table>
+    </div>
+
+
+    <div id="divBirthday_@ViewBag.WindowNumber" class="wsp-birthday_container">
+
+        @if (@Model[0].Birthday.ToString() == "")
+        {
+            return;
+        }
+
+
+        <div class="wsp-birthdat_text">
+            @*  <div class="wsp-birth_pic">
+                    <img width="30px" height="30px"  src=@Url.Content("~/" + @Model[0].Image) >
+                </div>*@
+            @if (@Model[0].Birthday == @DateTime.Now.Date.ToString())
+            {
+                <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_Today")  @VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_is") <span class="wsp-birthday_text_highlight">@Model[0].FirstName </span> @VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_Birthday")</p>
+            }
+            <p>@Model[0].FirstName  @VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_Birthday") @VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_on") <span class="wsp-birthday_text_highlight">@String.Format("{0:dd-MMM-yy}", Model[0].Birthday)</span></p>
+        </div>
+    </div>
+</div>
+
+
+</div>
+<div class="wsp-clear-both"></div>
+

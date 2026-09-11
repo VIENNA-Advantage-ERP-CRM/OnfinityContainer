@@ -1,0 +1,620 @@
+10:36:56.365    (INFO)     Trx.Start: [5]**** VISPRO_ModIns639085630161019207System.Random
+10:36:56.365    (INFO)     Trx.Commit: [5]**C** VISPRO_ModIns639085630161019207System.Random
+10:37:02.372    (INFO)     MChangeLog.FillChangeLog: [37]#11
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [37]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [37]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 378
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [37]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [37]Not insertedAD_Form_Access
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [37]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 201
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_assignparameter" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VA094_AssignParameter_ID) FROM VA094_AssignParameter
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_assignparameter" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VA094_AssignParameter_ID) FROM VA094_AssignParameter
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_AssignParameter_ID) FROM VA094_AssignParameter => 42P01: relation "va094_assignparameter" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [37]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 115
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_assignparameter_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_assignparameter_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_assigndimensions" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA094_AssignDimensions_ID) FROM VA094_AssignDimensions
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_assigndimensions" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA094_AssignDimensions_ID) FROM VA094_AssignDimensions
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_AssignDimensions_ID) FROM VA094_AssignDimensions => 42P01: relation "va094_assigndimensions" does not exist
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_assigndimensions_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_assigndimensions_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_valueparameter" does not exist
+
+POSITION: 43 [Query DR] SELECT MAX( VA094_ValueParameter_ID) FROM VA094_ValueParameter
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_valueparameter" does not exist
+
+POSITION: 43 [Query DR] SELECT MAX( VA094_ValueParameter_ID) FROM VA094_ValueParameter
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_ValueParameter_ID) FROM VA094_ValueParameter => 42P01: relation "va094_valueparameter" does not exist
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_valueparameter_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_valueparameter_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_forecastline" does not exist
+
+POSITION: 41 [Query DR] SELECT MAX( VA094_ForecastLine_ID) FROM VA094_ForecastLine
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_forecastline" does not exist
+
+POSITION: 41 [Query DR] SELECT MAX( VA094_ForecastLine_ID) FROM VA094_ForecastLine
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_ForecastLine_ID) FROM VA094_ForecastLine => 42P01: relation "va094_forecastline" does not exist
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_forecastline_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_forecastline_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_componentline" does not exist
+
+POSITION: 42 [Query DR] SELECT MAX( VA094_ComponentLine_ID) FROM VA094_ComponentLine
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_componentline" does not exist
+
+POSITION: 42 [Query DR] SELECT MAX( VA094_ComponentLine_ID) FROM VA094_ComponentLine
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_ComponentLine_ID) FROM VA094_ComponentLine => 42P01: relation "va094_componentline" does not exist
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_componentline_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_componentline_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_materialforecast" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA094_MaterialForecast_ID) FROM VA094_MaterialForecast
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_materialforecast" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA094_MaterialForecast_ID) FROM VA094_MaterialForecast
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_MaterialForecast_ID) FROM VA094_MaterialForecast => 42P01: relation "va094_materialforecast" does not exist
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_materialforecast_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_materialforecast_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_linedetail" does not exist
+
+POSITION: 39 [Query DR] SELECT MAX( VA094_LineDetail_ID) FROM VA094_LineDetail
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_linedetail" does not exist
+
+POSITION: 39 [Query DR] SELECT MAX( VA094_LineDetail_ID) FROM VA094_LineDetail
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_LineDetail_ID) FROM VA094_LineDetail => 42P01: relation "va094_linedetail" does not exist
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_linedetail_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_linedetail_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_budgetparameter" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VA094_BudgetParameter_ID) FROM VA094_BudgetParameter
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_budgetparameter" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VA094_BudgetParameter_ID) FROM VA094_BudgetParameter
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_BudgetParameter_ID) FROM VA094_BudgetParameter => 42P01: relation "va094_budgetparameter" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_budgetparameter_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_budgetparameter_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_budkeyfigures" does not exist
+
+POSITION: 42 [Query DR] SELECT MAX( VA094_BudKeyFigures_ID) FROM VA094_BudKeyFigures
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_budkeyfigures" does not exist
+
+POSITION: 42 [Query DR] SELECT MAX( VA094_BudKeyFigures_ID) FROM VA094_BudKeyFigures
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_BudKeyFigures_ID) FROM VA094_BudKeyFigures => 42P01: relation "va094_budkeyfigures" does not exist
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_budkeyfigures_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_budkeyfigures_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_keyfigurevalues" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VA094_KeyFigureValues_ID) FROM VA094_KeyFigureValues
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_keyfigurevalues" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VA094_KeyFigureValues_ID) FROM VA094_KeyFigureValues
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_KeyFigureValues_ID) FROM VA094_KeyFigureValues => 42P01: relation "va094_keyfigurevalues" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_keyfigurevalues_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_keyfigurevalues_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_budvalues" does not exist
+
+POSITION: 38 [Query DR] SELECT MAX( VA094_BudValues_ID) FROM VA094_BudValues
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_budvalues" does not exist
+
+POSITION: 38 [Query DR] SELECT MAX( VA094_BudValues_ID) FROM VA094_BudValues
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_BudValues_ID) FROM VA094_BudValues => 42P01: relation "va094_budvalues" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_budvalues_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_budvalues_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_t_budgetedrecord" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA094_t_BudgetedRecord_ID) FROM VA094_t_BudgetedRecord
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [37]42P01: relation "va094_t_budgetedrecord" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA094_t_BudgetedRecord_ID) FROM VA094_t_BudgetedRecord
+===========>     (SEVERE)   DB.GetSQLValue: [37]SELECT MAX( VA094_t_BudgetedRecord_ID) FROM VA094_t_BudgetedRecord => 42P01: relation "va094_t_budgetedrecord" does not exist
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42P01: sequence "va094_t_budgetedrecord_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42P01: sequence "va094_t_budgetedrecord_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [37]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 103
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+10:38:10.381    (INFO)     CacheMgt.Reset: [37]AD_Ref_Table: #1 (4)
+10:38:10.381    (INFO)     CacheMgt.Reset: [37]AD_Ref_Table: #1 (0)
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [37]Not insertedAD_Ref_Table
+10:38:10.381    (INFO)     CacheMgt.Reset: [37]AD_Ref_Table: #1 (0)
+10:38:10.381    (INFO)     CacheMgt.Reset: [37]AD_Ref_Table: #1 (0)
+10:38:10.381    (INFO)     CacheMgt.Reset: [37]AD_Ref_Table: #1 (0)
+10:38:10.381    (INFO)     CacheMgt.Reset: [37]AD_Ref_Table: #1 (0)
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [37]Not insertedAD_Ref_Table
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 43
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_BudValues WHERE VA094_KeyFigureValues_ID=@VA094_KeyFigureValues_ID@ AND IsActive='Y'
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@"
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@"
+
+POSITION: 30
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 30
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 30
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 30
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_BudValues WHERE VA094_KeyFigureValues_ID=@VA094_KeyFigureValues_ID@ AND IsActive='Y'
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(CAST(Line AS INT)),0)+10 AS DefaultValue FROM VA094_AssignDimensions WHERE VA094_AssignParameter_ID=@VA094_AssignParameter_ID@ AND IsActive='Y'
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(CAST(Line AS INT)),0)+10 AS DefaultValue FROM VA094_ValueParameter WHERE VA094_AssignDimensions_ID=@VA094_AssignDimensions_ID@ AND IsActive='Y'
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT COALESCE(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_ForecastLine WHERE VA094_MaterialForecast_ID=@VA094_MaterialForecast_ID@
+===========>     (SEVERE)   ImportModuleFromServer.ExecuteQuery: [37]importFromServer => 42P01: relation "va094_materialforecast" does not exist
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_ComponentLine WHERE VA094_LineDetail_ID=@VA094_LineDetail_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 41
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_ComponentLine WHERE VA094_LineDetail_ID=@VA094_LineDetail_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "dr" does not exist
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "dr" does not exist
+
+POSITION: 45
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_LineDetail WHERE VA094_ForecastLine_ID=@VA094_ForecastLine_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 38
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_LineDetail WHERE VA094_ForecastLine_ID=@VA094_ForecastLine_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 46
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 46
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 36
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 36
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@"
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@"
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 36
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 36
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 47
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 47
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 31
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 31
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 28
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 28
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(CAST(Line AS INT)),0)+10 AS DefaultValue FROM VA094_AssignDimensions WHERE VA094_AssignParameter_ID=@VA094_AssignParameter_ID@ AND IsActive='Y'
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT NVL(MAX(CAST(Line AS INT)),0)+10 AS DefaultValue FROM VA094_ValueParameter WHERE VA094_AssignDimensions_ID=@VA094_AssignDimensions_ID@ AND IsActive='Y'
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [37] => 42703: column "y" does not exist
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [37]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 40
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [37]Get sql default: @SQL=SELECT COALESCE(MAX(LineNo),0)+10 AS DefaultValue FROM VA094_ForecastLine WHERE VA094_MaterialForecast_ID=@VA094_MaterialForecast_ID@
+10:38:31.383    (INFO)     Env.Reset: [37]finalCall=False
+10:38:31.383    (INFO)     CacheMgt.Reset: [37]#22 (8099)
+10:38:31.383    (INFO)     Trx.Start: [37]**** VISPRO_ModIns639085631114559290System.Random
+10:38:31.383    (INFO)     Trx.Commit: [37]**C** VISPRO_ModIns639085631114559290System.Random
+10:38:35.383    (INFO)     MRole.Get: [22]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:38:35.383    (INFO)     MRole.Get: [22]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [22]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

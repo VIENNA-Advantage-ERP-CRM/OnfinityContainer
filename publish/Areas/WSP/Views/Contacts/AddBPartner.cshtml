@@ -1,0 +1,171 @@
+﻿@model WSP.Models.ContactsModel
+
+<div style='width: auto; height: 12%; margin-right: 5px'>
+    <table>
+        <tr>
+            <td>
+                <div style='margin-top: 0px; float: right' class='WSP_BPartner'>Search Key: </div>
+            </td>
+            <td>
+                <div style='margin-top: 0px' class='WSP_BPartner'>
+                    <input id="txtSearchKey_@ViewBag.WindowNumber" style='height: 25px;' type='text'>
+                </div>
+            </td>
+            <td>
+                <div style='margin-top: 0px; float: right' class='WSP_BPartner'>Greeting: </div>
+            </td>
+            <td>
+                <div style='margin-top: 0px; float: right' class='WSP_BPartner'>
+                    <select id="ddlGreeting1_@ViewBag.WindowNumber" style='width: 213px'>
+                        @foreach (var g in Model.lstGreeting)
+                        {
+                            <option value='@g.ID'>@g.Name</option>
+                        }
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Name: </div>
+            </td>
+            <td>
+                <div class='WSP_BPartner'>
+                    <input id="txtName_@ViewBag.WindowNumber" style='height: 25px;' type='text'>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Name2: </div>
+            </td>
+            <td>
+                <div class='WSP_BPartner'>
+                    <input id="txtName2_@ViewBag.WindowNumber" style='height: 25px;' type='text'>
+                </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>BPGroup: </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>
+                    <select id="ddlBPGroup_@ViewBag.WindowNumber" style='width: 213px'>
+                        @foreach (var bp in Model.lstBPGroup)
+                        {
+                            <option value='@bp.ID'>@bp.Name</option>
+                        }
+                    </select>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>BPRelation: </div>
+            </td>
+            <td>
+                <div class='WSP_BPartner'>
+                    <select id="ddlBPRelation_@ViewBag.WindowNumber" style='width: 80%'>
+                        @foreach (var bp in Model.lstBPRelation)
+                        {
+                            <option value='@bp.ID'>@bp.Name</option>
+                        }
+
+                    </select>
+                </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>BPLocation: </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>
+                    <select id="ddlBPLoaction_@ViewBag.WindowNumber" style='width: 213px'>
+                        @foreach (var bp in Model.lstBPLocation)
+                        {
+                            <option value='@bp.ID'>@bp.Name</option>
+                        }
+
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Contact: </div>
+            </td>
+            <td>
+                <div class='WSP_BPartner'>
+                    <input id="txtContact_@ViewBag.WindowNumber" style='height: 25px;' type='text'>
+                </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Greeting: </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>
+                    <select id="ddlGreeting_@ViewBag.WindowNumber" style='width: 213px'>
+                        @foreach (var g in Model.lstGreeting)
+                        {
+                            <option value='@g.ID'>@g.Name</option>
+                        }
+                    </select>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Title: </div>
+            </td>
+            <td>
+                <div class='WSP_BPartner'>
+                    <input id="txtTitle_@ViewBag.WindowNumber" style='height: 25px;' type='text'>
+                </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Email Address </div>
+            </td>
+            <td>
+                <div style='float: right;width:100%' class='WSP_BPartner'>
+                    <input id="txtEmail_@ViewBag.WindowNumber" style='height: 25px;width:100%' type='text'>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Address: </div>
+            </td>
+            <td>
+                <div id="divAddress_@ViewBag.WindowNumber" class='WSP_BPartner' style="width:80%;">
+                    @*<input id="txtAddress_@ViewBag.WindowNumber" style='height: 25px;' type='text'>*@
+                </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Phone:</div>
+            </td>
+            <td>
+                <div style='float: right; width:100%' class='WSP_BPartner'>
+                    <input id="txtPhone_@ViewBag.WindowNumber" style='height: 25px;width:100%' type='text'>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>2nd Phone: </div>
+            </td>
+            <td>
+                <div class='WSP_BPartner' style="width:100%;">
+                    <input id="txtPhone2_@ViewBag.WindowNumber" style='height: 25px;' type='text'>
+                </div>
+            </td>
+            <td>
+                <div style='float: right' class='WSP_BPartner'>Fax:</div>
+            </td>
+            <td>
+                <div style='float: right; margin-bottom: 5px;width:100%' class='WSP_BPartner' >
+                    <input id="txtFax_@ViewBag.WindowNumber" style='height: 25px;width:100%' type='text'>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</div>

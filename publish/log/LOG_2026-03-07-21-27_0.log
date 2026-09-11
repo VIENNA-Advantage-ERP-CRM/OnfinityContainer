@@ -1,0 +1,20 @@
+09:28:10.281    (INFO)     Trx.Start: [41]**** VISPRO_ModIns639085156902380727System.Random
+09:28:10.281    (INFO)     Trx.Commit: [41]**C** VISPRO_ModIns639085156902380727System.Random
+09:28:20.282    (INFO)     Env.Reset: [35]finalCall=False
+09:28:20.282    (INFO)     CacheMgt.Reset: [35]#17 (5727)
+09:28:20.282    (INFO)     Trx.Start: [35]**** VISPRO_ModIns639085157001912068System.Random
+09:28:20.282    (INFO)     Trx.Commit: [35]**C** VISPRO_ModIns639085157001912068System.Random
+09:28:39.283    (INFO)     MRole.Get: [40]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:28:39.283    (INFO)     MRole.Get: [40]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+09:28:39.283    (INFO)     MRole.Get: [40]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:28:39.283    (INFO)     MRole.Get: [40]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+09:28:39.283    (INFO)     MTree.Load: [40]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [40]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+09:28:39.283    (INFO)     Msg.InitMsg: [40]Records=5409 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [40]PushNotif - Module VA074_ is not installed!
+09:29:24.292    (INFO)     Trx.Start: [27]**** VISPRO_ModIns639085157642968307System.Random
+09:29:24.292    (INFO)     Trx.Commit: [27]**C** VISPRO_ModIns639085157642968307System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [8] => VISDBERRORCOLUMN: VALUE
+----------->     (WARNING)  DB.ExecuteQuery: [8]DBExecuteError - VISDBERRORCOLUMN: VALUE
+09:29:34.293    (INFO)     Env.Reset: [8]finalCall=False
+09:29:34.293    (INFO)     CacheMgt.Reset: [8]#14 (5730)

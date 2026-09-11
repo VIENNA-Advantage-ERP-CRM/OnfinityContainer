@@ -1,0 +1,166 @@
+10:34:59.345    (INFO)     Trx.Start: [88]**** VISPRO_ModIns639085628998345909System.Random
+10:34:59.345    (INFO)     Trx.Commit: [88]**C** VISPRO_ModIns639085628998345909System.Random
+10:35:03.353    (INFO)     MChangeLog.FillChangeLog: [114]#11
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 378
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [114]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [114]Not insertedAD_Form_Access
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 201
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va074_notificationtype" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA074_NotificationType_ID) FROM VA074_NotificationType
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va074_notificationtype" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VA074_NotificationType_ID) FROM VA074_NotificationType
+===========>     (SEVERE)   DB.GetSQLValue: [114]SELECT MAX( VA074_NotificationType_ID) FROM VA074_NotificationType => 42P01: relation "va074_notificationtype" does not exist
+
+POSITION: 45
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 115
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42P01: sequence "va074_notificationtype_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42P01: sequence "va074_notificationtype_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va074_mobilelinked" does not exist
+
+POSITION: 41 [Query DR] SELECT MAX( VA074_MobileLinked_ID) FROM VA074_MobileLinked
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va074_mobilelinked" does not exist
+
+POSITION: 41 [Query DR] SELECT MAX( VA074_MobileLinked_ID) FROM VA074_MobileLinked
+===========>     (SEVERE)   DB.GetSQLValue: [114]SELECT MAX( VA074_MobileLinked_ID) FROM VA074_MobileLinked => 42P01: relation "va074_mobilelinked" does not exist
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42P01: sequence "va074_mobilelinked_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42P01: sequence "va074_mobilelinked_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 197
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va074_pushnotilog" does not exist
+
+POSITION: 40 [Query DR] SELECT MAX( VA074_PushNotiLog_ID) FROM VA074_PushNotiLog
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va074_pushnotilog" does not exist
+
+POSITION: 40 [Query DR] SELECT MAX( VA074_PushNotiLog_ID) FROM VA074_PushNotiLog
+===========>     (SEVERE)   DB.GetSQLValue: [114]SELECT MAX( VA074_PushNotiLog_ID) FROM VA074_PushNotiLog => 42P01: relation "va074_pushnotilog" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42P01: sequence "va074_pushnotilog_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42P01: sequence "va074_pushnotilog_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 103
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@#"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "y" does not exist
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@"
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "y" does not exist
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "binarydata" of relation "ad_sysconfig" does not exist
+
+POSITION: 25
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "binarydata" of relation "ad_sysconfig" does not exist
+
+POSITION: 25
+10:35:24.352    (INFO)     Env.Reset: [114]finalCall=False
+10:35:24.352    (INFO)     CacheMgt.Reset: [114]#23 (8070)
+10:35:24.352    (INFO)     Trx.Start: [114]**** VISPRO_ModIns639085629244199886System.Random
+10:35:24.352    (INFO)     Trx.Commit: [114]**C** VISPRO_ModIns639085629244199886System.Random
+10:35:28.352    (INFO)     MRole.Get: [114]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:35:28.352    (INFO)     MRole.Get: [114]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

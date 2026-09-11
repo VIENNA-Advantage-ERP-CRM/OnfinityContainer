@@ -1,0 +1,339 @@
+02:29:41.294    (INFO)     MRole.Get: [32]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:29:41.294    (INFO)     MRole.Get: [32]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:29:41.294    (INFO)     MRole.Get: [32]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:29:41.294    (INFO)     MRole.Get: [32]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:29:41.294    (INFO)     MTree.Load: [32]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [32]PushNotif - Module VA074_ is not installed!
+===========>     (SEVERE)   VLookUpInfo.GetLookup_DisplayColumn: [7]No Identifier records found: VA204_RewardCardM
+----------->     (WARNING)  MRole.CanView: [7]AccessTableNoView - Required=2(Client Data) != UserLevel=O
+02:29:52.295    (INFO)     MRole.CanView: [7]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+02:34:15.341    (INFO)     MRole.Get: [20]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:34:15.341    (INFO)     MRole.Get: [20]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:34:15.341    (INFO)     MTree.Load: [20]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [20]PushNotif - Module VA074_ is not installed!
+02:35:30.353    (INFO)     MRole.Get: [37]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:35:30.353    (INFO)     MRole.Get: [37]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:35:30.353    (INFO)     MTree.Load: [37]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [37]PushNotif - Module VA074_ is not installed!
+02:37:31.373    (INFO)     MRole.Get: [5]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:37:31.373    (INFO)     MRole.Get: [5]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:37:31.373    (INFO)     MTree.Load: [5]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [5]PushNotif - Module VA074_ is not installed!
+02:37:43.374    (INFO)     MRole.Get: [17]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:37:43.374    (INFO)     MRole.Get: [17]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:37:43.374    (INFO)     MTree.Load: [17]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [17]PushNotif - Module VA074_ is not installed!
+02:39:02.392    (INFO)     MRole.Get: [33]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:39:02.392    (INFO)     MRole.Get: [33]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:39:02.392    (INFO)     MTree.Load: [33]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [33]PushNotif - Module VA074_ is not installed!
+02:42:37.423    (INFO)     MRole.Get: [22]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:42:37.423    (INFO)     MRole.Get: [22]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:42:37.423    (INFO)     MTree.Load: [22]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [22]PushNotif - Module VA074_ is not installed!
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+02:45:17.451    (INFO)     MRole.Get: [16]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:45:18.451    (INFO)     MRole.Get: [16]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:45:18.451    (INFO)     MTree.Load: [16]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [16]PushNotif - Module VA074_ is not installed!
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+02:48:55.485    (INFO)     MRole.Get: [18]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:48:55.485    (INFO)     MRole.Get: [18]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:48:55.485    (INFO)     MTree.Load: [18]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [18]PushNotif - Module VA074_ is not installed!
+02:49:03.493    (INFO)     MRole.Get: [7]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:49:03.493    (INFO)     MRole.Get: [7]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:49:03.493    (INFO)     MTree.Load: [7]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [7]PushNotif - Module VA074_ is not installed!
+02:49:19.491    (INFO)     MRole.Get: [36]AD_Role_ID=0, AD_User_ID=100, reload=True
+02:49:19.491    (INFO)     MRole.Get: [36]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+02:49:19.491    (INFO)     MTree.Load: [36]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [36]PushNotif - Module VA074_ is not installed!
+02:49:36.493    (INFO)     MRole.Get: [45]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:49:36.493    (INFO)     MRole.Get: [45]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:49:36.493    (INFO)     MTree.Load: [45]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [45]PushNotif - Module VA074_ is not installed!
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [39]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [46]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [7]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =291
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [7]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =259
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [7]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =319
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [7]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =318
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [7]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =335
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [7]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =539
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [7]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [7]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =417
+----------->     (WARNING)  MRole.CanView: [20]AccessTableNoView - Required=2(Client Data) != UserLevel=O
+02:50:47.504    (INFO)     MRole.CanView: [20]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [20]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =155
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [20]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =1000557
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+02:50:47.504    (INFO)     MTree.Load: [36]AD_Tree_ID=104, AD_User_ID=100, Editable=True, OnClient=True
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [46]Could not remove ON AD_Org JOIN AD_TreeNode ON AD_Org.AD_Org_ID=AD_TreeNode.Node_ID JOIN AD_Tree ON AD_TreeNode.AD_Tree_ID =AD_Tree.AD_Tree_ID
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [46]Could not remove ON AD_Org JOIN AD_TreeNode ON AD_Org.AD_Org_ID=AD_TreeNode.Node_ID JOIN AD_Tree ON AD_TreeNode.AD_Tree_ID =AD_Tree.AD_Tree_ID
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [46]Could not remove ON AD_Org JOIN AD_TreeNode ON AD_Org.AD_Org_ID=AD_TreeNode.Node_ID JOIN AD_Tree ON AD_TreeNode.AD_Tree_ID =AD_Tree.AD_Tree_ID
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [46]Could not remove ON AD_Org JOIN AD_TreeNode ON AD_Org.AD_Org_ID=AD_TreeNode.Node_ID JOIN AD_Tree ON AD_TreeNode.AD_Tree_ID =AD_Tree.AD_Tree_ID
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [46]Could not remove ON AD_Org JOIN AD_TreeNode ON AD_Org.AD_Org_ID=AD_TreeNode.Node_ID JOIN AD_Tree ON AD_TreeNode.AD_Tree_ID =AD_Tree.AD_Tree_ID
+----------->     (WARNING)  AccessSqlParser.GetTableInfo: [46]Could not remove ON AD_Org JOIN AD_TreeNode ON AD_Org.AD_Org_ID=AD_TreeNode.Node_ID JOIN AD_Tree ON AD_TreeNode.AD_Tree_ID =AD_Tree.AD_Tree_ID
+02:51:14.511    (INFO)     MRole.Get: [50]AD_Role_ID=103, AD_User_ID=100, reload=True
+02:51:14.511    (INFO)     MRole.Get: [50]MRole[103,IdeasInc User,UserLevel=  O,AD_Client_ID IN(0,11),AD_Org_ID IN(0,11,12)]
+02:51:14.511    (INFO)     MTree.Load: [50]AD_Tree_ID=10, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [50]PushNotif - Module VA074_ is not installed!
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [44]Not found: 'UpdatedBy'
+02:52:00.520    (INFO)     MSession.Logout: [49]-08:57:19.390
+*** 12/30/2024 3:36:41 AM VAdvantage Log  ***
+*** 12/30/2024 3:36:41 AM VAdvantage Log ***

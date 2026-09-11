@@ -1,0 +1,355 @@
+﻿@model WSP.Models.SchedulerModels
+<div class="wsp-home-scheduler">
+    <div class="wsp-home-left vis-pull-left">
+        <div class="wsp-home-left-calendar">
+            <div id="@("scalendar_" + ViewBag.WindowNumber)" class="home-left-calendar" >
+            </div>
+            @*<div  id="@("divcalendar_" + ViewBag.WindowNumber)" class="div-home-left-calendar1" style="margin-top:65px">*@
+            <div  id="@("divcalendar_" + ViewBag.WindowNumber)" class="div-home-left-calendar1" style="display:none">
+            </div>
+        </div>
+        <div class="wsp-home-left-btm">
+            <div class="wsp-view-cal-lbl">
+                @VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "ViewCalender")
+            </div>
+            <div class="wsp-home-left-viewtype">
+                <div class="wsp-left-viewtype-left" style="cursor: pointer;">
+                    <input  id="@("mycalendar_" + ViewBag.WindowNumber)" name="@("rdoSchedtype_" + ViewBag.WindowNumber)"    type="radio" value="1" checked="checked" />
+                    @*<label style="font-weight: 100;  margin-bottom:0px;" for="@("mycalendar_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "MyOwn")</label>*@
+                    <label style="font-weight: 100;  margin-bottom:0px;" for="@("mycalendar_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_MyOwn")</label>
+                    <span id="@("imgMyCal_" + ViewBag.WindowNumber)" class="glyphicon glyphicon-refresh"></span>
+                </div>
+                <div class="wsp-left-viewtype-right" style="cursor: pointer;">
+                    <input id="@("sharedcalendar_" + ViewBag.WindowNumber)"  name="@("rdoSchedtype_" + ViewBag.WindowNumber)"  type="radio" value="2"  />
+                    @*<label style="font-weight: 100; margin-bottom:0px;" for="@("sharedcalendar_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Shared") </label>*@
+                    <label style="font-weight: 100; margin-bottom:0px;" for="@("sharedcalendar_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Shared") </label>
+                    <span  id="@("imgSharedCal_" + ViewBag.WindowNumber)" class="glyphicon glyphicon-refresh"></span>
+
+                </div>
+            </div>
+            <div class="wsp-home-left-contact-actn1">
+                <div class="wsp-home-contact-lbl">
+                    @VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Contacts")
+                </div>
+                <div style="float: right;">
+                    <a href="javascript:void(0)"><span  title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_AddContacts")" id="@("btnAddcontact_" + ViewBag.WindowNumber)" class="glyphicon glyphicon-plus"></span></a>
+                    <a href="javascript:void(0)"><span title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_delContacts")" id="@("btnDeletecontact_" + ViewBag.WindowNumber)" class="glyphicon glyphicon-remove"></span></a>
+                </div>
+            </div>
+            <div id="@("scontct_" + ViewBag.WindowNumber)"  class="wsp-home-left-contacts"  style="overflow:auto">
+                @foreach (var item in Model.lstUsrInfo)
+                {
+                    <div class="wsp-home-left-contacts-inner">
+                        <input id="@("scntct_" + item.ID + ViewBag.WindowNumber)"  type="checkbox" name="chkSContcts" value="@item.ID" class="vis-pull-left">
+                        @*<label class="wsp-lbl-contacts" for="@("scntct_" + item.ID + ViewBag.WindowNumber)" style="float:left;width:80%;display:inline;white-space:nowrap;">@item.Name</label>*@
+                         @if (item.Email != "")
+                        {
+                            @*<label class="wsp-lbl-contacts" for="@("scntct_" + item.ID + ViewBag.WindowNumber)" style="float:left;width:80%;display:inline;white-space:nowrap;">@item.Name (@item.Email)</label> *@
+                             <label class="wsp-lbl-contacts" for="@("scntct_" + item.ID + ViewBag.WindowNumber)" style="float:left;width:80%;display:inline;white-space:nowrap;" title="@item.Name (@item.Email)" >@item.Name (@item.Email)</label>
+                        }
+                         else
+                         {
+                            @*<label class="wsp-lbl-contacts" for="@("scntct_" + item.ID + ViewBag.WindowNumber)" style="float:left;width:80%;display:inline;white-space:nowrap;">@item.Name</label> *@
+                             <label class="wsp-lbl-contacts" for="@("scntct_" + item.ID + ViewBag.WindowNumber)" style="float:left;width:80%;display:inline;white-space:nowrap;" title="@item.Name"  >@item.Name</label> 
+                         }
+                    </div>
+                }
+            </div>
+            @*<input id="@("btnLoadScheduler_" + ViewBag.WindowNumber)" type="button"  value="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Load scheduler")" class="wsp-home-left-buttom"  />*@
+            <input id="@("btnLoadScheduler_" + ViewBag.WindowNumber)" type="button"  value="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Loadscheduler")" class="wsp-home-left-buttom"  />
+        </div>
+    </div>
+    <div class="wsp-home-right vis-pull-right">
+        <div  id="@("mscheduler_" + ViewBag.WindowNumber)" class="wsp-scheduler"></div>
+    </div>
+</div>
+
+<script type="text/x-kendo-template" id="@("CustomSchedTemplate_" + ViewBag.WindowNumber)" >
+    
+<div    id="@("formAppointments_" + ViewBag.WindowNumber)"  class="wsp-calander-pop"  style='height:407px; overflow-x:auto; top:20px; '>
+<div class="k-edit-label">
+    <label for="Title">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Title")</label>
+</div>
+<div data-container-for="title" class="k-edit-field">
+    <input  id="@("title_" + ViewBag.WindowNumber)"    class="k-input k-textbox" style="width:100%;" data-bind="value: title"  placeholder="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Title")"  name="Title"  type="text"  required="required" />
+</div>    
+<div class="k-edit-label">
+    <label for="location">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Location")</label>
+</div>
+<div data-container-for="location" class="k-edit-field">
+    <input  id="@("location_" + ViewBag.WindowNumber)"  class="k-textbox"  style="width:100%;" data-bind="value: location"  placeholder="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Location")" name="Location" type="text" />
+</div>
+<div class="k-edit-label">
+    <label for="categories">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Category")</label>
+</div>     
+<div data-container-for="categories" class="k-edit-field" style="width: 200px;float: left;margin-left: 20px;">
+      <input  id="@("categories_" + ViewBag.WindowNumber)"   name="categories" style="width: 200px" type="text"
+            data-bind="value:categories" 
+            data-val="true" 
+            data-val-number="The field Catgory must be a number." 
+            data-source= '@Html.Raw(ViewBag.Cat)'
+            data-text-field="text"
+            data-value-field="value"
+            data-value-primitive="true"
+            data-option-label="None"
+            data-role="dropdownlist" />
+</div>    
+ <div style="margin-left: 10px;margin-right: 10px" class="vis-pull-left">
+   <input data-bind="checked: isAllDay"  id="@("isAllDay_" + ViewBag.WindowNumber)"  name="isAllDay" type="checkbox" value="true" />
+    @*<label for="@("isAllDay_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "IsAllDay")</label>*@
+    <label for="@("isAllDay_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_IsAllDay")</label>
+ </div> 
+
+  
+<div class="k-edit-label">
+    <label for="Start">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "StartDate")</label>
+</div>
+<div data-container-for="start" class="k-edit-field">
+    <input id="@("startDateTime_" + ViewBag.WindowNumber)"   name="start" required="required" style="z-index: inherit; " type="datetime" class="vis-pull-left"
+        data-bind="value: start, invisible: isAllDay"
+        data-role="datetimepicker" />
+    <input id="@("startDate_" + ViewBag.WindowNumber)"   name="start" required="required" type="date" style="z-index: inherit;" class="vis-pull-left"
+        data-bind="value: start, visible: isAllDay"
+        data-role="datepicker" />
+    <span data-bind="text: startTimezone"></span>
+    <span data-for="start" class="k-invalid-msg"></span>
+
+     
+</div>    
+
+
+<div class="k-edit-label">
+    <label for="End">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "EndDate")</label>
+</div>
+<div data-container-for="end" class="k-edit-field">
+    <input  id="@("endDatetime_" + ViewBag.WindowNumber)"   name="end" required="required" style="z-index: inherit;" type="datetime"
+        data-bind="value: end, invisible: isAllDay"
+        data-role="datetimepicker" />
+    <input  id="@("endtDate_" + ViewBag.WindowNumber)"   name="end" required="required" type="date" style="z-index: inherit;"
+        data-bind="value: end, visible: isAllDay"
+        data-role="datepicker" />
+
+    <span data-bind="text: endTimezone"></span>
+    <span data-for="end" class="k-invalid-msg"></span>
+</div>    
+
+<div class="k-edit-label">
+    @*<label for="recurrenceRule">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Repeat")</label>*@
+    <label for="recurrenceRule">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Repeat")</label>
+</div>
+<div   data-container-for="recurrenceRule" class="k-edit-field">
+    <div  id="@("recurrenceRule_" + ViewBag.WindowNumber)"  data-bind="value: recurrenceRule" name="recurrenceRule" data-role="recurrenceeditor">
+    </div>
+    <div id="@("NotRecurrenceRule_" + ViewBag.WindowNumber)"  class='wsp-Recurrence-disable' style='display:none;' > </div>
+</div>
+    
+<div class="k-edit-label">
+     <label  data-container-for="contactsText" >@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Contacts")</label>    
+</div>
+<div class="k-edit-field">  
+      <div  id="@("divSchedContacts_" + ViewBag.WindowNumber)"  class="wsp-Shared-Contact-div ui-helper-clearfix" >
+         <input  id="@("txtSchedContacts_" + ViewBag.WindowNumber)"  class="wsp-scheduler-contact-txt"  type="text" /> 
+      </div>
+     <input  id="@("txtContacts_" + ViewBag.WindowNumber)"    type="text" data-bind="value: contactsID"  style='display:none;' /> 
+
+     <div>
+        <input   id="@("isPrivate_" + ViewBag.WindowNumber)" data-bind="checked: isPrivate" name="isPrivate" type="checkbox" value="true" />
+        <label  for="@("isPrivate_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "IsPrivate")</label>
+     </div>
+</div>  
+
+<div class="k-edit-label">
+    <label for="description">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Description")</label>
+</div>
+<div data-container-for="description" class="k-edit-field">
+    <textarea  class="k-textbox" cols="20" data-bind="value: description" id="@("description_" + ViewBag.WindowNumber)" name="description" rows="2">
+    </textarea>
+</div>
+    
+<div class="k-edit-label">  
+</div>
+<div id="@("divIsAccept_" + ViewBag.WindowNumber)" data-container-for="description" class="k-edit-field">
+    <input   id="@("isAccept_" + ViewBag.WindowNumber)" data-bind="checked: isAccept" name="isAccept" type="checkbox" value="true" />
+      @*<label  for="@("isAccept_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "IsAccept")</label>*@
+    <label  for="@("isAccept_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_IsAccept")</label>
+</div> 
+
+</div> 
+    
+    
+<script> 
+jQuery(function() { 
+
+ @*    
+ debugger;
+ var $formAppointments =   jQuery("\#@("formAppointments_" + ViewBag.WindowNumber)");   
+ var $title =   jQuery("\#@("title_" + ViewBag.WindowNumber)");  *@      
+  @*   $formAppointments.kendoValidator({
+        rules: {
+            customRule1: function(input){
+              // all of the input must have a value
+              //  return $.trim($title.val()) !== "";
+              if (input.is("[name='Title']")) {
+                return $.trim(input.val()) !== "";
+              }
+            }
+         }
+      messages: {
+        customRule1: "Title fields are required",    
+      }
+});*@
+
+
+      var $txtTaskAutocomplete = jQuery("\#@("txtSchedContacts_" + ViewBag.WindowNumber)");     
+       var $divSharedContacts = jQuery("\#@("divSchedContacts_" + ViewBag.WindowNumber)");     
+       var $txtContacts = jQuery("\#@("txtContacts_" + ViewBag.WindowNumber)");  
+       //Bind keydown event in shared contact textbox
+         var l_id=   VIS.context.getAD_User_ID();     
+          $txtTaskAutocomplete.bind("keydown", function (event) {         
+                if (event.keyCode === $.ui.keyCode.TAB &&
+                    $(this).autocomplete("instance").menu.active) {
+                    event.preventDefault();
+                }
+            }).autocomplete({
+                minLength: 1,
+                source: function (request, response) {       
+                    if (request.term.trim().length ==0) {
+                        return;
+                    }               
+                    var SharedUser= l_id;           
+                    if(WSP.WspSharedUser.length>0)
+                    {
+                       for (var s in WSP.WspSharedUser) {
+                         SharedUser += "," + WSP.WspSharedUser[s].ID;
+                       }    
+                    } 
+                    // to get data from server using ajax request            
+                    $.ajax({
+                        url: VIS.Application.contextUrl + "WSP/Home/GetJsonUserInfo",
+                        dataType: "json",
+                        data: { "SearchKey": extractLast(request.term),"SharedUser": SharedUser},
+                        success: function (result) {           
+                            response($.map(JSON.parse(result.data), function (item) {
+                                return {  
+                                    label: item.Name,                                
+                                    value: item.Name,
+                                    id: item.ID
+                                }
+                            }));
+                        }
+                    });
+                },    
+                search: function () {
+                    // custom minLength
+                    var term = extractLast(this.value);
+                    if (term.length < 1) {
+                        return false;
+                    }
+                },        
+               open: function( event, ui ) {
+                setTimeout(function () {
+                    $('.ui-autocomplete').css('z-index', 100003);
+                     }, 0);
+                },
+                focus: function () {
+                    //prevent value inserted on focus
+                    return false;
+                },
+                 //define select handler to get selected contacts
+                select: function (event, ui) {
+                        var  span = $("<span>").text(ui.item.value),
+                        a = $("<a  data-index='"+ui.item.id+"' id='spanRemove"+ui.item.id+ "'>").addClass("remove").attr({ href: "javascript:", title: "Remove " + ui.item.value }).text("x").appendTo(span);                         
+                        //add friend to friend div
+                        span.insertBefore($txtTaskAutocomplete);                                    
+                        var txt_data= $txtContacts.val();
+                        if(txt_data != "" && txt_data.trim().length > 0)
+                        {  
+                           txt_data+=","+ui.item.id;
+                           $txtContacts.val(txt_data);
+                        }
+                        else
+                        {                         
+                          $txtContacts.val(ui.item.id);
+                        }
+                        $txtContacts.trigger("change");
+                        $txtTaskAutocomplete.val("");
+                        WSP.WspSharedUser.push( {ID: ui.item.id, Name:ui.item.value});  
+                        return false;                 
+                      },                
+                 change: function() {                         
+                    //prevent 'to' field being updated and correct position
+                    $txtTaskAutocomplete.val("").css("top", 2);
+                 }      
+               });
+
+               $divSharedContacts.find('.ui-helper-hidden-accessible').hide();               
+               //add focus on shared contact div and get focus on textbox
+               $divSharedContacts.click(function(){     
+                  $txtTaskAutocomplete.focus();
+                });
+                 
+              //bind click event to remove appointments      
+              $divSharedContacts.on("click", function(e){                            
+                 if(e.target.tagName=="A")
+                 {        
+                    if(l_id!= $(e.target).data('index'))    
+                    {        
+                       $(e.target).parent().remove();    
+                    }   
+                      if(WSP.WspSharedUser.length>0)
+                        {                            
+                           for(var j=0; j< WSP.WspSharedUser.length; j++)
+                           {
+                                var sid = WSP.WspSharedUser[j].ID;
+                                var did = $(e.target).data('index');
+                                if (sid === did) {                                
+                                    var ddl_ = WSP.WspSharedUser[j].ID;
+                                    var txt_ = $txtContacts.val();
+                                    var res = txt_.replace(ddl_,"");
+                                    $txtContacts.val(res);
+                                    WSP.WspSharedUser.splice(j, 1);
+                                }                      
+                           }
+                           $txtContacts.trigger("change");
+                     } 
+                   else{
+                      WSP.WspSharedUser.splice(0, 1);
+                     }                    
+                 }
+              });
+              
+            function split(val) {
+                return val.split(/,\s*/);
+            }
+            function extractLast(term) {
+                return split(term).pop();
+            }
+      });              
+    <\/script> 
+   
+
+</script>
+
+
+<script type="text/javascript">
+    function error_handler(e) {
+        if (e.errors) {
+            var message = "Errors:\n";
+            $.each(e.errors, function (key, value) {
+                if ('errors' in value) {
+                    $.each(value.errors, function () {
+                        message += this + "\n";
+                    });
+                }
+            });
+            scheduler.one("dataBinding", function (e) {
+                //prevent saving if server error is thrown
+                e.preventDefault();
+            })
+        }
+    }
+
+</script>
+
+
+

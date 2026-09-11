@@ -1,0 +1,156 @@
+﻿
+@*Wave Planning*@
+
+
+
+<div id="@("VAWMS_MainDiv_" + ViewBag.WindowNumber)" class="waveMain-div vis-forms-container">
+    @*1st row*@
+    <div class="param-div">
+        <label  id="@("VAMFG_WHLabel_" + ViewBag.WindowNumber)" >Warehouse</label>
+        <select id="@("VAMFG_WHCombo_" + ViewBag.WindowNumber)" ></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_WOTypeLbl_" + ViewBag.WindowNumber)" >Work Order Type Group</label>
+        <select id="@("VAMFG_WOTypeCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_WOLabel_" + ViewBag.WindowNumber)">Work Order</label>
+        <select id="@("VAMFG_WOCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_Productlbl_" + ViewBag.WindowNumber)">Product</label>
+        <div id="@("VAMFG_ProductControl_" + ViewBag.WindowNumber)" class="search-control"></div>
+    </div>
+
+    @*2nd row*@
+    <div class="param-div">
+        <label  id="@("VAMFG_OpertSeqLbl_" + ViewBag.WindowNumber)">Operation Sequence</label>
+        <input  id="@("VAMFG_OpertSeqTxtbx_" + ViewBag.WindowNumber)"  type="text" style="width:100%; text-align: right;" />
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_lbl1" + ViewBag.WindowNumber)">- </label>
+        <input  id="@("VAMFG_lbl1Txtbx_" + ViewBag.WindowNumber)" type="text" style="width:100%; text-align: right;" />
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_WorkCenterlbl_" + ViewBag.WindowNumber)">Work Center</label>
+        <select id="@("VAMFG_WorkCntrCombo_" + ViewBag.WindowNumber)" ></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_BPartnerlbl_" + ViewBag.WindowNumber)" >Business Partner</label>
+        <div id="@("VAMFG_BPartnerControl_" + ViewBag.WindowNumber)" ></div>
+    </div>
+
+
+
+    @*3rd row*@
+    <div class="param-div">
+        <label  id="@("VAMFG_OpertnlSheduledDateFromLbl_" + ViewBag.WindowNumber)" >Operation Scheduled Date From</label>
+        <input  id="@("VAMFG_OpertnlSheduledDateFromCtrl_" + ViewBag.WindowNumber)"  type="date" class="date-ctrl" />
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_lbl2" + ViewBag.WindowNumber)">- </label>
+        <input  id="@("VAMFG_lbl2DateCtrl_" + ViewBag.WindowNumber)"  type="date" class="date-ctrl" />
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_OpertnlSheduledDateToLbl_" + ViewBag.WindowNumber)">Opr. Scheduled Date To</label>
+        <input  id="@("VAMFG_OpertnlSheduledDateToCtrl_" + ViewBag.WindowNumber)"  type="date"  class="date-ctrl"/>
+    </div>
+
+    <div class="param-div">
+        <label  id="@("VAMFG_lbl3" + ViewBag.WindowNumber)" >- </label>
+        <input  id="@("VAMFG_lbl3DateCtrl_" + ViewBag.WindowNumber)"  type="date" class="date-ctrl" />
+    </div>
+
+
+    @*4th row*@
+    <div class="param-div">
+        <label id="@("VAMFG_PriorityLbl_" + ViewBag.WindowNumber)">Priority</label>
+        <select id="@("VAMFG_PriorityCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_WrkOrdrTypeLbl_" + ViewBag.WindowNumber)">Work Order Type</label>
+        <select id="@("VAMFG_WrkOrdrTypeCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_WrkOrdrSrtCrytLbl_" + ViewBag.WindowNumber)">Work Order Sort Criteria</label>
+        <select id="@("VAMFG_WrkOrdrSrtCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+        <input type="checkbox" id="@("VAMFG_chkSupervisedOperation_" + ViewBag.WindowNumber)" style="float: left;margin-top: 30px;width: 20px; height: 15px;"/>
+        <p style="float: left; margin-top: 27px; font-weight: 700">Supervised Operation Only</p>
+    </div>
+
+
+
+    @*5th row*@
+    <div class="param-div">
+    </div>
+    <div class="param-div">
+    </div>
+    <div class="param-div">
+    </div>
+    <div class="param-div">
+        <input type="button" id="@("VAMFG_SearchBtn" + ViewBag.WindowNumber)" value="Search" style="width:100%;font-weight:700;margin-top: 5px;height: 30px;"/>
+    </div>
+
+
+    @*6th row*@
+    <div class="WaveMainGrid">
+        <div  id="@("VAMFG_WaveGridView_" + ViewBag.WindowNumber)"  style="height:100%"></div>
+    </div>
+
+    @*7th row*@
+    <div class="param-div">
+
+        <label  id="@("VAMFG_ProcessRowLbl_" + ViewBag.WindowNumber)">Process Rows</label>
+        <input  id="@("VAMFG_ProcessRowTxtBx_" + ViewBag.WindowNumber)" type="text" style="width:100%; text-align: right;" />
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_SourceZoneLbl_" + ViewBag.WindowNumber)">Source Zone</label>
+        <select id="@("VAMFG_SourceZonecmbo_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_WrkOrdrFullRuleLbl_" + ViewBag.WindowNumber)">Work Order Fullfillment Rule</label>
+        <select id="@("VAMFG_WrkOrdrFullRuleCom_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_PickMethodLbl_" + ViewBag.WindowNumber)">Pick Method</label>
+        <select id="@("VAMFG_PickMethodCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+
+    @*8th row*@
+    <div class="param-div">
+        <label  id="@("VAMFG_ClusterSizeLbl_" + ViewBag.WindowNumber)">Cluster Size</label>
+        <input  id="@("VAMFG_ClusterSizeTxtBx_" + ViewBag.WindowNumber)" type="text" style="width:100%;text-align: right;" />
+
+    </div>
+    <div class="param-div">
+        <label  id="@("VAMFG_TaskTypeLbl_" + ViewBag.WindowNumber)">Task Type</label>
+                <select id="@("VAMFG_TaskTypeCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+    <div class="param-div">
+<label  id="@("VAMFG_MLocatorLbl_" + ViewBag.WindowNumber)" >Staging Locator</label>
+                <input  id="@("VAMFG_MLocatorControl_" + ViewBag.WindowNumber)" type="text" style="width:85%;float:left"   />
+                <input type="button" id="@("VAMFG_MLocatorBtn_" + ViewBag.WindowNumber)" class="control-button" />
+    </div>
+    <div class="param-div">
+       <label  id="@("VAMFG_DocActionLbl_" + ViewBag.WindowNumber)">Document Action</label>
+                <select id="@("VAMFG_DocActionCombo_" + ViewBag.WindowNumber)"></select>
+    </div>
+
+    @*9th row*@
+    <div class="param-div">
+         <input type="checkbox" id="@("VAMFG_chkGeneratePickLst_" + ViewBag.WindowNumber)" style="float: left;margin-top: 18px;width: 20px; height: 15px;"/>
+                <p id="@("VAMFG_ParGeneratePickLst_" + ViewBag.WindowNumber)" style="float: left; margin-top: 15px; font-weight: 700">Generate Pick List</p>
+    </div>
+    <div class="param-div">
+        <input type="checkbox" id="@("VAMFG_chkPrintPickLst_" + ViewBag.WindowNumber)" style="float: left;margin-top: 18px;width: 20px; height: 15px;"/>
+                <p id="@("VAMFG_ParPrintPickLst_" + ViewBag.WindowNumber)" style="float: left; margin-top: 15px; font-weight: 700">Print Pick List</p>
+    </div>
+    <div class="param-div">
+    </div>
+    <div class="param-div">
+        <input type="button" id="@("VAMFG_ProcessBtn" + ViewBag.WindowNumber)" value="Process" style="width:100%;font-weight:700;margin-top: 15px;height: 30px;"/>
+        
+    </div>
+</div>

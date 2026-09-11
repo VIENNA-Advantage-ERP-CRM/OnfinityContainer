@@ -1,0 +1,426 @@
+﻿/* Version 1.0.51.0*/
+
+.VAFAM-header {
+    /* width: 100%; */
+    /* background: #1aa0ed; */
+    /* float: left; */
+}
+
+.VAFAM-title {
+    /* width: 40%; */
+    /* float: left; */
+    /* padding: 10px 0 0 15px; */
+    flex: 1;
+}
+
+.VAFAM-btn-close {
+    /* width: 45px; */
+    /* background: url(../Images/close.png); */
+    background-color: transparent;
+    /* float: right; */
+    /* background-repeat: no-repeat; */
+    /* padding-top: 25px; */
+    /* padding-bottom: 19px; */
+    /* cursor: pointer; */
+    /* background-position: center; */
+    border: 0px;
+    /* margin: 0; */
+}
+
+.VAFAM-btn-refresh {
+    background: transparent;
+    /* width: 45px; */
+    /* float: right; */
+    /* padding-top: 25px; */
+    /* padding-bottom: 19px; */
+    cursor: pointer;
+    border: 0px;
+    padding: 0 10px;
+    font-size: 1rem;
+    color: rgba(var(--v-c-primary), 1);
+}
+
+
+/*.VAFAM-srch-cntrol-with100
+{
+    width: 70%;
+    float: left;
+}*/
+
+/*.print-button
+{
+    width: 24%;
+    height: 30px;
+    font-weight: bold;
+    float: right;
+    margin-left: 10px;
+}*/
+
+/*.btn-add-newline
+{
+    width: 40%;
+    height: 30px;
+    font-weight: bold;
+    float: right;
+    margin-right: 10px;
+}*/
+
+/*.btn-delete-line
+{
+    width: 40%;
+    height: 30px;
+    font-weight: bold;
+    float: right;
+}*/
+
+/*.grid
+{
+    width: 100%;
+    height: 100%;
+}*/
+
+/*.date-ctrl
+{
+    width: 100%;
+    height: 30px;
+}*/
+
+
+
+
+/*.btn-ok
+{
+    background-color: #616364;
+    color: white;
+    width: 77px;
+    border: 0px;
+    float: right;
+    margin-right: 20px;
+    padding: 8px 15px;
+}*/
+
+
+
+/*.div-left
+{
+    float: left;
+    height: 100%;
+    margin-bottom: 2px;
+    margin-left: 0px;
+    width: 40%;
+    background-color: #F1F1F1;
+}*/
+
+/*.div-left-top
+{
+    overflow-y: auto;
+    margin-top: 35px;
+    height: 80%;
+}*/
+
+/*.div-left-bottom
+{
+    height: 7%;
+    position: relative;
+    margin-top: 28px;
+}*/
+
+/*.td-label
+{
+    padding: 4px 12px 2px;
+}*/
+
+/*.td-control
+{
+    padding: 0px 12px 0px;
+}*/
+
+/*table
+{
+    width: 100%;
+}*/
+
+/*.div-right
+{
+    float: right;
+    height: 100%;
+    margin-left: 0px;
+    width: 59.5%;
+}*/
+
+/*.div-right-top
+{
+    margin-top: 35px;
+    height: 80%;
+}*/
+
+
+/*.div-left-width50
+{
+    width: 50%;
+    float: left;
+}*/
+
+/*.div-width100
+{
+    width: 100%;
+}*/
+
+/*.div-right-width50
+{
+    float: right;
+    width: 50%;
+}*/
+
+/*.div-right-width60
+{
+    float: right;
+    width: 60%;
+}*/
+
+
+
+
+/***************************  Pratap *********************/
+
+/*.div-top-inner
+{
+    width: 32%;
+    height: 100%;
+    float: left;
+}*/
+
+
+/*ul
+{
+    list-style: none;
+    display: inline;
+}*/
+
+/*.value-width
+{
+    width: 25%;
+    cursor: pointer;
+}*/
+
+/*.label-width
+{
+    width: 25%;
+    font-weight: bold;
+}*/
+/*updated css*/
+.VAFAM-maindiv-content {
+    width: 100%;
+    float: left;
+    /* padding: 20px; */
+    background: #fff;
+    height: calc(100% - 44px);
+}
+
+.VAFAM-div-top {
+    float: left;
+    height: 100%;
+    width: 100%;
+    clear: both;
+}
+
+/*.div-bottom
+{
+    float: left;
+    height: 53%;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}*/
+
+.VAFAM-outer-div-grids {
+    float: left;
+    width: 100%;
+    height: calc(100% - 48px);
+    /* margin-top: 10px; */
+    /* padding: 10px; */
+}
+
+/*.div-right-bottom
+{
+    height: 7%;
+    position: relative;
+    margin-top: 28px;
+}*/
+
+.VAFAM-btn-sticker {
+    /* background-color: #616364; */
+    /* color: white; */
+    /* border: 0px; */
+    /* float: right; */
+    /* padding: 8px 15px; */
+    /* cursor: pointer; */
+    margin-top: 0;
+}
+/*.btn-refresh
+{
+    background-color: #616364;
+    color: white;
+    border: 0px;
+    float: left;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-right: 10px;
+}*/
+.VAFAM-form-parameters {
+    width: 25%;
+    float: left;
+    /*padding-left: 10px;*/
+    /*padding-right: 10px;*/
+}
+
+.VAFAM-label-top {
+    /*float: left;
+    font-weight: bold;
+    width: 50%;*/
+}
+
+.VAFAM-cmb-width100 {
+    /* width: 100%; */
+    /* cursor: pointer; */
+    /* margin-bottom: 7px; */
+}
+
+.VAFAM-btn-generateasset {
+    /* background-color: #616364; */
+    /* color: white; */
+    border: 0px;
+    /* border-right: 2px; */
+    /* float: right; */
+    /* padding: 8px 15px; */
+    /* margin-top: 18px; */
+    /* cursor: pointer; */
+    margin: 0 10px;
+}
+
+.VAFAM-leftWrap, .VAFAM-formField, .VAFAM-contentpart {
+    float: left;
+}
+
+.VAFAM-FormMainWrap, .VAFAM-formField {
+    width: 100%;
+}
+
+.VAFAM-leftWrap {
+    float: left;
+    width: 250px;
+    padding: 10px 0;
+    background: rgba(var(--v-c-secondary), 1);
+    height: 100%;
+}
+
+.VAFAM-formField {
+    /*margin-bottom: 10px;*/
+}
+
+    .VAFAM-formField label {
+        /*font-weight: normal;
+font-size: 14px;
+margin-bottom: 3px;*/
+    }
+
+    .VAFAM-formField input,
+    .VAFAM-formField select {
+        /* border: 1px solid #ccc; */
+        /* color: #666; */
+        /* height: 31px; */
+        /* padding: 0 10px; */
+    }
+
+        .VAFAM-formField input.formInput {
+            /*width: calc(100% - 62px);*/
+        }
+
+.fromBtn {
+    float: right;
+    background: #616364;
+    color: #fff;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.VAFAM-contentpart {
+    width: calc(100% - 250px);
+    padding: 10px;
+    height: 100%;
+}
+
+.VAFAM-formField input[type="checkbox"] {
+    float: left;
+    margin: 0 10px 0 0;
+    width: auto;
+    height: auto;
+}
+
+.VAFAM-formField label.VAFAM-check {
+    float: left;
+    font-weight: normal;
+    width: auto;
+}
+
+
+
+
+.VAFAM-leftInner {
+    float: left;
+    width: 100%;
+    height: calc(100% - 50px);
+    /* position: absolute; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 5px 10px 10px;
+    margin-bottom: 10px;
+}
+
+.VAFAM-formfieldcheckbox {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.VAFAM-frmCloseBtn {
+    border-left: 1px solid rgba(var(--v-c-on-secondary), .1);
+    padding-left: 1rem;
+    margin-left: .5rem;
+}
+
+.VAFAM-outerMainDiv {
+    width: 100%;
+    height: 100%;
+}
+
+.VAFAM-assetsInfoHead,
+.VAFAM-assetInfoRow {
+    display: flex;
+}
+
+.VAFAM-assetsInfoHead {
+    align-items: center;
+}
+
+    .VAFAM-assetsInfoHead h5 {
+        flex: 1;
+        font-size: .875rem;
+        margin: 0;
+    }
+
+    .VAFAM-assetsInfoHead i {
+        cursor: pointer;
+        font-size: 1rem;
+    }
+
+.VAFAM-assetInfoRow .vis-input-wrap {
+    padding: 0 .5rem;
+    flex: 1;
+    /*width: 50%;*/
+}
+
+.VAFAM-formField .VIS_Pref_btn-2 {
+    min-width: 70px;
+}
+

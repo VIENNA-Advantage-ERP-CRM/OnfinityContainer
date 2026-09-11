@@ -1,0 +1,182 @@
+05:32:49.324    (INFO)     Trx.Start: [69]**** VISPRO_ModIns639086311695160025System.Random
+05:32:49.324    (INFO)     Trx.Commit: [69]**C** VISPRO_ModIns639086311695160025System.Random
+05:33:00.330    (INFO)     Env.Reset: [70]finalCall=False
+05:33:00.330    (INFO)     CacheMgt.Reset: [70]#19 (6998)
+05:33:00.330    (INFO)     Trx.Start: [70]**** VISPRO_ModIns639086311804064197System.Random
+05:33:00.330    (INFO)     Trx.Commit: [70]**C** VISPRO_ModIns639086311804064197System.Random
+05:33:20.332    (INFO)     MRole.Get: [65]AD_Role_ID=0, AD_User_ID=100, reload=True
+05:33:20.332    (INFO)     MRole.Get: [65]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+05:33:20.332    (INFO)     MRole.Get: [65]AD_Role_ID=0, AD_User_ID=100, reload=True
+05:33:20.332    (INFO)     MRole.Get: [65]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+05:33:20.332    (INFO)     MTree.Load: [65]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [65]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+05:33:21.332    (INFO)     Msg.InitMsg: [65]Records=6665 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [65]PushNotif - No tokens found to send notification to.
+05:35:19.351    (INFO)     Trx.Start: [30]**** VISPRO_ModIns639086313195005082System.Random
+05:35:19.351    (INFO)     Trx.Commit: [30]**C** VISPRO_ModIns639086313195005082System.Random
+05:35:22.352    (INFO)     MChangeLog.FillChangeLog: [71]#11
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [71]Not insertedAD_Ref_Table
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [71] => 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [71]DBExecuteError - 23505: duplicate key value violates unique constraint "vadb_d_chartaccess_ind"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+05:35:26.352    (INFO)     Env.Reset: [71]finalCall=False
+05:35:26.352    (INFO)     CacheMgt.Reset: [71]#18 (7014)
+05:35:26.352    (INFO)     Trx.Start: [71]**** VISPRO_ModIns639086313263653301System.Random
+05:35:26.352    (INFO)     Trx.Commit: [71]**C** VISPRO_ModIns639086313263653301System.Random
+05:35:44.354    (INFO)     MRole.Get: [67]AD_Role_ID=0, AD_User_ID=100, reload=True
+05:35:44.354    (INFO)     MRole.Get: [67]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+05:35:44.354    (INFO)     MRole.Get: [67]AD_Role_ID=0, AD_User_ID=100, reload=True
+05:35:44.354    (INFO)     MRole.Get: [67]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+05:35:44.354    (INFO)     MTree.Load: [67]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [67]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+05:35:44.354    (INFO)     Msg.InitMsg: [67]Records=6665 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [67]PushNotif - No tokens found to send notification to.
+05:36:28.362    (INFO)     Trx.Start: [64]**** VISPRO_ModIns639086313886800572System.Random
+05:36:28.362    (INFO)     Trx.Commit: [64]**C** VISPRO_ModIns639086313886800572System.Random
+05:36:31.363    (INFO)     MChangeLog.FillChangeLog: [66]#11
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [66]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 461
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+05:36:31.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [66]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+05:36:31.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:32.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:32.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:32.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:33.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:34.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:34.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:34.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:35.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:36.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:36.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:36.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:37.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:37.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+05:36:37.363    (INFO)     CacheMgt.Reset: [66]AD_Image: #1 (0)
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "30"
+
+POSITION: 201
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "30"
+
+POSITION: 201
+05:36:54.365    (INFO)     Env.Reset: [66]finalCall=False
+05:36:54.365    (INFO)     CacheMgt.Reset: [66]#22 (8142)
+05:36:54.365    (INFO)     Trx.Start: [66]**** VISPRO_ModIns639086314148167287System.Random
+05:36:54.365    (INFO)     Trx.Commit: [66]**C** VISPRO_ModIns639086314148167287System.Random
+05:37:59.375    (INFO)     MRole.Get: [65]AD_Role_ID=0, AD_User_ID=100, reload=True
+05:37:59.375    (INFO)     MRole.Get: [65]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [65]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+05:37:59.375    (INFO)     MSession.Logout: [65]-07:54:05.954
+05:40:28.402    (INFO)     MRole.Get: [66]AD_Role_ID=0, AD_User_ID=100, reload=True
+05:40:28.402    (INFO)     MRole.Get: [66]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+05:40:28.402    (INFO)     MTree.Load: [66]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [66]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+05:40:28.402    (INFO)     Msg.InitMsg: [66]Records=6665 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [66]PushNotif - No tokens found to send notification to.

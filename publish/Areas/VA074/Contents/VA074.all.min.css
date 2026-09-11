@@ -1,0 +1,193 @@
+﻿
+.VA074-main-container,
+.VA074-data-wrapper,
+.VA074-cards-wrapper,
+.VA074-left-card-wrap,
+.VA074-bottom-wrapper {
+    display: flex;
+}
+
+.VA074-data-wrapper,
+.VA074-left-card-wrap,
+.VA074-right-card-wrap,
+.VA074-bottom-wrapper {
+    flex-direction: column;
+}
+
+.VA074-main-container {
+    background: linear-gradient(to bottom, rgba(var(--v-c-primary), .5) 0%, rgba(var(--v-c-primary), .5) 30%, #fff 30%, #fff 70%);
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.VA074-data-wrapper {
+    width: 70%;
+}
+
+.VA074-cards-wrapper {
+    width: 100%;
+}
+
+.VA074-left-card-wrap,
+.VA074-right-card-wrap {
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0px 0px 5px 2px rgb(0 0 0 / 11%);
+    border-radius: .15rem;
+}
+
+.VA074-left-card-wrap {
+    width: 40%;
+    text-align: center;
+    margin-right: 20px;
+}
+
+.VA074-left-card-textWrap {
+    padding: 10px 0;
+}
+
+.VA074-qrcode-wrap {
+    width: 100%;
+}
+
+    .VA074-qrcode-wrap img {
+        max-width: 100%;
+    }
+
+    .VA074-qrcode-wrap div {
+        max-width: 100%;
+    }
+
+.VA074-left-card-textWrap h4 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+}
+
+.VA074-strong-text {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.VA074-right-card-wrap {
+    width: 70%;
+    margin-left: 20px;
+    max-height: 375px; /*330*/
+}
+
+.VA074-right-cardTitle {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.VA074-linked-deviceBox {
+    border: 1px solid rgba(var(--v-c-on-secondary), 1);
+    border-radius: .25rem;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    background-color: rgba(var(--v-c-primary), .1);
+}
+
+.VA074-font-weight {
+    font-weight: 600;
+}
+
+.VA074-linked-deviceBox:last-child {
+    margin-bottom: 0;
+}
+
+.VA074-linked-deviceInfo {
+    flex: 1;
+    padding-right: 10px;
+}
+
+    .VA074-linked-deviceInfo p {
+        margin: 0;
+    }
+
+    .VA074-linked-deviceInfo span {
+        font-size: .75rem;
+    }
+
+.VA074-linked-deviceDelIco {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background: #bd1212;
+    border-radius: 50%;
+    position: relative;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.6em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+    .VA074-linked-deviceDelIco:before {
+        position: absolute;
+        content: '-';
+        font-family: arial;
+        margin-top: -4px;
+        left: 5px;
+    }
+
+.VA074-linked-deviceSelectedBox {
+    border-color: rgba(var(--v-c-primary), 1);
+}
+
+.VA074-linked-devicesList {
+    overflow: auto;
+    height: 90%;
+    padding: 10px;
+}
+
+.VA074-bottom-wrapper {
+    text-align: center;
+    padding: 2rem;
+}
+
+.VA074-download-btns-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+    .VA074-download-btns-wrap a {
+        display: flex;
+        margin: .5rem;
+    }
+
+html[dir="rtl"] .VA074-left-card-wrap {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+html[dir="rtl"] .VA074-right-card-wrap {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+html[dir="rtl"] .VA074-left-card-textWrap,
+html[dir="rtl"] .VA074-left-card-textWrap h4,
+html[dir="rtl"] .VA074-bottom-wrapper small {
+    text-align: center;
+}
+
+@media (max-width: 767px) {
+    .VA074-data-wrapper {
+        width: 90%;
+    }
+
+    .VA074-right-card-wrap {
+        padding: 1.5rem;
+    }
+
+    .VA074-left-card-wrap {
+        padding: 1rem;
+    }
+}

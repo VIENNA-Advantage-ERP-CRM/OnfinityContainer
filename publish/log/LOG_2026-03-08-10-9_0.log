@@ -1,0 +1,129 @@
+10:10:02.102    (INFO)     Trx.Start: [66]**** VISPRO_ModIns639085614022463483System.Random
+10:10:02.102    (INFO)     Trx.Commit: [66]**C** VISPRO_ModIns639085614022463483System.Random
+10:10:05.105    (INFO)     MChangeLog.FillChangeLog: [91]#11
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [91]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [91]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 201
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42703: column "y" does not exist
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 34
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 34
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42703: column "y" does not exist
+
+POSITION: 34
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 34
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42601: syntax error at or near "=@#"
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42703: column "y" does not exist
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [91] => 42703: column "binarydata" of relation "ad_reference" does not exist
+
+POSITION: 25
+----------->     (WARNING)  DB.ExecuteQuery: [91]DBExecuteError - 42703: column "binarydata" of relation "ad_reference" does not exist
+
+POSITION: 25
+10:10:31.103    (INFO)     Env.Reset: [91]finalCall=False
+10:10:31.103    (INFO)     CacheMgt.Reset: [91]#23 (7909)
+10:10:31.103    (INFO)     Trx.Start: [91]**** VISPRO_ModIns639085614314322365System.Random
+10:10:31.103    (INFO)     Trx.Commit: [91]**C** VISPRO_ModIns639085614314322365System.Random
+10:10:34.103    (INFO)     MRole.Get: [111]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:10:34.103    (INFO)     MRole.Get: [111]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [111]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

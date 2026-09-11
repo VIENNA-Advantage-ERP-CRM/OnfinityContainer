@@ -1,0 +1,20 @@
+# Runs on the DEDICATED WINDOWS HOST that serves the app. Point POSTGRES_HOST
+# (in .env) at the separate Linux host running docker-compose.linux.yml -
+# there's no sensible default here since that's always a different machine.
+# Deliberately no `host.docker.internal` fallback: even where that name
+# resolves, it would point back at this same Windows host, which is the
+# wrong machine in this two-host layout - and on some Docker Desktop
+# configurations it doesn't resolve from Windows containers at all.
+services:
+  web:
+    platform: windows/amd64
+    build: .
+    container_name: onfinity-app
+    ports:
+      - "${WEB_PORT:-8080}:80"
+    environment:
+      - POSTGRES_HOST=${POSTGRES_HOST:?Set POSTGRES_HOST in .env to the Linux database host's address}
+      - POSTGRES_USER=${POSTGRES_USER:-viennacrmuser}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-changeme}
+      - POSTGRES_DB=${POSTGRES_DB:-onfinitydb}
+      - DB_PORT=${DB_PORT:-5432}

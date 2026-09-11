@@ -1,0 +1,91 @@
+﻿<div id="MainDiv" class="plan-main-div vis-forms-container vis-formouterwrpdiv">
+    @*<div id="@("VAMRP_BusyIndicator_" + ViewBag.WindowNumber)" class="busy_indicator"></div>*@
+    <div style="visibility: hidden" id="@("VAMRP_BusyIndicator_" + ViewBag.WindowNumber)" class="vis-busyindicatorouterwrap"><div class="vis-busyindicatorinnerwrap"><i class="vis-busyindicatordiv"></i></div></div>
+    <div id="@("leftPanel_"+ViewBag.WindowNumber)" class="div-left vis-leftsidebarouterwrap">
+        <div id="@("leftPanelTop_"+ViewBag.WindowNumber)" class="div-left-top">
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("VAMRP_ComboPlan_"+ViewBag.WindowNumber)" class="cmb-width100"></select>
+                    <label id="@("VAMRP_labelPlan_"+ViewBag.WindowNumber)" class="label-top">Plan</label>
+                </div>
+            </div>
+
+            <div class="input-group vis-input-wrap" id="@("VAMRP_ControlProduct_"+ViewBag.WindowNumber)">
+                @*<label id="@("VAMRP_labelProduct_"+ViewBag.WindowNumber)" class="label-top">Product</label>*@
+                @*<select id="@("ComboProduct_"+ViewBag.WindowNumber)" class="cmb-width100"></select>*@
+                @*<div id="@("VAMRP_ControlProduct_"+ViewBag.WindowNumber)" class="cmb-width100"></div>*@
+            </div>
+
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("VAMRP_ComboPeriod_"+ViewBag.WindowNumber)" class="cmb-width100"></select>
+                    <label id="@("VAMRP_labelPeriod_"+ViewBag.WindowNumber)" class="label-top">Period</label>
+                </div>
+            </div>
+
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("VAMRP_ComboOrderType_"+ViewBag.WindowNumber)" class="cmb-width100"></select>
+                    <label id="@("VAMRP_labelOrderType_"+ViewBag.WindowNumber)" class="label-top">OrderType</label>
+                </div>
+            </div>
+
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <select id="@("VAMRP_ComboBP_"+ViewBag.WindowNumber)" class="cmb-width100"></select>
+                    <label id="@("VAMRP_labelBP_"+ViewBag.WindowNumber)" class="label-top">Business Partner</label>
+                </div>
+            </div>
+
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <input id="@("VAMRP_OrderDateFrom_"+ViewBag.WindowNumber)" class="date-ctrl1" type="date">
+                    <label id="@("VAMRP_labelOrderDate_"+ViewBag.WindowNumber)" class="label-top">Order Date</label>
+                </div>
+            </div>
+
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <input id="@("VAMRP_OrderDateTo_"+ViewBag.WindowNumber)" class="date-ctrl1" type="date">
+                </div>
+            </div>
+
+            <div class="input-group vis-input-wrap" id="@("VAMRP_SalesOrder_"+ViewBag.WindowNumber)">
+            </div>
+
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <input id="@("VAMRP_QuantityFrom_"+ViewBag.WindowNumber)" class="date-ctrl1" type="number">
+                    <label id="@("VAMRP_labelQuantity_"+ViewBag.WindowNumber)" class="label-top">Quantity Range</label>
+                </div>
+            </div>
+
+            <div class="input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <input id="@("VAMRP_QuantityTo_"+ViewBag.WindowNumber)" class="date-ctrl1" type="number">
+                </div>
+            </div>
+
+        </div>
+        <div id="@("leftPanelBottom_"+ViewBag.WindowNumber)" class="div-left-bottom">
+            <button id="@("VAMRP_buttonSearch_"+ViewBag.WindowNumber)" class="VIS_Pref_btn-2 vis-frm-button btn-search">Search</button>
+        </div>
+    </div>
+    <div id="@("RightPanel_"+ViewBag.WindowNumber)" class="div-right">
+        <div id="@("RightPanelBottom_"+ViewBag.WindowNumber)" class="div-right-bottom">
+            <div id="@("RightPanelGrid_"+ViewBag.WindowNumber)" class="div-grid">
+            </div>
+        </div>
+        <div id="@("RightPanelTop_"+ViewBag.WindowNumber)" class="div-right-top">
+            <div id="@("RightPanelleft_"+ViewBag.WindowNumber)" class="div-rl-width50 input-group vis-input-wrap">
+                <div class="vis-control-wrap">
+                    <input id="@("VAMRP_txtProcessRow_"+ViewBag.WindowNumber)" placeholder=" " data-placeholder="">
+                    <label id="@("VAMRP_labelProcessRow_"+ViewBag.WindowNumber)">Process Row</label>
+                </div>
+            </div>
+            <div id="@("RightPanelRight_"+ViewBag.WindowNumber)" class="div-rr-width50">
+                <button id="@("VAMRP_buttonProcess_"+ViewBag.WindowNumber)" class="VIS_Pref_btn-2 vis-frm-button btn-process">Process</button>
+            </div>
+        </div>
+    </div>
+</div>

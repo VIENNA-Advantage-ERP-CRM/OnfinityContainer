@@ -1,0 +1,81 @@
+09:16:02.162    (INFO)     Trx.Start: [36]**** VISPRO_ModIns639085581621749869System.Random
+09:16:02.162    (INFO)     Trx.Commit: [36]**C** VISPRO_ModIns639085581621749869System.Random
+09:16:05.165    (INFO)     MChangeLog.FillChangeLog: [25]#10
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [25]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [25] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [25]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [25]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [25] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [25]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [25]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [25] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [25]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [25]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [25] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [25]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [25]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [25] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [25]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [25]Not insertedAD_Ref_Table
+===========>     (SEVERE)   DB.ExecuteQuery: [25] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [25]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [25] => 42601: syntax error at or near "=@"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [25]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 38
+09:16:09.169    (INFO)     ConvertSQL.ApplyConvertMap: [25]Exception clause needs to be converted: CREATE OR REPLACE FUNCTION public.currencyrate( p_curfrom_id integer, p_curto_id integer, p_convdate timestamp with time zone, p_conversiontype_id integer, p_client_id integer, p_org_id integer) RETURNS numeric LANGUAGE 'plpgsql' COST 100 STABLE SECURITY DEFINER AS $BODY$ DECLARE cf_IsEuro char(1) := NULL; cf_IsEMUMember char(1); cf_EMUEntryDate timestamp; cf_EMURate numeric; ct_IsEuro char(1) := NULL; ct_IsEMUMember char(1); ct_EMUEntryDate timestamp; ct_EMURate numeric; v_CurrencyFrom integer; v_CurrencyTo integer; v_CurrencyEuro integer; v_ConvDate timestamp :=clock_timestamp(); v_ConversionType_ID integer := 0; v_Rate numeric; v_isFetchAllDateOrNot char(1); v_multiplyRate numeric; BEGIN IF (p_CurFrom_ID = p_CurTo_ID) THEN RETURN 1; END IF; IF (p_ConvDate IS NOT NULL) THEN v_ConvDate := p_ConvDate; END IF; IF ( p_ConversionType_ID IS NULL  OR p_ConversionType_ID = 0 ) THEN BEGIN SELECT C_ConversionType_ID INTO STRICT v_ConversionType_ID FROM C_ConversionType WHERE IsDefault = 'Y' AND AD_Client_ID IN (0, p_Client_ID) ORDER BY AD_Client_ID DESC LIMIT 1; EXCEPTION WHEN OTHERS THEN RAISE NOTICE 'Conversion Type Not Found'; END; ELSE v_ConversionType_ID := p_ConversionType_ID; END IF; BEGIN SELECT IsEuro, IsEMUMember, EMUEntryDate, EMURate INTO STRICT cf_IsEuro, cf_IsEMUMember, cf_EMUEntryDate, cf_EMURate FROM C_Currency WHERE C_Currency_ID = p_CurFrom_ID; EXCEPTION WHEN OTHERS THEN NULL; END; IF (cf_IsEuro IS NULL) THEN RAISE NOTICE 'From Currency Not Found: %', p_CurFrom_ID; RETURN NULL; END IF; BEGIN SELECT IsEuro, IsEMUMember, EMUEntryDate, EMURate INTO STRICT ct_IsEuro, ct_IsEMUMember, ct_EMUEntryDate, ct_EMURate FROM C_Currency WHERE C_Currency_ID = p_CurTo_ID; EXCEPTION WHEN OTHERS THEN NULL; END; IF (ct_IsEuro IS NULL) THEN RAISE NOTICE 'To Currency Not Found: %', p_CurTo_ID; RETURN NULL; END IF; IF ( cf_IsEuro = 'Y' AND ct_IsEMUMember = 'Y' AND v_ConvDate >= ct_EMUEntryDate ) THEN RETURN ct_EMURate; END IF; IF ( ct_IsEuro = 'Y' AND cf_IsEMUMember = 'Y' AND v_ConvDate >= cf_EMUEntryDate ) THEN RETURN 1 / cf_EMURate; END IF; IF ( cf_IsEMUMember = 'Y' AND cf_IsEMUMember = 'Y' AND v_ConvDate >= cf_EMUEntryDate AND v_ConvDate >= ct_EMUEntryDate ) THEN RETURN ct_EMURate / cf_EMURate; END IF; v_CurrencyFrom := p_CurFrom_ID; v_CurrencyTo := p_CurTo_ID; IF ( ( cf_isEMUMember = 'Y' AND v_ConvDate >= cf_EMUEntryDate ) OR ( ct_isEMUMember = 'Y' AND v_ConvDate >= ct_EMUEntryDate ) ) THEN SELECT MAX(C_Currency_ID) INTO STRICT v_CurrencyEuro FROM C_Currency WHERE IsEuro = 'Y'; IF (v_CurrencyEuro IS NULL) THEN RAISE NOTICE 'Euro Not Found'; RETURN NULL; END IF; IF ( cf_isEMUMember = 'Y' AND v_ConvDate >= cf_EMUEntryDate ) THEN v_CurrencyFrom := v_CurrencyEuro; ELSE v_CurrencyTo := v_CurrencyEuro; END IF; END IF; DECLARE CUR_Rate CURSOR FOR SELECT MultiplyRate FROM C_Conversion_Rate WHERE C_Currency_ID = v_CurrencyFrom AND C_Currency_To_ID = v_CurrencyTo AND C_ConversionType_ID = v_ConversionType_ID AND v_ConvDate BETWEEN ValidFrom AND ValidTo AND IsActive = 'Y' AND AD_Client_ID IN (0, p_Client_ID) AND AD_Org_ID IN (0, p_Org_ID) ORDER BY AD_Client_ID DESC, AD_Org_ID DESC, ValidFrom DESC; BEGIN FOR c IN CUR_Rate LOOP v_Rate := c.MultiplyRate; EXIT; END LOOP; END; IF (v_Rate IS NULL) THEN SELECT IsFetchAllDateOrnot INTO STRICT v_isFetchAllDateOrNot FROM C_ConversionType WHERE C_ConversionType_ID = v_ConversionType_ID; IF (v_isFetchAllDateOrNot = 'Y') THEN SELECT MultiplyRate INTO STRICT v_Rate FROM C_Conversion_Rate WHERE C_Conversion_Rate_id = ( SELECT C_Conversion_Rate_id FROM ( SELECT C_Conversion_Rate_id, dense_rank() over ( PARTITION by ad_client_id ORDER BY ValidFrom, C_Conversion_Rate_id ) rnk FROM C_Conversion_Rate WHERE C_Currency_ID = v_CurrencyFrom AND C_Currency_To_ID = v_CurrencyTo AND C_ConversionType_ID = v_ConversionType_ID AND ValidFrom < v_ConvDate AND IsActive = 'Y' AND AD_Client_ID IN (0, p_Client_ID) AND AD_Org_ID IN (0, p_Org_ID) ) q ORDER BY rnk DESC LIMIT 1 ); IF (v_Rate IS NULL) THEN RAISE NOTICE 'Conversion Rate Not Found in previous timestamp'; RETURN NULL; END IF; ELSE RAISE NOTICE 'Conversion Rate Not Found'; RETURN NULL; END IF; END IF; IF ( cf_isEMUMember = 'Y' AND v_ConvDate >= cf_EMUEntryDate ) THEN RETURN v_Rate / cf_EMURate; END IF; IF ( ct_isEMUMember = 'Y' AND v_ConvDate >= ct_EMUEntryDate ) THEN RETURN v_Rate * ct_EMURate; END IF; RETURN v_Rate; EXCEPTION WHEN OTHERS THEN RAISE NOTICE '%', SQLERRM; RETURN NULL; END; $BODY$;
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [25]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 197
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+09:16:17.161    (INFO)     Env.Reset: [25]finalCall=False
+09:16:17.161    (INFO)     CacheMgt.Reset: [25]#23 (7310)
+09:16:17.161    (INFO)     Trx.Start: [25]**** VISPRO_ModIns639085581778215386System.Random
+09:16:17.161    (INFO)     Trx.Commit: [25]**C** VISPRO_ModIns639085581778215386System.Random
+09:16:21.162    (INFO)     MRole.Get: [94]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:16:21.162    (INFO)     MRole.Get: [94]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [94]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

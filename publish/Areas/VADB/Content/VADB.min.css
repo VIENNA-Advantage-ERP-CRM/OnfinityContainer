@@ -1,0 +1,1391 @@
+﻿/*Version 1.0.1.1 */
+/* Minification failed. Returning unminified contents.
+(5,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(20,36): run-time error CSS1039: Token not allowed after unary operator: '-v-c-secondary'
+(138,33): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(139,22): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-primary'
+(197,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-secondary'
+(266,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(267,22): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-primary'
+(278,22): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-primary'
+(329,22): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(340,22): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(388,33): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(445,33): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(615,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(621,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(629,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(945,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(978,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(982,33): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(1042,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(1043,22): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-primary'
+(1151,39): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(1215,27): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(1252,33): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(1271,29): run-time error CSS1039: Token not allowed after unary operator: '-v-c-on-secondary'
+(1297,33): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+(1304,22): run-time error CSS1039: Token not allowed after unary operator: '-v-c-primary'
+ */
+
+.vadb-header-menu {
+    height: 100%;
+    width: 100%;
+    background: rgba(var(--v-c-on-secondary), 1);
+    margin-left: -160px;
+    float: left;
+}
+
+
+.vadb-header-menu-POS {
+    height: 100%;
+    width: 100%;
+    margin-left: -160px;
+    float: left;
+}
+
+.vadb-header-menu .vis-apanel-lb-ul li {
+    border-bottom-color: rgba(var(--v-c-secondary), .1);
+}
+
+.vadb-header-menu-li {
+    padding: 0px;
+    margin: 0px;
+    /* text-align: center; */
+    float: right;
+    /* padding-right: 10px; */
+    width: 95%;
+    /*padding-right: 10px;*/
+}
+
+
+.vadb-li-top {
+    padding-top: 15px;
+    text-align: left;
+    background: #444343;
+    border-bottom: 1px solid white;
+    /*padding-right: 10px;*/
+    padding-bottom: 7px;
+    list-style-type: none;
+}
+
+.vadb-erp {
+    float: left;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    top: -8px;
+}
+
+span.vadb-sakriti {
+    /*float: left;*/
+    /*display: none;*/
+}
+
+
+.vadb-appointment {
+    height: 35px;
+    border-bottom: 1px solid #666565;
+}
+
+
+
+
+
+@media (max-width:777px) {
+    .header-tab {
+        width: 50%;
+        float: left;
+        background: #727272;
+        height: 90%;
+        overflow-y: auto;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    span.vaba-sakriti {
+        display: block !important;
+    }
+
+
+    .vadb-header-menu-POS {
+        height: 90%;
+        margin-left: 0px !important;
+        float: left;
+    }
+
+    .content-2 {
+        width: 100%;
+        float: left;
+        min-height: 400px;
+        overflow-y: auto;
+        height: 90%;
+        background: white;
+        box-shadow: 16px 0px 38px #55AAD0;
+    }
+
+    .content-1 {
+        width: 100%;
+        float: left;
+        min-height: 400px;
+        overflow-y: auto;
+        height: 90%;
+        padding-left: 5px;
+        background: white;
+        box-shadow: 16px 0px 38px #55AAD0;
+    }
+
+    .appointment {
+        text-align: left !important;
+    }
+}
+
+
+.calculated-width {
+    /*width: -moz-calc(100% - 300px);
+    width: -webkit-calc(100% - 300px);
+    width: calc(100% - 300px);*/
+}
+
+.vadb-seletedliItem {
+    background-color: rgba(var(--v-c-primary), 1);
+    color: rgba(var(--v-c-on-primary), 1);
+}
+
+
+.div-ba {
+    outline-width: 0px;
+}
+
+
+
+.vadb-lblSelectColumn {
+    margin-right: 5px;
+}
+
+html[dir="rtl"] .vadb-lblSelectColumn {
+    margin-right: 0px;
+    margin-left: 5px;
+}
+
+.vadb-searchControlForSearch {
+    display: inline;
+}
+
+/* Right Hand Side Bar  */
+
+.vadb-SearchedColumn {
+    list-style-type: none;
+}
+
+.vadb-FilterContainer {
+    display: block;
+    /*float: left;*/
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+/*html[dir="rtl"] .vadb-FilterContainer {
+     float: right;
+}*/
+
+.vadb-FilterSeries-data {
+    display: block;
+    /*float: left;*/
+    max-height: 185px;
+    overflow: auto;
+}
+/*html[dir="rtl"] .vadb-FilterSeries-data {
+     float: right;
+}*/
+
+.vadb-RightSlider {
+    background: rgba(var(--v-c-secondary), 1);
+    padding-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.vadb-SliderColWrap {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+.vadb-data {
+    max-height: 215px;
+    overflow: auto;
+    /* float: left; */
+    width: 100%;
+    position: relative;
+    max-width: 228px;
+}
+/*html[dir="rtl"] .vadb-data {
+      float: right;
+}*/
+
+.vadb-SliderColWrap-container {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-bottom: 10px; */
+    border-bottom: 2px solid #fff;
+}
+
+html[dir="rtl"] .vadb-SliderColWrap-container {
+    float: right;
+}
+
+.vadb-SliderColWrapSeries {
+    float: left;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+html[dir="rtl"] .vadb-SliderColWrapSeries {
+    float: right;
+}
+
+.vadb-SliderArrow {
+    float: left;
+}
+
+html[dir="rtl"] .vadb-SliderArrow {
+    float: right;
+}
+
+.vadb-arrow-wrap {
+    width: 21px;
+    height: 21px;
+    float: left;
+    cursor: pointer;
+    margin-bottom: 0px;
+    display: flex;
+    background: rgba(var(--v-c-primary), 1);
+    color: rgba(var(--v-c-on-primary), 1);
+    align-items: center;
+    justify-content: center;
+}
+
+.vis-menuTitle i {
+    font-size: 1.2rem;
+}
+
+
+.vadb-header-menu i {
+    color: rgba(var(--v-c-on-primary), 1);
+    font-size: 1rem;
+}
+
+/*html[dir="rtl"] vadb-arrow-wrap {
+       float: right;
+}*/
+
+.vadb-SliderTab {
+    float: right;
+    width: calc(100% - 21px);
+    text-align: left;
+}
+
+html[dir="rtl"] .vadb-SliderTab {
+    float: left;
+}
+
+
+.vadb-SiderBtn {
+    float: left;
+    padding: 5px 10px;
+    background: #616364;
+    color: #fff;
+    cursor: pointer;
+}
+
+html[dir="rtl"] .vadb-SiderBtn {
+    float: right;
+}
+
+.vadb-SiderBtn:hover, .vadb-btnactive {
+    background: #1aa0ed;
+    color: #fff;
+    text-decoration: none;
+}
+
+.vadb-SeriesWrap, .vadb-SeriesOptions, .vadb-SeriesData {
+    float: left;
+    width: 100%;
+}
+
+html[dir="rtl"] .vadb-SeriesWrap, .vadb-SeriesOptions, .vadb-SeriesData {
+    float: right;
+}
+
+.vadb-SliderTittle {
+    /*float: left;*/
+    color: rgba(var(--v-c-primary), 1);
+    font-size: 14px !important;
+    width: 100%;
+}
+
+/*html[dir="rtl"] .vadb-SliderTittle {
+    float: right;
+}*/
+
+.vadb-SeriesSliderTittle {
+    /*float: left;*/
+    color: rgba(var(--v-c-primary), 1);
+    font-size: 14px !important;
+    width: 100%;
+}
+
+
+
+.vadb-SliderTittle2 {
+    /*float: left;*/
+    color: #1aa0ed;
+    font-size: 14px;
+    width: 100%;
+    margin: 0;
+}
+
+.vadb-SeriesData > input[type="checkbox"] {
+    /*float: left;*/
+    /*margin-right: 10px;*/
+}
+
+html[dir="rtl"] .vadb-SeriesData {
+    margin-left: 10px;
+}
+
+.vadb-SeriesData > label {
+    padding-left: 5px;
+    /* font-size: 12px; */
+    /* color: #666; */
+    font-weight: normal;
+    margin-bottom: 0px;
+}
+
+.vadb-SeriesOptions .vadb-SeriesData {
+    display: flex;
+    align-items: center;
+}
+
+.vadb-AddColWrap, .vadb-ColumnSearch {
+    /*float: left;*/
+    width: 100%;
+}
+
+.vadb-SeriesData > select, .vadb-data input:not([type="checkbox"]):not([type="radio"]) {
+    float: left;
+    /* margin-right: 10px; */
+    border: 1px solid rgba(var(--v-c-on-secondary), .3);
+    width: calc(100% - 35px);
+    height: 35px;
+    background-color: transparent;
+}
+
+.vadb-SeriesData > select {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+html[dir="rtl"] .vadb-SeriesData > select {
+    /*float: right;
+      margin-right: 0px;
+    margin-left: 10px;*/
+}
+
+.vadb-SeriesData1 > select {
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    width: 82%;
+}
+
+.vadb-RightSlider td {
+    vertical-align: top;
+}
+
+.vadb-kpi-move-arrows {
+    float: left;
+    display: flex;
+    flex-direction: column;
+    height: 98px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+}
+
+.vadb-chart-edit-icons {
+    float: right;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*color: rgba(var(--v-c-on-primary), 1);*/
+    font-size: 28px;
+    padding-top: 10px
+}
+
+.vadb-AddColBtn {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: rgba(var(--v-c-on-secondary), .2); */
+    border: 1px solid rgba(var(--v-c-on-secondary), .3);
+    /* font-size: 1.1rem; */
+    border-radius: .25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px;
+}
+
+.vadb-ColumnHead {
+    /* float: left; */
+    width: 100%;
+    margin: 10px 0;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+}
+
+.vadb-ColumnHeadLeft {
+    /* float: left; */
+    /* width: 90%; */
+    /* margin-top: 2px; */
+    flex: 1;
+}
+/*
+html[dir="rtl"] .vadb-ColumnHeadLeft {
+float:right;
+}*/
+.vadb-Filterdata {
+    /*float: left;*/
+    width: 100%;
+}
+
+.vadb-ExpandArrow {
+    /*width: 9px;
+    height: 6px;*/
+    float: left;
+    /*background: url(../Images/open-arrow.png);*/
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+html[dir="rtl"] .vadb-ExpandArrow {
+    float: right;
+}
+
+.vadb-collapsedArrow {
+    width: 6px;
+    height: 10px;
+    /*float: left;*/
+    background: url(../Images/close-arrow.png);
+    margin: 3px 5px 0 0;
+}
+
+html[dir="rtl"] .vadb-collapsedArrow {
+    margin: 3px 0px 0 5px;
+}
+
+.vadb-ColumnTittle {
+    /* float: left; */
+    /* color: #666; */
+    font-size: 13px !important;
+    margin: 0 !important;
+}
+
+.vadb-ColumnHeadRight {
+    float: right;
+    width: 10%;
+}
+
+html[dir="rtl"] .vadb-ColumnHeadRight {
+    float: left;
+}
+
+.vadb-ColumnIcon {
+    width: 18px;
+    height: 18px;
+    float: left;
+    cursor: pointer;
+}
+
+html[dir="rtl"] .vadb-ColumnIcon {
+    float: right;
+}
+
+.vadb-CloseIcon {
+    background: url(../Images/close.png);
+    /* margin-right: 5px; */
+}
+
+/*html[dir="rtl"] .vadb-CloseIcon {
+     margin-right: 0px;
+    margin-left: 5px;
+}*/
+
+.vadb-ConditionIcon {
+    background: url(../Images/condition.png);
+}
+
+.vadb-ColumnOptions {
+    width: 100%;
+    /*float: left;*/
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+html[dir="rtl"] .vadb-ColumnOptions {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+
+.vadb-ColumnSearch > input {
+    /*float: left;*/
+    background: none;
+    border: 1px solid #ccc;
+    height: 29px;
+    width: 86%;
+}
+
+.vadb-SearchBtn {
+    width: 29px;
+    height: 29px;
+    /*float: left;*/
+    background: url(../Images/search.png);
+    cursor: pointer;
+}
+
+.vadb-DateofBirth {
+    width: 100%;
+    /*float: left;*/
+    margin-left: 10px;
+}
+
+html[dir="rtl"] .vadb-DateofBirth {
+    margin-left: 0px;
+    margin-right: 10px;
+}
+
+
+.vadb-DateofBirth > vadb-p {
+    color: #666;
+    font-size: 12px;
+}
+
+.vadb-ApplyBtn {
+    float: left;
+    padding: 10px 10px;
+    /* position: relative; */
+    /* bottom: 0%; */
+    /* right: 0; */
+    width: 100%;
+    border-top: 2px solid #fff;
+}
+
+html[dir="rtl"] .vadb-ApplyBtn {
+    /* right: 0px; */
+    /* left: 10px; */
+}
+
+.vadbApplyBtn {
+    background: rgba(var(--v-c-primary), 1);
+    color: #fff !important;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+.vadbApplyAndSaveBtn {
+    background: rgba(var(--v-c-primary), 1);
+    color: #fff !important;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+.vadbSaveAS {
+    background: rgba(var(--v-c-primary), 1);
+    color: #fff !important;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+
+.vadb-ApplyBtn:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.vadb-Applied-data {
+    width: 100%;
+    /*float: left;*/
+    display: none;
+}
+
+.vadb-ColumnContent {
+    color: #666;
+    font-size: 12px;
+}
+
+.vadb-view-span {
+    /*margin:5px 5px 5px 5px;*/
+    /*font-size: 13px;*/
+    /*float:left;*/
+}
+
+.vadb-view-fields {
+    /* width: 100%; */
+    /* min-width: 180px; */
+    /* height: 25px; */
+    /* margin-bottom: 5px; */
+}
+
+.vadb-excel-fields {
+    /* width: 100%; */
+    /* min-width: 195px; */
+    /* height: 25px; */
+    /* margin-bottom: 5px; */
+    /* resize: none; */
+    /* border-radius: 0!important; */
+    /* font-size: 13px !important;*/
+}
+
+.vadb-table-caption {
+    float: left;
+    font-weight: bold;
+}
+
+/*-----------------------------------KPI HOME SCREEN---------------------------------*/
+
+.vadb-kpi-icon {
+    width: 25px;
+    height: 19px;
+    float: left;
+    background: url('../images/kpi.png');
+    margin-right: 10px;
+}
+
+.vadb-kpi-activityContainer {
+    margin: 5px 10px 5px 0px;
+    padding-bottom: 6px;
+    cursor: pointer;
+    /*overflow:auto;*/
+}
+
+.vadb-kpi-Head-right {
+    float: right;
+    margin: 20px 0 10px 0;
+    width: 50%;
+}
+
+.vadb-kpi-showCombo {
+    float: left;
+    width: 75%;
+}
+
+.vadb-kpi-topIcon {
+    float: right;
+    width: 25%;
+}
+
+.vadb-kpi-showCombo > label {
+    float: left;
+    width: 30%;
+    color: #999;
+    font-weight: normal;
+    margin-top: 4px;
+}
+
+.vadb-checkboxlist {
+    max-height: 220px;
+    overflow: auto;
+    /* padding-top: 5px; */
+    width: 100%;
+    /*margin-bottom: 5px;*/
+    position: relative;
+    top: -8px;
+}
+
+    .vadb-checkboxlist input[type="checkbox"] {
+        margin-right: 5px;
+        margin-top: 8px;
+    }
+
+.vadb-kpi-showCombo > select {
+    color: #999;
+    border: 1px solid #EEE;
+    padding: 5px 10px;
+    width: 70%;
+    float: left;
+}
+
+.vadb-kpi-refreshIcon {
+    margin-top: 3px !important;
+    margin-right: 10px;
+}
+
+.vadb-kpi-topborder {
+    border-top: 1px solid #74b5e2;
+    float: left;
+    width: 100%;
+    padding-top: 4px;
+    /*margin: 0px 10px;*/
+}
+
+.vadb-kpi-feedName {
+    float: left;
+    width: 30%;
+    /*margin-top: 7px;*/
+}
+
+    .vadb-kpi-feedName > h4, .vadb-kpi-status > p {
+        font-size: 14px;
+        color: #666;
+    }
+
+    .vadb-kpi-feedName > h4 {
+        /*padding-left: 3px;*/
+    }
+
+.vadb-kpi-Value {
+    float: left;
+    width: 50%;
+    text-align: right;
+}
+
+    .vadb-kpi-Value > h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .vadb-kpi-Value > p {
+        font-size: 12px;
+        color: #999;
+        font-weight: lighter;
+        margin-top: 3px;
+        margin-bottom: 0px;
+    }
+
+
+.vadb-kpi-Value-notIncluded {
+    float: left;
+    text-align: right;
+}
+
+    .vadb-kpi-Value-notIncluded > h1 {
+        margin: 0;
+        font-size: 24px;
+        color: #666;
+        font-weight: 500;
+    }
+
+    .vadb-kpi-Value-notIncluded > p {
+        font-size: 12px;
+        color: #999;
+        font-weight: lighter;
+        margin-top: 3px;
+    }
+
+
+
+
+.vadb-kpi-status {
+    float: right;
+}
+
+    .vadb-kpi-status p {
+        margin-bottom: 0px;
+    }
+
+.vadb-kpi-ArrowIcon {
+    width: 17px;
+    height: 13px;
+    float: right;
+    background-repeat: no-repeat;
+    margin-right: 7px;
+    margin-top: 5px;
+}
+
+.vadb-kpi-redArrow {
+    background: url('../images/kpi-redarrow.png');
+}
+
+.vadb-kpi-greenArrow {
+    background: url('../images/kpi-greenarrow.png');
+}
+
+.vadb-kpi-bottomborder {
+    border-top: 1px solid #eee;
+    float: left;
+    width: 100%;
+}
+
+.vadb-kpi-activityContainer:hover .vadb-kpi-feedName > h4, .vadb-kpi-activityContainer:hover .vadb-kpi-Value > h1, .vadb-kpi-activityContainer:hover .vadb-kpi-Value > p, .vadb-kpi-activityContainer:hover .vadb-kpi-status > p {
+    color: #1aa0ed;
+}
+
+/*---------------------------------END KPI HOME SCREEN---------------------------------*/
+.vadb-file-label {
+    color: #fff;
+    cursor: pointer;
+    color: #616364;
+    font-weight: normal;
+}
+
+.vadb-file-input {
+    opacity: 0;
+}
+
+.vadb-change-picture-ico {
+    /*background: url('../Images/home/upload-ico.png');
+    background-repeat: no-repeat;*/
+    width: 31px;
+    height: 31px;
+    float: left;
+    margin-top: 3px;
+    margin-right: 3px;
+}
+
+.vadb-file-type {
+    margin-top: -37px;
+    float: left;
+    z-index: 999;
+    line-height: 0;
+    font-size: 20px;
+    position: absolute;
+    top: 0px;
+    opacity: 0;
+    left: -200px;
+    -ms-filter: 'alpha(opacity=0)';
+    cursor: pointer;
+    margin: 0;
+    padding: 0;
+}
+
+.vadb-file-label {
+    cursor: pointer;
+    float: left;
+    width: 31px;
+    height: 31px;
+    /*overflow: hidden;*/
+    position: relative;
+}
+
+.vadb-file-input {
+    float: right;
+    z-index: 1;
+    position: absolute;
+    width: 120px !Important;
+    border: none;
+    padding: 0;
+    top: 80px;
+    right: 5px;
+    opacity: 0;
+    cursor: pointer;
+    height: 34px;
+}
+
+span.vadb-cancel-file {
+    width: 20px;
+    height: 20px;
+    /* float: right; */
+    background: rgba(var(--v-c-on-secondary), .1);
+    position: absolute;
+    z-index: 2;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: .55rem;
+    border-radius: 50%;
+    padding: 7px 5px;
+}
+
+a.vadb-file-upload {
+    background: #1aa0ed;
+    border-radius: 0;
+    color: #fff;
+    font-size: 13px;
+    float: right;
+    height: 30px;
+}
+
+.vadb-wizard-data-title {
+    width: 100%;
+    background: #e9eef0;
+    padding: 5px 10px;
+    color: #535353;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.vadb-delete-icon, .vadb-upload-icon {
+    width: 30px;
+    height: 30px;
+    float: right;
+    background: rgba(var(--v-c-on-secondary), .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(var(--v-c-on-secondary), .2);
+}
+
+.vadb-switch-category {
+    text-align: center;
+    /*margin-top: 10px;*/
+}
+
+    .vadb-switch-category > img {
+        margin-top: 20px;
+    }
+
+.vadb-wizard-blueBtn {
+    background: #1aa0ed;
+    border-radius: 0px;
+    color: #FFF !Important;
+    font-size: 13px;
+}
+
+.vadb-switch-category > a.vadb-wizard-blueBtn {
+    margin: 0 7px;
+}
+
+.vadb-wizard-data-check-50 > input {
+    float: left;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.vadb-wizard-data-check-50 > label {
+    font-weight: normal;
+    /* font-size: 13px; */
+    margin-bottom: 0px;
+    margin-left: 5px;
+    line-height: 12px;
+}
+
+.vadb-padding-half {
+    /* padding: 5px; */
+    /* padding-left: 0px; */
+}
+
+.vadb-padding-full {
+    padding-top: 5px;
+}
+
+.vadb-os-image-upload {
+    /* float: right; */
+    /* width: 18%; */
+    /* float: right; */
+    overflow: hidden;
+    /* margin-top: -10px; */
+    /* height: 40px; */
+    position: relative;
+}
+
+#vadb-os-file-input, .vadb-upload-imageInput {
+    opacity: 0;
+    /* margin-top: -35px; */
+    cursor: pointer;
+    /* width: 100%; */
+    /* float: left; */
+    position: absolute;
+    z-index: 2;
+    padding-left: 100px !important;
+}
+
+.vadb-os-file-label.input-group-text {
+    cursor: pointer;
+    background: rgba(var(--v-c-primary), 1);
+    color: rgba(var(--v-c-on-primary), 1);
+    /* font-weight: normal; */
+    width: auto;
+    /* padding: 6px 0; */
+    font-size: 14px;
+    /* text-align: center; */
+    /* margin-top: 10px; */
+    border-color: transparent;
+    position: relative;
+    left: 0;
+}
+
+.vadb-text-with-img {
+    vertical-align: middle;
+    float: left;
+    line-height: 31px;
+}
+
+.vadb-text-with-imgColor {
+    color: gray;
+    cursor: pointer;
+}
+
+.vadb-text-with-blue {
+    color: #1aa0ed;
+    cursor: pointer;
+}
+
+.vadb-apanel-lb-ul-POS {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .vadb-apanel-lb-ul-POS li {
+        padding-top: 12px;
+        padding-left: 8px;
+        padding-bottom: 10px;
+        cursor: pointer;
+        color: #fff;
+    }
+
+        .vadb-apanel-lb-ul-POS li span {
+            position: relative;
+            left: 12px;
+        }
+
+.VAPOS-navigatorPOSRep {
+    background: rgba(0, 0, 0, .3);
+    cursor: pointer;
+    width: 22px;
+    height: 72px;
+}
+
+.VAPOS-PrePOSRep {
+    float: left;
+}
+
+.VAPOS-NextPOSRep {
+    float: right;
+}
+
+.vadb-leftheader-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid #fff;
+}
+
+    .vadb-leftheader-wrap div:first-child i {
+        font-size: 1.3rem;
+    }
+
+.vadb-rightContainer {
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(100% - 42px);
+}
+
+.vadb-leftsidebar-wrap {
+    width: 200px;
+    display: inline-block;
+    float: left;
+    height: calc(100% - 42px);
+}
+
+html[dir="rtl"] .vadb-leftsidebar-wrap {
+    float: right;
+}
+
+.vadb-leftheader-wrap div {
+    display: flex;
+    align-items: center;
+}
+
+.vadb-header-menu .vis-apanel-lb-ul {
+    height: 100%;
+    margin: 0;
+    overflow: auto;
+}
+
+ul.vadb-TopSliderUl {
+    white-space: nowrap;
+    padding: 10px 2px;
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.vadb-TopSliderUl li {
+    padding: 0 10px;
+    display: inline-block;
+    border-right: 1px solid rgba(var(--v-c-on-secondary), .3);
+}
+
+.vadb-sliderDataDiv {
+    width: 200px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+    .vadb-sliderDataDiv img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .vadb-sliderDataDiv span {
+        padding: 0 5px;
+        display: inline-flex;
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        height: 40px;
+        overflow: hidden;
+        align-items: center;
+        flex: 1;
+    }
+
+.vadb-TopSliderOuterWrap {
+    overflow: hidden;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.vadb-dashboardOuterWrap {
+    padding: 0 10px 0 5px;
+}
+
+.vadb-dashboardTitile {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.vadb-SliderColWrap h4.vadb-SeriesSliderTittle,
+.vadb-AddColWrap h4 {
+    margin-bottom: 5px;
+}
+
+.vadb-ApplyBtn div {
+    display: inline-flex;
+}
+
+.vadb-SliderColWrap-container:last-child {
+    border-bottom: none;
+}
+
+.vadb-data input:not([type="checkbox"]):not([type="radio"]) {
+    margin-bottom: 10px;
+    padding: 5px 10px;
+}
+
+.vadb-newgrah-tblwrap tr td:not(:only-child):first-child {
+    padding-right: 5px;
+    width: 50%;
+}
+
+.vadb-newgrah-tblwrap tr td:not(:only-child):last-child {
+    padding-left: 5px;
+}
+
+.vadb-newgrah-tblwrap {
+    padding-top: 3px;
+}
+
+    .vadb-newgrah-tblwrap tr:last-child .vis-input-wrap {
+        margin-bottom: 0;
+    }
+
+.vadb-kpipopup-ulouter {
+    flex: 1;
+    overflow: auto;
+    border: 1px rgba(var(--v-c-on-secondary), .2) solid;
+    margin: 0;
+    border-radius: .25rem
+}
+
+    .vadb-kpipopup-ulouter ul {
+        height: 98px;
+        list-style-type: none;
+        padding: 0px;
+        margin: 0;
+    }
+
+        .vadb-kpipopup-ulouter ul li {
+            padding: 3px 12px;
+            margin-bottom: 1px;
+        }
+
+.vadb-kpi-move-arrows i {
+    height: 25px;
+    /*margin-right: 5px;*/
+    display: flex;
+    align-items: center;
+}
+
+.vadb-wizard-data-check-50 input[type=checkbox] {
+    margin: 0;
+}
+
+.vadb-wizard-data-check-50 {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.vadb-titleY-axis {
+    position: absolute;
+    top: -8px;
+    font-size: 12px;
+    background: #fff;
+    left: 5px;
+    padding: 0 0.4rem;
+}
+
+input.VIS_Pref_btn-2.vadb-upload-excel-nextbtn {
+    background-color: rgba(var(--v-c-primary), 1);
+    padding: 10px 15px !important;
+    margin-top: 10px;
+    border: none;
+}
+
+.vadb-arrow-down {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.vadb-rightsec-searchicon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;
+    height: 35px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-color: rgba(var(--v-c-on-secondary), .3);
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+
+.vadb-rightsec-searchInput {
+    padding-right: 45px;
+}
+
+.vadb-ApplyBtn a {
+    border-radius: .25rem;
+    padding: 8px 12px;
+}
+
+.vadb-newgrah-tblwrap table {
+    width: 100%;
+}
+
+.vadb-header-icons {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+    .vadb-header-icons i {
+        margin-right: 15px;
+        cursor: pointer;
+    }
+
+    .vadb-header-icons canvas {
+        background-color: rgba(var(--v-c-primary), 1);
+        margin-right: 15px;
+        width: 2px;
+        height: 32px;
+        margin-bottom: 0px;
+    }
+
+.vadb-rightsec-title {
+    color: rgba(var(--v-c-primary), 1);
+    font-size: 20px;
+    margin-bottom: 0;
+    font-weight: 600;
+    padding-left: 10px;
+    line-height: 21px;
+}
+/*RTL CSS*/
+html[dir="rtl"] .vadb-SeriesData > select,
+html[dir="rtl"] .vadb-data input:not([type="checkbox"]):not([type="radio"]) {
+    float: right;
+}
+
+html[dir="rtl"] .vadb-arrow-down,
+html[dir="rtl"] .vadb-rightsec-searchicon {
+    right: auto;
+}
+
+html[dir="rtl"] .vadb-arrow-down {
+    left: 10px;
+}
+
+html[dir="rtl"] .vadb-rightsec-searchInput {
+    padding-left: 45px;
+}
+
+html[dir="rtl"] .vadb-rightsec-searchicon {
+    left: 0;
+}
+
+html[dir="rtl"] .vadb-header-icons i,
+html[dir="rtl"] .vadb-header-icons canvas,
+html[dir="rtl"] .vadb-checkboxlist input[type="checkbox"] {
+    margin-right: 0px;
+}
+
+html[dir="rtl"] .vadb-header-icons i,
+html[dir="rtl"] .vadb-header-icons canvas {
+    margin-left: 15px;
+}
+
+html[dir="rtl"] .vadb-rightsec-title,
+html[dir="rtl"] .vadb-newgrah-tblwrap tr td:not(:only-child):last-child {
+    padding-left: 0;
+}
+
+html[dir="rtl"] .vadb-rightsec-title {
+    padding-right: 10px;
+}
+
+html[dir="rtl"] .vadb-SeriesData > select {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+html[dir="rtl"] .vadb-AddColBtn,
+html[dir="rtl"] .vadb-rightsec-searchicon {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+html[dir="rtl"] .vadb-checkboxlist input[type="checkbox"] {
+    margin-left: 5px;
+}
+
+html[dir="rtl"] .vadb-newgrah-tblwrap tr td:not(:only-child):last-child {
+    padding-right: 5px;
+}
+
+html[dir="rtl"] .vadb-newgrah-tblwrap tr td:not(:only-child):first-child {
+    padding-right: 0px;
+    padding-left: 5px;
+}

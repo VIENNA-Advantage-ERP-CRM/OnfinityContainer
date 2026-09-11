@@ -1,0 +1,154 @@
+﻿@model WSP.Models.SchedulerModels
+<div id="@("divAppointments_" + ViewBag.WindowNumber)">
+</div>
+
+<script type="text/x-kendo-template" id="CustomAppointmentsTemplate">
+<div style='height:500px; overflow-x:auto; top:15px;' class='wsp-calander-pop'>
+<div class="k-edit-label">
+    <span class="vis vis-url"></span>
+</div>
+<div data-container-for="meetingUrl" class="k-edit-field">
+    <input id="@("meetingUrl_" + ViewBag.WindowNumber)" class="k-textbox" style="width:100%;" data-bind="value: meetingUrl"
+    placeholder="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_MeetingUrl")" name="Location" type="text" />
+</div>
+<div class="k-edit-label">
+    <span class="vis vis-pencil"></span>
+    @*<label for="Title">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Title")</label>*@
+</div>
+<div data-container-for="title" class="k-edit-field">
+    <input id="@("title_" + ViewBag.WindowNumber)" class="k-input k-textbox" style="width:100%;" data-bind="value: title" placeholder="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Title")"  name="Title" type="text" required="required" />
+    @*<input  id="@("syncWith_" + ViewBag.WindowNumber)"   name="syncwith" style="width: 30%; float:right;" type="text"
+            data-bind="value:syncwith" data-val="true"
+            data-val-number="The field Catgory must be a number."
+            data-source= '@Html.Raw(ViewBag.Cat)'
+            data-text-field="text"
+            data-value-field="value"
+            data-value-primitive="true"
+            data-option-label="None"
+            data-role="dropdownlist" />*@
+</div>
+<div class="k-edit-label">
+    <span class="vis vis-location"></span>
+    @*<label for="location">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Location")</label>*@
+</div>
+<div data-container-for="location" class="k-edit-field">
+    <input id="@("location_" + ViewBag.WindowNumber)" class="k-textbox" style="width:100%;" data-bind="value: location" placeholder="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Location")" name="Location" type="text" />
+</div>
+<div class="k-edit-label">
+    <span class="vis vis-card-o"></span>
+    @*<label for="categories">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Category")</label>*@
+</div>
+<div data-container-for="categories" class="k-edit-field"  >
+      <input  id="@("categories_" + ViewBag.WindowNumber)"   name="categories" style="width: 200px; float:left;" type="text"
+            data-bind="value:categories"
+            data-val="true"
+            data-val-number="The field Catgory must be a number."
+            data-source= '@Html.Raw(ViewBag.Cat)'
+            data-text-field="text"
+            data-value-field="value"
+            data-value-primitive="true"
+            data-option-label="None"
+            data-role="dropdownlist" />
+     <div style="float:left" class="select-allDays">
+     <input data-bind="checked: isAllDay"  id="@("isAllDay_" + ViewBag.WindowNumber)"  name="isAllDay" type="checkbox" value="true" />
+       <label for="@("isAllDay_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_IsAllDay")</label>
+    </div>
+    <div class="checked-private">
+        <input id="@("isPrivate_" + ViewBag.WindowNumber)" data-bind="checked: isPrivate" name="isPrivate" type="checkbox" value="true" />
+        <label for="@("isPrivate_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "IsPrivate")</label>
+    </div>
+</div>
+    @*<div style="float:left" class="select-allDays">
+     <input data-bind="checked: isAllDay" id="@("isAllDay_" + ViewBag.WindowNumber)" name="isAllDay" type="checkbox" value="true" />
+       <label for="@("isAllDay_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_IsAllDay")</label>
+    </div>*@
+<div class="k-edit-label">
+    <span class="vis vis-calendar"></span>
+    @*<label for="Start">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "StartDate")</label>*@
+</div>
+<div class="startEnd-cal k-edit-field">
+    <div data-container-for="start" class="k-edit-field">
+        <input id="@("startDateTime_" + ViewBag.WindowNumber)"   name="start" required="required" style="z-index: inherit;" type="datetime"
+            data-bind="value: start, invisible: isAllDay"
+
+            data-role="datetimepicker" />
+        <input id="@("startDate_" + ViewBag.WindowNumber)"   name="start" required="required" type="date" style="z-index: inherit;"
+            data-bind="value: start, visible: isAllDay"
+
+            data-role="datepicker" />
+        <span data-bind="text: startTimezone"></span>
+        <span data-for="start" class="k-invalid-msg"></span>
+
+    </div>
+    <div data-container-for="end" class="k-edit-field">
+        <input  id="@("endDatetime_" + ViewBag.WindowNumber)"   name="end" required="required" style="z-index: inherit;" type="datetime"
+            data-bind="value: end, invisible: isAllDay" data-role="datetimepicker" />
+        <input  id="@("endtDate_" + ViewBag.WindowNumber)" name="end" required="required" type="date" style="z-index: inherit;"
+            data-bind="value: end, visible: isAllDay" data-role="datepicker" />
+        <span data-bind="text: endTimezone"></span>
+        <span data-for="end" class="k-invalid-msg"></span>
+    </div>
+        @*<div data-container-for="start" class="k-edit-field">
+            <input id="@("startDateTime_" + ViewBag.WindowNumber)" name="start" required="required" style="z-index: inherit;" type="datetime"
+                data-bind="value: start, invisible: isAllDay" data-role="datetimepicker" />
+            <input id="@("startDate_" + ViewBag.WindowNumber)" name="start" required="required" type="date" style="z-index: inherit;"
+                data-bind="value: start, visible: isAllDay" data-role="datepicker" />
+            <span data-bind="text: startTimezone"></span>
+            <span data-for="start" class="k-invalid-msg"></span>
+        </div>
+        <div class="k-edit-label">
+            <label for="End">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "EndDate")</label>
+        </div>
+        <div data-container-for="end" class="k-edit-field">
+            <input  id="@("endDatetime_" + ViewBag.WindowNumber)" name="end" required="required" style="z-index: inherit;" type="datetime"
+                data-bind="value: end, invisible: isAllDay" data-role="datetimepicker" />
+            <input  id="@("endtDate_" + ViewBag.WindowNumber)" name="end" required="required" type="date" style="z-index: inherit;"
+                data-bind="value: end, visible: isAllDay" data-role="datepicker" />
+            <span data-bind="text: endTimezone"></span>
+            <span data-for="end" class="k-invalid-msg"></span>*@
+</div>
+<div class="k-edit-label">
+    <span class="vis vis-refresh"></span>
+    @*<label for="recurrenceRule">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_Repeat")</label>*@
+</div>
+<div data-container-for="recurrenceRule" class="k-edit-field wsp-repeat-items">
+    <div id="@("recurrenceRule_" + ViewBag.WindowNumber)" data-bind="value: recurrenceRule" name="recurrenceRule" data-role="recurrenceeditor" style="width: 200px; float:left;">
+    </div>
+</div>
+<div class="k-edit-label">
+    <span class="vis vis-contacts-o"></span>
+     @*<label  data-container-for="contactsText">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Contacts")</label>*@
+</div>
+<div class="k-edit-field" style="display:flex;flex-direction:column;">
+    <div  id="@("divAptContacts_" + ViewBag.WindowNumber)" class="wsp-Shared-Contact-div ui-helper-clearfix" >
+        <input id="@("txtAptContacts_" + ViewBag.WindowNumber)" class="wsp-scheduler-contact-txt"  type="text" />
+    </div>
+    <div id="@("emailError_" + ViewBag.WindowNumber)" data-for="contact" class="wsp-contact-error">
+        <p>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "WSP_InvalidEmail")</p>
+    </div>
+    <div id="@("divShowContacts_" + ViewBag.WindowNumber)" data-container-for="contactName" class="wsp-Show-Contact-div">
+        @*<input type="text" id="contactName" name="contactName" readonly class="k-input" />*@
+    </div>
+     <input id="@("txtAptHiddenContacts_" + ViewBag.WindowNumber)" type="text" data-bind="value: contactsID"  style='display:none;' />
+    @*<span id="emailError" data-for="contact" class="k-invalid-msg"></span>*@
+    @*<div class="checked-private">
+        <input id="@("isPrivate_" + ViewBag.WindowNumber)" data-bind="checked: isPrivate" name="isPrivate" type="checkbox" value="true" />
+        <label for="@("isPrivate_" + ViewBag.WindowNumber)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "IsPrivate")</label>
+    </div>*@
+</div>
+<div class="k-edit-label">
+    <span class="vis vis-file-text"></span>
+    @*<label for="description">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.lang, "Description")</label>*@
+</div>
+<div data-container-for="description" class="k-edit-field">
+    <textarea  class="k-textbox" cols="20" data-bind="value: description" id="@("description_" + ViewBag.WindowNumber)" name="description" rows="2">
+    </textarea>
+</div>
+</div>
+@*<div class="k-edit-buttons k-state-default">
+    <button type="button" class="k-button k-primary custom-button-save">Custom Save</button>
+    <button type="button" class="k-button k-primary custom-button-save">Save</button>
+    <button type="button" class="k-button custom-button-cancel">Cancel</button>
+</div>*@
+</script>
+

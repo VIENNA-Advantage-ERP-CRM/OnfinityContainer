@@ -1,0 +1,117 @@
+﻿
+<div class="VAMFG_main-bom vis-forms-container">
+    <div class="VAMFG_div-left-Bom vis-leftsidebarouterwrap">
+        <div class="VAMFG_div-left-top-bom">
+
+            <div class="VAMFG-divleftformwrap">
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap" id="@("VAMFG_CmbProd_" + ViewBag.WindowNumber)">
+                </div>
+
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAMFG_CmbBOM_" + ViewBag.WindowNumber)" class="VAMFG_cmb-width100 VAMFG-dropdown" data-hasbtn=" "></select>
+                        <label id="@("VAMFG_LblBOM_" + ViewBag.WindowNumber)" class="VAMFG_label-top"></label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="VAMFG-info-btn VAMFG-info-btn-BOM input-group-text">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap" id="@("VAMFG_AttributeSetInstanceCmb_" + ViewBag.WindowNumber)">
+                    @*<div class="vis-control-wrap">
+                            <label id="@("VAMFG_LblAttributeSetInstance_" + ViewBag.WindowNumber)" class="VAMFG_label-top"></label>
+                        </div>*@
+
+                </div>
+
+                @*<div class="VAMFG_cmb-width100 VAMFG-dropdown VAMFG-Attributes"></div>*@
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAMFG_CmbInvoice_" + ViewBag.WindowNumber)" class="VAMFG_cmb-width100 VAMFG-dropdown" data-hasbtn=" "></select>
+                        <label id="@("VAMFG_LblInvoice_" + ViewBag.WindowNumber)" class="VAMFG_label-top "></label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="VAMFG-info-btn VAMFG-info-btn-Inv input-group-text">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAMFG_CmbOrder_" + ViewBag.WindowNumber)" class="VAMFG_cmb-width100 VAMFG-dropdown" data-hasbtn=" "></select>
+                        <label id="@("VAMFG_LblOrder_" + ViewBag.WindowNumber)" class="VAMFG_label-top"></label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="VAMFG-info-btn VAMFG-info-btn-Ord input-group-text">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAMFG_CmbProject_" + ViewBag.WindowNumber)" class="VAMFG_cmb-width100 VAMFG-dropdown" data-hasbtn=" "></select>
+                        <label id="@("VAMFG_LblProject_" + ViewBag.WindowNumber)" class="VAMFG_label-top"></label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="VAMFG-info-btn VAMFG-info-btn-Prj input-group-text">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAMFG_RequisitionCmb_" + ViewBag.WindowNumber)" class="VAMFG_cmb-width100 VAMFG-dropdown" data-hasbtn=" "></select>
+                        <label id="@("VAMFG_LblRequisition_" + ViewBag.WindowNumber)" class="VAMFG_label-top"></label>
+                    </div>
+                    <div class="input-group-append">
+                        <button class="VAMFG-info-btn VAMFG-info-btn-Req input-group-text">
+                            <i class="fa fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap" id="@("VAMFG_DocStatusDivWrp_" + ViewBag.WindowNumber)">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAMFG_DocStatusCmb_" + ViewBag.WindowNumber)" class="VAMFG_cmb-width100" data-hasbtn=" "></select>
+                        <label id="@("VAMFG_LblDocStatus_" + ViewBag.WindowNumber)" class="VAMFG_label-top"></label>
+                    </div>
+                </div>
+
+                <div class="VAMFG-leftdatawrap input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <input type="number" id="@("VAMFG_Qty_" + ViewBag.WindowNumber)" class="VAMFG_cmb-width100" style="cursor:text;">
+                        <label id="@("VAMFG_LblQty_" + ViewBag.WindowNumber)" class="VAMFG_label-top"></label>
+                    </div>
+                </div>
+            </div>
+
+            <button id="@("VAMFG_btnRefresh_" + ViewBag.WindowNumber)" class="VAMFG_Pref_btn-2">
+                <i class="vis vis-refresh"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="VAMFG_div-right-bom">
+        <div class="VAMFG_outer-div-grids-bom">
+            <div class="VAMFG_div-grid-Consume-bom">
+                <div id="@("VAMFG_BOMGrid_" + ViewBag.WindowNumber)" class="VAMFG_grid">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="VAMFG_div-right-bottom-bom">
+            <button id="@("VAMFG_PrintButton_"+ViewBag.WindowNumber)" class="VAMFG-btn-print VIS_Pref_btn-2"></button>
+            <button id="@("VAMFG_CancelButton_" + ViewBag.WindowNumber)" class="VAMFG_btn-cancel-bom VIS_Pref_btn-2"></button>
+            <button id="@("VAMFG_OkButton_" + ViewBag.WindowNumber)" class="VAMFG_btn-ok-bom VIS_Pref_btn-2"></button>
+        </div>
+    </div>
+
+</div>
+
+

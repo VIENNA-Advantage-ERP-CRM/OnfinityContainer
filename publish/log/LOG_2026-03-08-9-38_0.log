@@ -1,0 +1,1938 @@
+09:39:44.394    (INFO)     Trx.Start: [10]**** VISPRO_ModIns639085595848915298System.Random
+09:39:44.394    (INFO)     Trx.Commit: [10]**C** VISPRO_ModIns639085595848915298System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "type"
+
+POSITION: 19
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "type"
+
+POSITION: 19
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "as"
+
+POSITION: 85
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "as"
+
+POSITION: 85
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P07: relation "vafam_t_assetlisting_para" already exists
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P07: relation "vafam_t_assetlisting_para" already exists
+09:39:52.395    (INFO)     MChangeLog.FillChangeLog: [66]#10
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [66]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23502: null value in column "name" of relation "ad_menu" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23502: null value in column "name" of relation "ad_menu" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  MMenu.AddWindowToMenu: [66]Not insertedAD_Menu
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23502: null value in column "name" of relation "ad_menu" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23502: null value in column "name" of relation "ad_menu" violates not-null constraint
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  MMenu.AddWindowToMenu: [66]Not insertedAD_Menu
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [66]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.AddWindowToMenu: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 22001: value too long for type character varying(50)
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 22001: value too long for type character varying(50)
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [66]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 103
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (4)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+09:41:25.412    (INFO)     CacheMgt.Reset: [66]AD_Ref_Table: #1 (0)
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [66]Not insertedAD_Ref_Table
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "y" does not exist
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "y" does not exist
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "y" does not exist
+
+POSITION: 28
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 28
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "=@#"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "=@#"
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "y" does not exist
+
+POSITION: 32
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 32
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "n" does not exist
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "n" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "y" does not exist
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "y" does not exist
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "=@#"
+
+POSITION: 47
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 47
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "=@#"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "=@"
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "=@#"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "Force"
+
+POSITION: 19
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "Force"
+
+POSITION: 19
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "rownum" does not exist
+
+POSITION: 100
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "rownum" does not exist
+
+POSITION: 100
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column ast.depreciatedamt does not exist
+
+POSITION: 249
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column ast.depreciatedamt does not exist
+
+POSITION: 249
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "v_AssetGroup"
+
+POSITION: 78
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "v_AssetGroup"
+
+POSITION: 78
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "rownum" does not exist
+
+POSITION: 109
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "rownum" does not exist
+
+POSITION: 109
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: subquery in FROM must have an alias
+
+POSITION: 63
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: subquery in FROM must have an alias
+
+POSITION: 63
+09:41:35.413    (INFO)     ConvertSQL.ApplyConvertMap: [66]Exception clause needs to be converted: create or replace function public.VAFAM_AssetListing(pinstance_id bigint) returns void language plpgsql as $function$ declare p_fromdate TIMESTAMP(0); p_todate TIMESTAMP(0); org_id INT = 0; p_ad_client_id INT = 0; p_a_asset_group_id varchar(250)= '0'; p_a_asset_id varchar(250)= '0'; printzero char(1); resultstr varchar(2000); message varchar(2000); T_TR1 RECORD; cur_parameter cursor( pinstance DOUBLE precision ) for select ad_pinstance.ad_client_id, ad_pinstance_para.parametername, ad_pinstance_para.p_string, ad_pinstance_para.p_number, ad_pinstance_para.p_date, ad_pinstance_para.p_date_to from ad_pinstance left join ad_pinstance_para on ad_pinstance.ad_pinstance_id = ad_pinstance_para.ad_pinstance_id where ad_pinstance.ad_pinstance_id = pinstance order by ad_pinstance_para.seqno; t_otrx INT; v_trunc VARCHAR(2000); fetch_size INT = 50000; v_sql_err_code VARCHAR(100); v_sql_err_desc VARCHAR(2000); begin update AD_PInstance set Created = clock_timestamp(), IsProcessing = 'Y' where AD_PInstance_ID = PInstance_ID; raise notice '%', 'Updating PInstance - Processing ' || pinstance_id; resultstr := 'PInstanceNotFound'; resultstr := 'ReadingParameters'; for p in cur_parameter(pinstance_id) loop p_ad_client_id := p.ad_client_id; if ( p.parametername = 'FROMDATE' ) then p_fromdate := p.p_date; p_todate := p.p_date_to; raise notice '%', 'FROMDATE =%' || p.p_date; else if ( p.parametername = 'AD_Org_ID' ) then org_id := p.p_number; raise notice '%', ' AD_Org_ID =%' || p.p_number; else if ( p.parametername = 'A_Asset_Group_ID' ) then if p.p_string is not null then p_a_asset_group_id := p.p_string; else p_a_asset_group_id := p.p_number; end if; raise notice '%', ' A_Asset_Group_ID =%' || p.p_number; else if ( p.parametername = 'A_Asset_ID' ) then if p.p_string is not null then p_a_asset_id := p.p_string; else p_a_asset_id := p.p_number; end if; raise notice '%', ' p_a_asset_id =%' || p.p_string || p.p_number; else raise notice '%', 'Unknown Parameter=%' || p.parametername; end if; end if; end if; end if; end loop; truncate table vafam_t_assetlisting_para; insert into vafam_t_assetlisting_para select 'a_asset_group_id', unnest (string_to_array(nvl(p_a_asset_group_id, '') , ',')::integer[]); insert into vafam_t_assetlisting_para select 'a_asset_id', unnest (string_to_array(nvl(p_a_asset_id, '') , ',')::integer[]); for T_TR1 in select ad_client_id, ad_org_id, a_asset_id, a_asset_group_id, fromdate, todate, org, assetgroup, assetsubgroup, assetcode, assetname, serialno, legacycode, inservicedate, depreciationpercent, expectedscrapvalue, costcentre, location, openingcost, addition, revaluation, transfer, disposal, writeoff, ( openingcost + addition + revaluation + transfer + disposal + writeoff ) as balance, dep_opening, dep_duringperiod, dep_transfer, dep_disposal, dep_writeoff, ( dep_opening + dep_duringperiod + dep_transfer + dep_disposal + dep_writeoff ) as dep_total, ( ( openingcost + addition + revaluation + transfer + disposal + writeoff ) + ( dep_opening + dep_duringperiod + dep_transfer + dep_disposal + dep_writeoff ) ) as netbookvalue from ( with daterange as ( select p_fromdate as fromdate, p_todate as todate ) select a_asset.ad_client_id, a_asset.ad_org_id, a_asset.a_asset_id, a_asset.a_asset_group_id, daterange.fromdate, daterange.todate, ad_org.name as org, a_asset_group.name as assetgroup, a_asset.vafam_subnumber as assetsubgroup, a_asset.value as assetcode, a_asset.name as assetname, a_asset.serno as serialno, ' ' as legacycode, a_asset.assetservicedate as inservicedate, a_asset.lifeuseunits || ' ' || ( select ad_ref_list.name from ad_reference inner join ad_ref_list on ( ad_reference.ad_reference_id = ad_ref_list.ad_reference_id ) where ad_reference.name = 'VAFAM_LifeUseUnitRef' and ad_ref_list.value = a_asset.vafam_lifeuseunit ) as depreciationpercent, a_asset.expectedscrapvalue as expectedscrapvalue, case when ad_org1.name ='*' then '' else ad_org1.name END as costcentre, ( select m_warehouse.name || nvl2( m_locator.locatorcombination, '_' || m_locator.locatorcombination, '' ) from m_locator inner join m_warehouse on ( m_locator.m_warehouse_id = m_warehouse.m_warehouse_id ) where m_locator.m_locator_id = a_asset.m_locator_id ) as location, ( coalesce(( select SUM(ast_exp.price * ast_exp.qty) from vafam_expense ast_exp inner join a_asset ast_in on ast_exp.a_asset_id = ast_in.a_asset_id where ast_exp.a_asset_id = a_asset.a_asset_id and(ast_exp.vafam_capitalexpense = 'C' or ast_exp.vafam_isastimpenhance = 'Y') and ast_exp.dateacct < daterange.fromdate and ast_in.actualassetservicedate < daterange.fromdate ), 0) + coalesce(( select SUM(ast_disp.vafam_grossvaldispasset) from vafam_disposaldetails ast_disp inner join a_asset ast_in on ast_disp.a_asset_id = ast_in.a_asset_id where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx >= daterange.fromdate and ast_in.actualassetservicedate < daterange.fromdate and(ast_disp.isdisposed = 'Y' or ast_disp.iswriteoff = 'Y' or istransferred = 'Y') ), 0) ) as openingcost, coalesce(( select SUM(ast_exp.price * ast_exp.qty) from vafam_expense ast_exp where ast_exp.a_asset_id = a_asset.a_asset_id and ast_exp.vafam_capitalexpense = 'C' and ast_exp.dateacct between daterange.fromdate and daterange.todate ), 0) as addition, coalesce(( select SUM(ast_exp.price * ast_exp.qty) from vafam_expense ast_exp inner join a_asset ast_in on ast_exp.a_asset_id = ast_in.a_asset_id where ast_exp.a_asset_id = a_asset.a_asset_id and ast_exp.vafam_isastimpenhance = 'Y' and ast_exp.dateacct between daterange.fromdate and daterange.todate ), 0) as revaluation, coalesce(( select SUM(ast_disp.vafam_grossvaldispasset) from vafam_disposaldetails ast_disp where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx between daterange.fromdate and daterange.todate and(ast_disp.isdisposed = 'N' and ast_disp.iswriteoff = 'N' and istransferred = 'Y') ), 0) * - 1 as transfer, coalesce(( select SUM(ast_disp.vafam_grossvaldispasset) from vafam_disposaldetails ast_disp where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx between daterange.fromdate and daterange.todate and(ast_disp.isdisposed = 'Y' and ast_disp.iswriteoff = 'N' and istransferred = 'N') ), 0) * - 1 as disposal, coalesce(( select SUM(ast_disp.vafam_grossvaldispasset) from vafam_disposaldetails ast_disp where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx between daterange.fromdate and daterange.todate and(ast_disp.isdisposed = 'N' and ast_disp.iswriteoff = 'Y' and istransferred = 'N') ), 0) * - 1 as writeoff, ( coalesce(( select SUM(ast_in.vafam_slmdepreciation) from a_asset ast_in where ast_in.a_asset_id = a_asset.a_asset_id and ast_in.actualassetservicedate < daterange.fromdate and(ast_in.isdisposed = 'N' or(ast_in.isdisposed = 'Y' and ast_in.assetdisposaldate between daterange.fromdate and daterange.todate)) ), 0) - coalesce(( select SUM(ast_sch.vafam_depamount) from vafam_assetschedule ast_sch inner join a_asset ast_in on ast_sch.a_asset_id = ast_in.a_asset_id where ast_sch.a_asset_id = a_asset.a_asset_id and ast_sch.isactive = 'Y' and ast_sch.vafam_depamor = 'Y' and ast_sch.vafam_depdate >= daterange.fromdate and ast_in.actualassetservicedate < daterange.fromdate ), 0) + coalesce(( select SUM(ast_disp.vafam_accdepfordispasset) from vafam_disposaldetails ast_disp inner join a_asset ast_in on ast_disp.a_asset_id = ast_in.a_asset_id where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx >= daterange.fromdate and ast_in.actualassetservicedate < daterange.fromdate and(ast_disp.isdisposed = 'Y' or ast_disp.iswriteoff = 'Y' or istransferred = 'Y') ), 0) ) * - 1 as dep_opening, coalesce(( select SUM(ast_sch.vafam_depamount) from vafam_assetschedule ast_sch where ast_sch.a_asset_id = a_asset.a_asset_id and ast_sch.isactive = 'Y' and ast_sch.vafam_depamor = 'Y' and ast_sch.vafam_depdate between daterange.fromdate and daterange.todate ), 0) * - 1 as dep_duringperiod, coalesce(( select SUM(ast_disp.vafam_accdepfordispasset) from vafam_disposaldetails ast_disp where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx between daterange.fromdate and daterange.todate and(ast_disp.isdisposed = 'N' and ast_disp.iswriteoff = 'N' and istransferred = 'Y') ), 0) as dep_transfer, coalesce(( select SUM(ast_disp.vafam_accdepfordispasset) from vafam_disposaldetails ast_disp where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx between daterange.fromdate and daterange.todate and(ast_disp.isdisposed = 'Y' and ast_disp.iswriteoff = 'N' and istransferred = 'N') ), 0) as dep_disposal, coalesce(( select SUM(ast_disp.vafam_accdepfordispasset) from vafam_disposaldetails ast_disp where ast_disp.a_asset_id = a_asset.a_asset_id and ast_disp.datetrx between daterange.fromdate and daterange.todate and(ast_disp.isdisposed = 'N' and ast_disp.iswriteoff = 'Y' and istransferred = 'N') ), 0) as dep_writeoff from a_asset inner join ad_org on ( a_asset.ad_org_id = ad_org.ad_org_id ) left join daterange on 1 = 1 left join a_asset_group on a_asset.a_asset_group_id = a_asset_group.a_asset_group_id left join ad_org ad_org1 on ( a_asset.ad_orgtrx_id = ad_org1.ad_org_id ) where a_asset.isactive = 'Y' and a_asset.vafam_hascomponent = 'N' and a_asset.ad_client_id = p_ad_client_id and a_asset.ad_org_id = case when org_id is not null and org_id >0 then org_id else a_asset.ad_org_id end and ( ( p_a_asset_group_id = '0' ) or ( p_a_asset_group_id <> '0' and a_asset.a_asset_group_id in ( select Value from vafam_t_assetlisting_para where paramname = 'a_asset_group_id') )) and ( ( p_a_asset_id = '0' ) or ( p_a_asset_id <> '0' and a_asset.a_asset_id in ( select Value from vafam_t_assetlisting_para where paramname = 'a_asset_id') )) ) Alias limit fetch_size loop insert into vafam_t_assetlisting ( ad_pinstance_id, ad_client_id, ad_org_id, a_asset_id, a_asset_group_id, fromdate, todate, org, assetgroup, assetsubgroup, assetcode, assetname, serialno, legacycode, inservicedate, depreciationpercent, expectedscrapvalue, costcentre, location, openingcost, addition, revaluation, transfer, disposal, writeoff, balance, dep_opening, dep_duringperiod, dep_transfer, dep_disposal, dep_writeoff, dep_total, netbookvalue ) values ( pinstance_id, T_TR1.ad_client_id, T_TR1.ad_org_id, T_TR1.a_asset_id, T_TR1.a_asset_group_id, T_TR1.fromdate, T_TR1.todate, T_TR1.org, T_TR1.assetgroup, T_TR1.assetsubgroup, T_TR1.assetcode, T_TR1.assetname, T_TR1.serialno, T_TR1.legacycode, T_TR1.inservicedate, T_TR1.depreciationpercent, T_TR1.expectedscrapvalue, T_TR1.costcentre, T_TR1.location, T_TR1.openingcost, T_TR1.addition, T_TR1.revaluation, T_TR1.transfer, T_TR1.disposal, T_TR1.writeoff, T_TR1.balance, T_TR1.dep_opening, T_TR1.dep_duringperiod, T_TR1.dep_transfer, T_TR1.dep_disposal, T_TR1.dep_writeoff, T_TR1.dep_total, T_TR1.netbookvalue ); exit when not found; end loop; exception when others then resultstr := resultstr || ': ' || sqlerrm || ' - ' || message; update ad_pinstance set updated = CURRENT_TIMESTAMP, isprocessing = 'N', result = 0, errormsg = resultstr where ad_pinstance_id = pinstance_id; end ; $function$
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42601: syntax error at or near "Y"
+
+POSITION: 52
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42601: syntax error at or near "Y"
+
+POSITION: 52
+===========>     (SEVERE)   DB.ExecuteQuery: [66]System.IndexOutOfRangeException: Index was outside the bounds of the array.
+   at System.String.get_Chars(Int32 index)
+   at VAdvantage.DBPort.ConvertSQL_PostgreSQL.ConvertUpdate(String sqlStatement)
+   at VAdvantage.DBPort.ConvertSQL_PostgreSQL.ConvertStatement(String sqlStatement)
+   at VAdvantage.DBPort.ConvertSQL.ConvertIt(String sqlStatements)
+   at VAdvantage.DBPort.ConvertSQL.Convert(String sqlStatements)
+   at VAdvantage.DataBase.DB_PostgreSQL.ConvertStatement(String oraStatement)
+   at CoreLibrary.DataBase.DB.ConvertSqlQuery(String sql)
+   at VAdvantage.SqlExec.ExecuteQuery.ExecuteNonQuery(String sql, SqlParameter[] arrParam)
+   at CoreLibrary.DataBase.DB.ExecuteQuery(String sql, SqlParameter[] param, Trx trx, Boolean ignoreError, Boolean throwError)
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_workflow_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Workflow_Access.ImportNow: [66]Not insertedAD_Workflow_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 42703: column "binarydata" of relation "ad_group_process" does not exist
+
+POSITION: 29
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 42703: column "binarydata" of relation "ad_group_process" does not exist
+
+POSITION: 29
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [66]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [66]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [66] => VISDBERRORCOLUMN: VALUE
+----------->     (WARNING)  DB.ExecuteQuery: [66]DBExecuteError - VISDBERRORCOLUMN: VALUE
+09:42:01.421    (INFO)     Env.Reset: [66]finalCall=False
+09:42:01.421    (INFO)     CacheMgt.Reset: [66]#22 (7567)
+09:42:01.421    (INFO)     Trx.Start: [66]**** VISPRO_ModIns639085597211744295System.Random
+09:42:01.421    (INFO)     Trx.Commit: [66]**C** VISPRO_ModIns639085597211744295System.Random
+09:42:09.429    (INFO)     MRole.Get: [91]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:42:09.429    (INFO)     MRole.Get: [91]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [91]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

@@ -1,0 +1,110 @@
+04:33:53.335    (INFO)     MSession.Logout: [48]-08:57:58.534
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [48]SessionEventHandler  - Object reference not set to an instance of an object.
+04:51:10.511    (INFO)     MRole.Get: [48]AD_Role_ID=0, AD_User_ID=100, reload=True
+04:51:10.511    (INFO)     MRole.Get: [48]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+04:51:10.511    (INFO)     MTree.Load: [48]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [48]PushNotif - Module VA074_ is not installed!
+04:52:20.522    (INFO)     Trx.Start: [20]**** VISPRO_ModIns638759695407386152System.Random
+04:52:20.522    (INFO)     Trx.Commit: [20]**C** VISPRO_ModIns638759695407386152System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "BYTE"
+
+POSITION: 105
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "BYTE"
+
+POSITION: 105
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42P07: relation "uniqeexportentry" already exists
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42P07: relation "uniqeexportentry" already exists
+04:52:27.522    (INFO)     MChangeLog.FillChangeLog: [54]#9
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [54]Not insertedAD_Window_Access
+04:52:28.522    (INFO)     CacheMgt.Reset: [54]AD_Ref_Table: #1 (2)
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [54]Get sql default: @SQL=SELECT NVL(MAX(AD_EntityType_ID),999999)+1 FROM AD_EntityType WHERE AD_EntityType_ID > 1000
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "=@"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42703: column "y" does not exist
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42703: column "u" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42703: column "u" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42703: column "u" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42703: column "u" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "=@#"
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "=@#"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42703: column "y" does not exist
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [54] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [54]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+04:52:37.523    (INFO)     Env.Reset: [54]finalCall=False
+04:52:37.523    (INFO)     CacheMgt.Reset: [54]#22 (5471)
+04:52:37.523    (INFO)     Trx.Start: [54]**** VISPRO_ModIns638759695577396613System.Random
+04:52:37.523    (INFO)     Trx.Commit: [54]**C** VISPRO_ModIns638759695577396613System.Random
+04:52:58.525    (INFO)     MSession.Logout: [54]-08:58:12.864
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [54]SessionEventHandler  - Object reference not set to an instance of an object.

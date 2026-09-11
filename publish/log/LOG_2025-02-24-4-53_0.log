@@ -1,0 +1,8 @@
+04:54:16.541    (INFO)     Trx.Start: [48]**** VISPRO_ModIns638759696569412226System.Random
+04:54:16.541    (INFO)     Trx.Commit: [48]**C** VISPRO_ModIns638759696569412226System.Random
+04:54:53.545    (INFO)     Env.Reset: [54]finalCall=False
+04:54:53.545    (INFO)     CacheMgt.Reset: [54]#17 (4605)
+04:54:53.545    (INFO)     Trx.Start: [54]**** VISPRO_ModIns638759696933426824System.Random
+04:54:53.545    (INFO)     Trx.Commit: [54]**C** VISPRO_ModIns638759696933426824System.Random
+04:54:59.545    (INFO)     MSession.Logout: [54]-08:59:32.52
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [54]SessionEventHandler  - Object reference not set to an instance of an object.

@@ -1,0 +1,32 @@
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [20]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =1000793
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [20]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [20]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =1000794
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [9]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =112
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [9]Not found: 'UpdatedBy'
+----------->     (WARNING)  GridTable.GetField: [17]Not found: 'Created'
+----------->     (WARNING)  GridTable.GetField: [17]Not found: 'CreatedBy'
+----------->     (WARNING)  GridTable.GetField: [17]Not found: 'Updated'
+----------->     (WARNING)  GridTable.GetField: [17]Not found: 'UpdatedBy'
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [17]42P01: relation "vadms_windowdoclink" does not exist
+
+POSITION: 47 [Query D] =>SELECT vadms_windowdoclink_id, record_id FROM VADMS_WindowDocLink wdl JOIN vadms_document doc ON (wdl.VADMS_Document_ID  =doc.VADMS_Document_ID) WHERE doc.vadms_docstatus!='DD' AND AD_Table_ID =1000009

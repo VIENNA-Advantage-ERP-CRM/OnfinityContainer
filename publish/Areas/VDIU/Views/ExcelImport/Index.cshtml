@@ -1,0 +1,209 @@
+﻿@inherits System.Web.Mvc.WebViewPage
+@{
+    ViewBag.Title = "Index";
+}
+
+<div class="VDIU-mainDiv">
+    <div class="VDIU-mainLeftDiv" id="VDIU-mainLeftDiv_@ViewBag.WindowNumber">
+        <div>
+            <input type="text" placeholder="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Search")" id="txtSearch_@ViewBag.WindowNumber" />
+        </div>
+        @*<div>*@
+        <ul id="ulWindow_@ViewBag.WindowNumber" class="VDIU-windowUL">
+        </ul>
+        @*</div>*@
+    </div>
+
+    <div id="VDIUdivMainRightRoot_@ViewBag.WindowNumber" class="VDIU-mainRightDiv vis-formouterwrpdiv">
+        <div class="VDIU-mainRightFirstDiv">
+            <div class="VDIU-right-top">
+                @*<div class="VDIU-mainRightFirstDiv-DivMapping">
+                        <label id="VDIULbSelectMapping_@ViewBag.WindowNumber">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "SelectMapping") </label>
+                        <label id="VDIULbMappingName_@ViewBag.WindowNumber" style="display: none; left: 0px;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "MappingName") </label>
+                    </div>*@
+                <div id="divMap_@ViewBag.WindowNumber" class="VDIU-mainRightFirstDiv-DivMappingControl input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="cmbMap_@ViewBag.WindowNumber" data-hasbtn=" ">
+                        </select>
+                        <label id="VDIULbSelectMapping_@ViewBag.WindowNumber">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "SelectMapping") </label>
+                    </div>
+                    <div class="VDIU-mainRightFirstDiv-DivBtnMap input-group-append">
+                        <button id="btnShowCreateMap_@ViewBag.WindowNumber" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_AddNewMapName")" class="VDIU-create-map input-group-text">
+                            <i class="vis vis-createdocument"></i>
+                        </button>
+                    </div>
+                    <div class="VDIU-mainRightFirstDiv-DivBtnMap input-group-append">
+                        <button id="btnDeleteMap_@ViewBag.WindowNumber" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_DelMapName")" class="VDIU-delmap-btn input-group-text">
+                            <i class="vis vis-delete"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="divCreateMap_@ViewBag.WindowNumber" class="VDIU-mapInput input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <input id="txtCreateMap_@ViewBag.WindowNumber" type="text" placeholder=" " data-placeholder="" data-hasbtn=" ">
+                        <label id="VDIULbMappingName_@ViewBag.WindowNumber" style="display: none;">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "MappingName") </label>
+                    </div>
+                    <div class="VDIU-mainRightFirstDiv-DivBtnCreateMap input-group-append">
+                        <button id="btnCreateMap_@ViewBag.WindowNumber" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_SaveMapName")" class="VDIU-create-map1 input-group-text">
+                            <i class="vis vis-save"></i>
+                        </button>
+                    </div>
+                    <div class="VDIU-mainRightFirstDiv-DivBtnCancle input-group-append">
+                        <button id="btnCancle_@ViewBag.WindowNumber" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_CancelMapName")" class="VDIU-Cancle-map input-group-text" style="display:none">
+                            <i class="vis vis-mark"></i>
+                        </button>
+
+                    </div>
+                </div>
+                @*<div class="VDIU-mainRightFirstDiv-DivBtnCreateMap">
+                        <button id="btnCreateMap_@ViewBag.WindowNumber" title="Save Mapping Name" class="VDIU-map VDIU-create-map1"></button>
+                    </div>*@
+                @*<div class="VDIU-mainRightFirstDiv-DivBtnMap">
+                        <button id="btnShowCreateMap_@ViewBag.WindowNumber" title="Add New Mapping Name" class="VDIU-map VDIU-create-map"></button>
+                    </div>
+                    <div class="VDIU-mainRightFirstDiv-DivBtnMap">
+                        <button id="btnDeleteMap_@ViewBag.WindowNumber" title="Delete Mapping Name" class="VDIU-map VDIU-delmap-btn"> <i class="vis vis-delete"></i>
+                        </button>
+                    </div>*@
+                @*<div class="VDIU-mainRightFirstDiv-DivBtnCancle">
+                        <button id="btnCancle_@ViewBag.WindowNumber" title="Cancel Mapping Name" class="VDIU-map VDIU-Cancle-map" style="display:none"></button>
+                    </div>*@
+            </div>
+            <div class="VDIU-TopblankDiv">
+                <button class="VDIU-MapColumns" disabled=""></button>
+            </div>
+            <div class="VDIU-right-top">
+                @*<div class="VDIU-mainRightFirstDiv-DivTab">
+                        <label>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "SelectTab") </label>
+                    </div>*@
+                <div class="VDIU-mainRightFirstDiv-DivTabCmbControl input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="VDIUWindowTab_@ViewBag.WindowNumber">
+                        </select>
+                        <label>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "SelectTab") </label>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="VDIU-mainRightSecondDiv">
+            <div class="VDIU-mainRightSecondDiv-ChildFirstDiv">
+                <div class="VDIU-maintopsecwrap">
+                    <div style="float: left">
+                        <label>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "ExcelColumns") </label>
+                    </div>
+                    <div>
+                        <button disabled id="VDIUBtnDownload_@ViewBag.WindowNumber" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_DownloadExcelFile")" style="margin-left:15px;" class="VDIU-map VDIU-open-icon">
+                            <i class="vis vis-excel-download VDIU-Excel-color"></i>
+
+                        </button>
+                        <button disabled id="VDIUBtnOpen_@ViewBag.WindowNumber" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_UploadExcelFile")" style="margin-left:15px;" class="VDIU-map VDIU-open-icon"><i class="vis vis-excel-upload VDIU-Excel-color"></i></button>
+
+                        <input type="file" id="VDIUFileDialog_@ViewBag.WindowNumber" accept=".csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" style="display:none">
+                    </div>
+                </div>
+                <div id="VDIUDivExcelColumns_@ViewBag.WindowNumber" style="overflow:auto" class="VDIU-DivTabColumns">
+                    <ul id="VDIUUlExcelColumns_@ViewBag.WindowNumber" class="VDIU-UlExcelCols">
+                    </ul>
+                </div>
+            </div>
+
+            <div class="VDIU-second-centerDiv">
+                <button id="VDIUMapColumns_@ViewBag.WindowNumber" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_Map")" class="VDIU-MapColumns" disabled>
+                    <i class="vis vis-loop"></i>
+                </button>
+                @*  <a id="VDIUCreateExcel_@ViewBag.WindowNumber" class="VDIU-MapColumns" style="float:left;display:none"></a>*@
+            </div>
+
+            <div class="VDIU-mainRightSecondDiv-ChildSecondDiv">
+                <div class="VDIU-maintopsecwrap">
+                    <div class="VDIU-ledgerouterwrap">
+                        <div class="VDIU-ledgerdatawrp">
+                            <div class="VDIU-ledgerboxdiv" style="background-color: green;"></div>
+                            <div>
+                                <label>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_Mapping") </label>
+                            </div>
+
+                        </div>
+                        <div class="VDIU-ledgerdatawrp">
+                            <div class="VDIU-ledgerboxdiv" style="background-color: rgba(var(--v-c-primary), 1);"></div>
+                            <div>
+                                <label>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_DefaultValues") </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div style="float: right">
+                        <label id="VDIULbIdentifierValue_@ViewBag.WindowNumber" class="VDIU-IdentifierVal"></label>
+                    </div>
+                </div>
+                <div class="VDIU-DivTabColumns" style="overflow: auto;" id="VDIUDivTabColumns_@ViewBag.WindowNumber">
+                    <ul id="VDIUUlTabColumns_@ViewBag.WindowNumber" class="VDIU-UlDbCols">
+                    </ul>
+
+                </div>
+                <div style="height: 350px; width: 100%; background-color: rgba(var(--v-c-secondary), 1); display: none;position:relative" id="VDIUDBColumnDisable_@ViewBag.WindowNumber" class="VDIU-Busy"></div>
+
+            </div>
+        </div>
+
+        <div class="VDIU-mainRightThirdDiv">
+            @*  <div style="float: left">
+                    <button>Mapping</button>
+                </div>
+                <div style="float: left; border: 0; width: auto; height: auto;">
+                    <button>Default Values</button>
+                </div>
+                <div style="float: left">
+                    <button>Log</button>
+                </div>*@
+            <div class="d-flex justify-content-between">
+                <ul id="VDIUTabul_@ViewBag.WindowNumber" class="VDIU-tabs">
+                    <li id="VDIULiMapping_@ViewBag.WindowNumber" class="selected"><a rel="tab_div1" href="#">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_TabMapping")</a></li>
+                    <li id="VDIULiDefaultValues_@ViewBag.WindowNumber" style="border:none" class=""><a rel="tab_div2" href="#">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_TabDefValues")</a></li>
+                    <li id="VDIULiLog_@ViewBag.WindowNumber" class=""><a rel="tab_div3" href="#">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_TabLog")</a></li>
+                    <li id="VDIULiErrorLog_@ViewBag.WindowNumber" class=""><a rel="tab_div3" href="#">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_TabErrorLog")</a></li>
+                </ul>
+                <div id="VDIUMainRightControlDiv_@ViewBag.WindowNumber" class="VDIU-mainRightControlDiv">
+                </div>
+            </div>
+            <div id="VDIUDivTab_@ViewBag.WindowNumber" class="VDIU-tabscontentwrap">
+                <ul id="VDIUULMapping_@ViewBag.WindowNumber" class="VDIU-Mapping">
+                </ul>
+                <ul id="VDIUULDefaultMapping_@ViewBag.WindowNumber" class="VDIU-tabscntntinnwrapul">
+                </ul>
+                <ul id="VDIULog_@ViewBag.WindowNumber" class="VDIU-Log">
+                </ul>
+                <div id="VDIUErrorLog_@ViewBag.WindowNumber" class="vdiu-ErrorLogGrid">
+                </div>
+            </div>
+            <div style="background-color: #e0e0e0; display: none ;height: 85%;position: relative;top: -187px;" id="VDIUMappingTabsDisable_@ViewBag.WindowNumber" class="VDIU-Busy"></div>
+        </div>
+        <div class="VDIU-mainRightFourthDiv">
+            <div style="float: right;">
+                <button id="VDIUBtnImport_@ViewBag.WindowNumber" title="Import" class="VDIU-Import" disabled>
+                    <i class="vis vis-import"></i>
+                </button>
+            </div>
+            <div style="float: right;">
+                <button id="VDIUBtnSaveChanges_@ViewBag.WindowNumber" title="Save Mapping" class="VDIU-SaveChanges" disabled>
+                    <i class="vis vis-save"></i>
+                </button>
+            </div>
+            <div style="float: right;display: flex; align-items: center; height: 37px;">
+                <input id="VDIUChkCommit_@ViewBag.WindowNumber" type="checkbox" disabled />
+                <label>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_CommitImport")</label>
+            </div>
+            <div style="float: left">
+                <button id="VDIUExportLog_@ViewBag.WindowNumber" class="VDIU-ExportLog" disabled>@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_ExportLog")</button>
+
+                @*<a class="VIS_Pref_pass-btn" style="display:none;" id="VDIUExportLogExcel_@ViewBag.WindowNumber" >Export Log</a>*@
+            <a tabindex="" class="VDIU-ExportLog" style="display:none;" id="VDIUExportLogExcel_@ViewBag.WindowNumber">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "VDIU_ExportLog")</a>
+                @*<a class="VDIU-ExportLog" style="display:block;float:right;margin-left:5px" id="VDIUCreateExcel_@ViewBag.WindowNumber"  >Create Excel Template</a>*@
+            </div>
+        </div>
+
+    </div>
+</div>
+

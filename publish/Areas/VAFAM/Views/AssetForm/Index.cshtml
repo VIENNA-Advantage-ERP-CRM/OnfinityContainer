@@ -1,0 +1,133 @@
+﻿
+<div class="VAFAM-header vis-ad-w-header" id="@("VAFAM_Header_" + ViewBag.WindowNumber)">
+    <div class="vis-ad-w-name VAFAM-title">
+        <h5 id="@("VAFAM_Title_" + ViewBag.WindowNumber)">Asset Form</h5>
+    </div>
+    <button class="VAFAM-btn-refresh" id="@("VAFAM_Refresh_" + ViewBag.WindowNumber)"><i class="vis vis-refresh"></i></button>
+    <button class="VAFAM-btn-close vis-ad-w-close" id="@("VAFAM_Close_" + ViewBag.WindowNumber)"><i class="vis vis-cross"></i></button>
+    <div class="vis-ad-w-header-border"></div>
+</div>
+<div id="VAFAM_MainDiv" class="VAFAM-maindiv-content">
+    <div id="@("VAFAM_BusyIndic_" + ViewBag.WindowNumber)"></div>
+
+    <div class="VAFAM-div-top">
+        <div class="VAFAM-leftWrap vis-leftsidebarouterwrap" id="@("VAFAM_FieldGroup_" + ViewBag.WindowNumber)">
+            <div class="VAFAM-leftInner">
+                <div class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbOrg_" + ViewBag.WindowNumber)" class="VAFAM-cmb-width100"></select>
+                        <label id="@("VAFAM_LblOrg_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Organization</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                <div class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbWh_" + ViewBag.WindowNumber)" class="VAFAM-cmb-width100"></select>
+                        <label id="@("VAFAM_LblWh_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Warehouse</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                <div class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbLoc_" + ViewBag.WindowNumber)" class="VAFAM-cmb-width100"></select>
+                        <label id="@("VAFAM_LblLoc_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Locator</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                @*----------------Neha--------------------*@
+                <div class="VAFAM-formField input-group vis-input-wrap" id="@("VAFAM_CmbProductCat_" + ViewBag.WindowNumber)">
+                    @*<label id="@("VAFAM_LblProdCat_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Product Category</label>*@
+                    @*<div id="@("VAFAM_CmbProductCat_" + ViewBag.WindowNumber)" style="float:left;width:100%"></div>*@
+                </div>@*VAFAM-formField*@
+                @*----------------End--------------------*@
+                <div class="VAFAM-formField input-group vis-input-wrap" id="@("VAFAM_Product_" + ViewBag.WindowNumber)">
+                    @*<label id="@("VAFAM_LblProd_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Product</label>*@
+                    @*<div id="@("VAFAM_CmbProd_" + ViewBag.WindowNumber)"></div>*@
+                    @*<div id="@("VAFAM_Product_" + ViewBag.WindowNumber)"></div>*@
+                </div>@*VAFAM-formField*@
+                @*----------------Neha--------------------*@
+                <div class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbAttributeSet_" + ViewBag.WindowNumber)" class="VAFAM-cmb-width100"></select>
+                        <label id="@("VAFAM_AttributeSet_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Attribute Set Instance</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                @*----------------End--------------------*@
+
+                <div id="@("VAFAM_TopLblAstGp_" + ViewBag.WindowNumber)" class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbAstGp_" + ViewBag.WindowNumber)" class="VAFAM-cmb-width100" data-hasbtn=" "></select>
+                        <label id="@("VAFAM_LblAstGp_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Asset Group</label>
+                    </div>
+                    <div class="input-group-append">
+                        <i id="@("VAFAM_ZoomAssetGroup_" + ViewBag.WindowNumber)" class="input-group-text vis vis-find" style='cursor:pointer'></i>
+                        <i id="@("VAFAM_RefreshAssetGroup_" + ViewBag.WindowNumber)" class="input-group-text vis vis-refresh" style='cursor:pointer;'></i>
+                        @*<img id="@("VAFAM_ZoomAssetGroup_" + ViewBag.WindowNumber)" style='cursor:pointer' src="~/Areas/VAFAM/Images/zoom.png" />
+                            <img id="@("VAFAM_RefreshAssetGroup_" + ViewBag.WindowNumber)" style='cursor:pointer;margin-left: -5px;' src="~/Areas/VAFAM/Images/grouprefresh.png" />*@
+                    </div>
+                </div>@*VAFAM-formField*@
+                @*----------------Neha--------------------*@
+                <div class="VAFAM-formField input-group vis-input-wrap" style="display:none;">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbAstType_" + ViewBag.WindowNumber)" disabled class="VAFAM-cmb-width100"></select>
+                        <label id="@("VAFAM_AssetType_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Asset Type</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                <div class="VAFAM-formField input-group vis-input-wrap" style="display:none;">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbProType_" + ViewBag.WindowNumber)" disabled class="VAFAM-cmb-width100"></select>
+                        <label id="@("VAFAM_ProductType_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Depreciation/Amortization Template</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                <div class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <input type="date" id="@("VAFAM_CmbServiceDate_" + ViewBag.WindowNumber)" class="VAFAM-cmb-width100" >
+                        <label id="@("VAFAM_ServiceDate_" + ViewBag.WindowNumber)" class="VAFAM-label-top">In Service Date</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                @*----------------End--------------------*@
+                <div class="VAFAM-formField VAFAM-formfieldcheckbox">
+                    <input id="@("VAFAM_ChkEnfRul_" + ViewBag.WindowNumber)" type="checkbox" >
+                    <label id="@("VAFAM_LblEnfRul_" + ViewBag.WindowNumber)" class="VAFAM-label-top VAFAM-check">Enforce Rule</label>
+                </div>@*VAFAM-formField*@
+                <div class="VAFAM-formField input-group vis-input-wrap" id="@("VAFAM_Rcpt_" + ViewBag.WindowNumber)">
+                    @*<div class="vis-control-wrap">
+                        @*<label id="@("VAFAM_LblRcpt_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Material Receipt</label>*@
+                    @*<div id="@("VAFAM_Rcpt_" + ViewBag.WindowNumber)"></div>*@
+                    @*</div>*@
+                </div>@*VAFAM-formField*@
+                <div class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <select id="@("VAFAM_CmbRcptL_" + ViewBag.WindowNumber)" class="VAFAM-cmb-width100"></select>
+                        <label id="@("VAFAM_LblRcptL_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Receipt Line</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+                <div class="VAFAM-formField input-group vis-input-wrap">
+                    <div class="vis-control-wrap">
+                        <input id="@("VAFAM_TxtQty_" + ViewBag.WindowNumber)" type="text" class="VAFAM-cmb-width100" style="text-align: right;    cursor: auto" />
+                        <label id="@("VAFAM_LblQty_" + ViewBag.WindowNumber)" class="VAFAM-label-top">Quantity</label>
+                    </div>
+                </div>@*VAFAM-formField*@
+            </div>
+            <div class="VAFAM-formField">
+                <input type="text" style="display: none;">
+            </div>
+            <div class="VAFAM-formField">
+                <button id="@("VAFAM_GenerateAsset_" + ViewBag.WindowNumber)" class="VAFAM-btn-generateasset VIS_Pref_btn-2">Generate Asset</button>
+            </div>
+        </div>
+
+        <div class="VAFAM-contentpart">
+            <div id="@("VAFAM_DivGrid_" + ViewBag.WindowNumber)" class="VAFAM-outer-div-grids">
+                <div id="@("VAFAM_AssetGrid_" + ViewBag.WindowNumber)" class="grid">
+                </div>
+            </div>
+
+            <div class="VAFAM-form-parameters" id="@("VAFAM_BottomDiv_" + ViewBag.WindowNumber)" style=" float: right; width: auto; margin-top: 10px;">
+                <button id="@("VAFAM_PrintSticker_" + ViewBag.WindowNumber)" class="VAFAM-btn-sticker VIS_Pref_btn-2">Print Sticker</button>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+

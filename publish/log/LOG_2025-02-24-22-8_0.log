@@ -1,0 +1,107 @@
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [5]42703: column ad_widgetsize.d_chart_id does not exist
+
+POSITION: 375 [Query D] =>SELECT D_Chart.chartType, D_Chart.d_chart_id, D_Chart.Name, colspan,rowspan,'C' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence, IsDefault,AD_IMAGE.BINARYDATA,D_Chart.AD_Window_ID FROM D_Chart INNER JOIN 
+                            D_ChartAccess ON (D_Chart.D_Chart_ID=D_ChartAccess.D_Chart_ID)
+                            INNER JOIN AD_WidgetSize ON (D_Chart.D_Chart_ID=AD_WidgetSize.D_Chart_ID)LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                           
+                            WHERE D_Chart.isActive='Y' AND AD_WidgetSize.isActive='Y' AND  D_ChartAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT RC_KPI.KPIType AS chartType, RC_KPI.RC_KPI_ID AS d_chart_id,  RC_KPI.Name, colspan,rowspan,'K' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA,RC_KPI.AD_Window_ID FROM RC_KPI INNER JOIN 
+                            RC_KPIAccess ON (RC_KPI.RC_KPI_ID=RC_KPIAccess.RC_KPI_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_KPI.RC_KPI_ID=AD_WidgetSize.RC_KPI_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_KPI.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_KPIAccess.AD_Role_ID=0 AND Homepage='Y' UNION ALL  SELECT 'V' AS chartType, RC_View.RC_View_ID AS d_chart_id, RC_View.Name, colspan,rowspan,'V' AS Type,AD_WidgetSize.AD_WidgetSize_ID,Sequence ,IsDefault,AD_IMAGE.BINARYDATA, RC_View.AD_Window_ID FROM RC_View INNER JOIN 
+                            RC_ViewAccess ON (RC_View.RC_View_ID=RC_ViewAccess.RC_View_ID)
+                            INNER JOIN AD_WidgetSize ON (RC_View.RC_View_ID=AD_WidgetSize.RC_View_ID) LEFT JOIN AD_IMAGE ON AD_IMAGE.AD_IMAGE_ID=AD_WidgetSize.AD_IMAGE_ID                            
+                            WHERE RC_View.isActive='Y' AND AD_WidgetSize.isActive='Y' AND   RC_ViewAccess.AD_Role_ID=0 AND Homepage='Y'
+10:09:13.913    (INFO)     Trx.Start: [5]**** VISPRO_ModIns638760317531438451System.Random
+10:09:13.913    (INFO)     Trx.Commit: [5]**C** VISPRO_ModIns638760317531438451System.Random
+10:09:16.916    (INFO)     MChangeLog.FillChangeLog: [80]#9
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [80]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [80]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [80]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [80]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [80]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [80]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 42703: column "y" does not exist
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 42703: column "f" does not exist
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 42703: column "f" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 42703: column "n" does not exist
+
+POSITION: 50
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 42703: column "n" does not exist
+
+POSITION: 50
+===========>     (SEVERE)   DB.ExecuteQuery: [80] => 42703: column "y" does not exist
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [80]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 45
+10:09:25.925    (INFO)     Env.Reset: [80]finalCall=False
+10:09:25.925    (INFO)     CacheMgt.Reset: [80]#21 (5887)

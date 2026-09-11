@@ -1,0 +1,14 @@
+08:39:08.398    (INFO)     MRole.Get: [22]AD_Role_ID=0, AD_User_ID=100, reload=True
+08:39:08.398    (INFO)     MRole.Get: [22]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+08:39:08.398    (INFO)     MTree.Load: [22]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [22]PushNotif - Module VA074_ is not installed!
+08:43:10.431    (INFO)     MRole.Get: [26]AD_Role_ID=0, AD_User_ID=100, reload=True
+08:43:10.431    (INFO)     MRole.Get: [26]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+08:43:10.431    (INFO)     MTree.Load: [26]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [26]PushNotif - Module VA074_ is not installed!
+08:47:02.472    (INFO)     MRole.Get: [5]AD_Role_ID=0, AD_User_ID=100, reload=True
+08:47:02.472    (INFO)     MRole.Get: [5]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+08:47:02.472    (INFO)     MTree.Load: [5]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+08:47:02.472    (INFO)     Trx.Start: [5]**** ConnSH638633692225561552System.Random
+08:47:02.472    (INFO)     Trx.Commit: [5]**C** ConnSH638633692225561552System.Random
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [5]PushNotif - Module VA074_ is not installed!

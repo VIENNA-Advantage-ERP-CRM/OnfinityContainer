@@ -1,0 +1,865 @@
+09:09:47.947    (INFO)     Trx.Start: [85]**** VISPRO_ModIns639085145879498571System.Random
+09:09:48.948    (INFO)     Trx.Commit: [85]**C** VISPRO_ModIns639085145879498571System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42710: constraint "fk1000001_1004537" for relation "appointmentsinfo" already exists
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42710: constraint "fk1000001_1004537" for relation "appointmentsinfo" already exists
+09:09:52.952    (INFO)     MChangeLog.FillChangeLog: [67]#10
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [67]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [67]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [67]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [67]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [67]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [67]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_moduletab" violates foreign key constraint "fk1000353_1008023"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23503: insert or update on table "ad_modulefield" violates foreign key constraint "fk1000354_1008044"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [67]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [67]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [67]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [67]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [67]Not insertedAD_Process_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [67]Not insertedAD_Process_Access
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smparameter" does not exist
+
+POSITION: 38 [Query DR] SELECT MAX( WSP_SMParameter_ID) FROM WSP_SMParameter
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smparameter" does not exist
+
+POSITION: 38 [Query DR] SELECT MAX( WSP_SMParameter_ID) FROM WSP_SMParameter
+===========>     (SEVERE)   DB.GetSQLValue: [67]SELECT MAX( WSP_SMParameter_ID) FROM WSP_SMParameter => 42P01: relation "wsp_smparameter" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42P01: sequence "wsp_smparameter_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42P01: sequence "wsp_smparameter_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smchattopic" does not exist
+
+POSITION: 38 [Query DR] SELECT MAX( WSP_SMChatTopic_ID) FROM WSP_SMChatTopic
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smchattopic" does not exist
+
+POSITION: 38 [Query DR] SELECT MAX( WSP_SMChatTopic_ID) FROM WSP_SMChatTopic
+===========>     (SEVERE)   DB.GetSQLValue: [67]SELECT MAX( WSP_SMChatTopic_ID) FROM WSP_SMChatTopic => 42P01: relation "wsp_smchattopic" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42P01: sequence "wsp_smchattopic_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42P01: sequence "wsp_smchattopic_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smchatidentifier" does not exist
+
+POSITION: 43 [Query DR] SELECT MAX( WSP_SMChatIdentifier_ID) FROM WSP_SMChatIdentifier
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smchatidentifier" does not exist
+
+POSITION: 43 [Query DR] SELECT MAX( WSP_SMChatIdentifier_ID) FROM WSP_SMChatIdentifier
+===========>     (SEVERE)   DB.GetSQLValue: [67]SELECT MAX( WSP_SMChatIdentifier_ID) FROM WSP_SMChatIdentifier => 42P01: relation "wsp_smchatidentifier" does not exist
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42P01: sequence "wsp_smchatidentifier_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42P01: sequence "wsp_smchatidentifier_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smconfiguration" does not exist
+
+POSITION: 42 [Query DR] SELECT MAX( WSP_SMConfiguration_ID) FROM WSP_SMConfiguration
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smconfiguration" does not exist
+
+POSITION: 42 [Query DR] SELECT MAX( WSP_SMConfiguration_ID) FROM WSP_SMConfiguration
+===========>     (SEVERE)   DB.GetSQLValue: [67]SELECT MAX( WSP_SMConfiguration_ID) FROM WSP_SMConfiguration => 42P01: relation "wsp_smconfiguration" does not exist
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42P01: sequence "wsp_smconfiguration_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42P01: sequence "wsp_smconfiguration_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smchatmessage" does not exist
+
+POSITION: 40 [Query DR] SELECT MAX( WSP_SMChatMessage_ID) FROM WSP_SMChatMessage
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [67]42P01: relation "wsp_smchatmessage" does not exist
+
+POSITION: 40 [Query DR] SELECT MAX( WSP_SMChatMessage_ID) FROM WSP_SMChatMessage
+===========>     (SEVERE)   DB.GetSQLValue: [67]SELECT MAX( WSP_SMChatMessage_ID) FROM WSP_SMChatMessage => 42P01: relation "wsp_smchatmessage" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42P01: sequence "wsp_smchatmessage_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42P01: sequence "wsp_smchatmessage_seq" does not exist
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [67]Not insertedAD_Ref_Table
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 47
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 47
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 36
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 36
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 30
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 30
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 30
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 30
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 32
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 32
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 29
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 29
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 29
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 29
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 30
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 30
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 30
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 30
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 36
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 36
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 36
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [67]Get sql default: @SQL=SELECT NVL(MAX(Line),0)+10 AS DefaultValue FROM WSP_SMParameter WHERE WSP_SMConfiguration_ID=@WSP_SMConfiguration_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [67]Get sql default: @SQL=SELECT NVL(MAX(Line),0)+10 AS DefaultValue FROM WSP_SMParameter WHERE WSP_SMConfiguration_ID=@WSP_SMConfiguration_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42601: syntax error at or near "=@#"
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 42703: column "y" does not exist
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => VISDBERRORCOLUMN: VALUE
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - VISDBERRORCOLUMN: VALUE
+===========>     (SEVERE)   DB.ExecuteQuery: [67] => VISDBERRORCOLUMN: VALUE
+----------->     (WARNING)  DB.ExecuteQuery: [67]DBExecuteError - VISDBERRORCOLUMN: VALUE

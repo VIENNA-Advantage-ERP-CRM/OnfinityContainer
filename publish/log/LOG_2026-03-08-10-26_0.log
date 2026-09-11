@@ -1,0 +1,222 @@
+10:27:11.271    (INFO)     Trx.Start: [91]**** VISPRO_ModIns639085624315960152System.Random
+10:27:11.271    (INFO)     Trx.Commit: [91]**C** VISPRO_ModIns639085624315960152System.Random
+10:27:14.271    (INFO)     MChangeLog.FillChangeLog: [31]#11
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [31]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [31]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 201
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [31]42P01: relation "va038_amortizationtemplate" does not exist
+
+POSITION: 49 [Query DR] SELECT MAX( VA038_AmortizationTemplate_ID) FROM VA038_AmortizationTemplate
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [31]42P01: relation "va038_amortizationtemplate" does not exist
+
+POSITION: 49 [Query DR] SELECT MAX( VA038_AmortizationTemplate_ID) FROM VA038_AmortizationTemplate
+===========>     (SEVERE)   DB.GetSQLValue: [31]SELECT MAX( VA038_AmortizationTemplate_ID) FROM VA038_AmortizationTemplate => 42P01: relation "va038_amortizationtemplate" does not exist
+
+POSITION: 49
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [31]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 115
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42P01: sequence "va038_amortizationtemplate_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42P01: sequence "va038_amortizationtemplate_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [31]42P01: relation "va038_amortization_acct" does not exist
+
+POSITION: 46 [Query DR] SELECT MAX( VA038_Amortization_Acct_ID) FROM VA038_Amortization_Acct
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [31]42P01: relation "va038_amortization_acct" does not exist
+
+POSITION: 46 [Query DR] SELECT MAX( VA038_Amortization_Acct_ID) FROM VA038_Amortization_Acct
+===========>     (SEVERE)   DB.GetSQLValue: [31]SELECT MAX( VA038_Amortization_Acct_ID) FROM VA038_Amortization_Acct => 42P01: relation "va038_amortization_acct" does not exist
+
+POSITION: 46
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42P01: sequence "va038_amortization_acct_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42P01: sequence "va038_amortization_acct_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [31]42P01: relation "va038_amortizationschedule" does not exist
+
+POSITION: 49 [Query DR] SELECT MAX( VA038_AmortizationSchedule_ID) FROM VA038_AmortizationSchedule
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [31]42P01: relation "va038_amortizationschedule" does not exist
+
+POSITION: 49 [Query DR] SELECT MAX( VA038_AmortizationSchedule_ID) FROM VA038_AmortizationSchedule
+===========>     (SEVERE)   DB.GetSQLValue: [31]SELECT MAX( VA038_AmortizationSchedule_ID) FROM VA038_AmortizationSchedule => 42P01: relation "va038_amortizationschedule" does not exist
+
+POSITION: 49
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42P01: sequence "va038_amortizationschedule_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42P01: sequence "va038_amortizationschedule_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [31]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 197
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [31]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 103
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 51
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 51
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 48
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 48
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42703: column "y" does not exist
+
+POSITION: 48
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 48
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42703: column "y" does not exist
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42703: column "y" does not exist
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 34
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 34
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 31
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 31
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42703: column "y" does not exist
+
+POSITION: 31
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 31
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 33
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 33
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 30
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 30
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42601: syntax error at or near "=@#"
+
+POSITION: 48
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 48
+===========>     (SEVERE)   DB.ExecuteQuery: [31] => 42703: column "y" does not exist
+
+POSITION: 48
+----------->     (WARNING)  DB.ExecuteQuery: [31]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 48
+10:27:45.274    (INFO)     Env.Reset: [31]finalCall=False
+10:27:45.274    (INFO)     CacheMgt.Reset: [31]#23 (8042)
+10:27:45.274    (INFO)     Trx.Start: [31]**** VISPRO_ModIns639085624658820120System.Random
+10:27:45.274    (INFO)     Trx.Commit: [31]**C** VISPRO_ModIns639085624658820120System.Random
+10:27:49.274    (INFO)     MRole.Get: [91]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:27:49.274    (INFO)     MRole.Get: [91]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [91]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

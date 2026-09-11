@@ -1,0 +1,287 @@
+10:18:42.184    (INFO)     Trx.Start: [10]**** VISPRO_ModIns639085187223719407System.Random
+10:18:42.184    (INFO)     Trx.Commit: [10]**C** VISPRO_ModIns639085187223719407System.Random
+10:18:45.184    (INFO)     MChangeLog.FillChangeLog: [79]#10
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [79]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [79]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 201
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VAI01_AssistantScreen_ID) FROM VAI01_AssistantScreen
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VAI01_AssistantScreen_ID) FROM VAI01_AssistantScreen
+===========>     (SEVERE)   DB.GetSQLValue: [79]SELECT MAX( VAI01_AssistantScreen_ID) FROM VAI01_AssistantScreen => 42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [79]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 115
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42P01: sequence "vai01_assistantscreen_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42P01: sequence "vai01_assistantscreen_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [79]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 197
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_aiassistant" does not exist
+
+POSITION: 40 [Query DR] SELECT MAX( VAI01_AIAssistant_ID) FROM VAI01_AIAssistant
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_aiassistant" does not exist
+
+POSITION: 40 [Query DR] SELECT MAX( VAI01_AIAssistant_ID) FROM VAI01_AIAssistant
+===========>     (SEVERE)   DB.GetSQLValue: [79]SELECT MAX( VAI01_AIAssistant_ID) FROM VAI01_AIAssistant => 42P01: relation "vai01_aiassistant" does not exist
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42P01: sequence "vai01_aiassistant_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42P01: sequence "vai01_aiassistant_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [67]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 146 AND AD_Table_ID = 115 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_assistantthread" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VAI01_AssistantThread_ID) FROM VAI01_AssistantThread
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_assistantthread" does not exist
+
+POSITION: 44 [Query DR] SELECT MAX( VAI01_AssistantThread_ID) FROM VAI01_AssistantThread
+===========>     (SEVERE)   DB.GetSQLValue: [79]SELECT MAX( VAI01_AssistantThread_ID) FROM VAI01_AssistantThread => 42P01: relation "vai01_assistantthread" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42P01: sequence "vai01_assistantthread_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42P01: sequence "vai01_assistantthread_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [66]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 146 AND AD_Table_ID = 115 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_assistantfunctions" does not exist
+
+POSITION: 47 [Query DR] SELECT MAX( VAI01_AssistantFunctions_ID) FROM VAI01_AssistantFunctions
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_assistantfunctions" does not exist
+
+POSITION: 47 [Query DR] SELECT MAX( VAI01_AssistantFunctions_ID) FROM VAI01_AssistantFunctions
+===========>     (SEVERE)   DB.GetSQLValue: [79]SELECT MAX( VAI01_AssistantFunctions_ID) FROM VAI01_AssistantFunctions => 42P01: relation "vai01_assistantfunctions" does not exist
+
+POSITION: 47
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42P01: sequence "vai01_assistantfunctions_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42P01: sequence "vai01_assistantfunctions_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [47]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 146 AND AD_Table_ID = 115 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [79]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 378
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [10]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 309 AND AD_Table_ID = 378 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [81]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 309 AND AD_Table_ID = 378 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [66]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 110 AND AD_Table_ID = 116 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [88]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 311 AND AD_Table_ID = 201 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [67]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 311 AND AD_Table_ID = 201 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_llmconfiguration" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VAI01_LLMConfiguration_ID) FROM VAI01_LLMConfiguration
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_llmconfiguration" does not exist
+
+POSITION: 45 [Query DR] SELECT MAX( VAI01_LLMConfiguration_ID) FROM VAI01_LLMConfiguration
+===========>     (SEVERE)   DB.GetSQLValue: [79]SELECT MAX( VAI01_LLMConfiguration_ID) FROM VAI01_LLMConfiguration => 42P01: relation "vai01_llmconfiguration" does not exist
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42P01: sequence "vai01_llmconfiguration_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42P01: sequence "vai01_llmconfiguration_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [47]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 146 AND AD_Table_ID = 115 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [88]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 308 AND AD_Table_ID = 197 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [31]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 308 AND AD_Table_ID = 197 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [47]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 308 AND AD_Table_ID = 197 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [66]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 308 AND AD_Table_ID = 197 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_apiauthcredential" does not exist
+
+POSITION: 46 [Query DR] SELECT MAX( VAI01_APIAuthCredential_ID) FROM VAI01_APIAuthCredential
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [79]42P01: relation "vai01_apiauthcredential" does not exist
+
+POSITION: 46 [Query DR] SELECT MAX( VAI01_APIAuthCredential_ID) FROM VAI01_APIAuthCredential
+===========>     (SEVERE)   DB.GetSQLValue: [79]SELECT MAX( VAI01_APIAuthCredential_ID) FROM VAI01_APIAuthCredential => 42P01: relation "vai01_apiauthcredential" does not exist
+
+POSITION: 46
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42P01: sequence "vai01_apiauthcredential_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42P01: sequence "vai01_apiauthcredential_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [67]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 146 AND AD_Table_ID = 115 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [79]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 103
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteScalar: [10]42P01: relation "vai01_assistantscreen" does not exist
+
+POSITION: 38[Query SLR]SELECT VAI01_AssistantScreen_ID FROM VAI01_AssistantScreen WHERE AD_Tab_ID = 103 AND AD_Table_ID = 103 AND AD_Client_ID = 0 ORDER BY AD_Org_ID DESC
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [79]Not insertedAD_Ref_Table
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42703: column "y" does not exist
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@"
+
+POSITION: 31
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 31
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@"
+
+POSITION: 28
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 28
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42703: column "y" does not exist
+
+POSITION: 28
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 28
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@#"
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42703: column "y" does not exist
+
+POSITION: 39
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@#"
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42703: column "y" does not exist
+
+POSITION: 43
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 43
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@#"
+
+POSITION: 46
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 46
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42703: column "y" does not exist
+
+POSITION: 46
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 46
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42601: syntax error at or near "=@#"
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42703: column "y" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [79] => 42P01: relation "vai01_apiauthcredential" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [79]DBExecuteError - 42P01: relation "vai01_apiauthcredential" does not exist
+10:19:12.191    (INFO)     Env.Reset: [79]finalCall=False
+10:19:12.191    (INFO)     CacheMgt.Reset: [79]#23 (6655)
+10:19:12.191    (INFO)     Trx.Start: [79]**** VISPRO_ModIns639085187528733339System.Random
+10:19:12.191    (INFO)     Trx.Commit: [79]**C** VISPRO_ModIns639085187528733339System.Random
+10:19:16.191    (INFO)     MRole.Get: [67]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:19:16.191    (INFO)     MRole.Get: [67]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [67]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

@@ -1,0 +1,256 @@
+10:29:54.295    (INFO)     Trx.Start: [31]**** VISPRO_ModIns639085625943425723System.Random
+10:29:54.295    (INFO)     Trx.Commit: [31]**C** VISPRO_ModIns639085625943425723System.Random
+10:30:00.300    (INFO)     Env.Reset: [111]finalCall=False
+10:30:00.300    (INFO)     CacheMgt.Reset: [111]#18 (6895)
+10:30:00.300    (INFO)     Trx.Start: [111]**** VISPRO_ModIns639085626006260710System.Random
+10:30:00.300    (INFO)     Trx.Commit: [111]**C** VISPRO_ModIns639085626006260710System.Random
+10:30:15.301    (INFO)     MRole.Get: [10]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:30:15.301    (INFO)     MRole.Get: [10]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+10:30:15.301    (INFO)     MRole.Get: [10]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:30:15.301    (INFO)     MRole.Get: [10]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+10:30:15.301    (INFO)     MTree.Load: [10]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+===========>     (SEVERE)   MTree.LoadNodes: [10]Nodes w/o parent - adding to root - System.Collections.Generic.List`1[VAdvantage.Classes.VTreeNode]
+10:30:16.301    (INFO)     Msg.InitMsg: [10]Records=6574 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [10]PushNotif - Module VA074_ is not installed!
+10:30:59.305    (INFO)     Trx.Start: [111]**** VISPRO_ModIns639085626595744210System.Random
+10:30:59.305    (INFO)     Trx.Commit: [111]**C** VISPRO_ModIns639085626595744210System.Random
+10:31:04.314    (INFO)     MChangeLog.FillChangeLog: [114]#11
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 378
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [114]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [114]Not insertedAD_Form_Access
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 201
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va046_productstickerline" does not exist
+
+POSITION: 47 [Query DR] SELECT MAX( VA046_ProductStickerLine_ID) FROM VA046_ProductStickerLine
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va046_productstickerline" does not exist
+
+POSITION: 47 [Query DR] SELECT MAX( VA046_ProductStickerLine_ID) FROM VA046_ProductStickerLine
+===========>     (SEVERE)   DB.GetSQLValue: [114]SELECT MAX( VA046_ProductStickerLine_ID) FROM VA046_ProductStickerLine => 42P01: relation "va046_productstickerline" does not exist
+
+POSITION: 47
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 115
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42P01: sequence "va046_productstickerline_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42P01: sequence "va046_productstickerline_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va046_productstickerhdr" does not exist
+
+POSITION: 46 [Query DR] SELECT MAX( VA046_ProductStickerHdr_ID) FROM VA046_ProductStickerHdr
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va046_productstickerhdr" does not exist
+
+POSITION: 46 [Query DR] SELECT MAX( VA046_ProductStickerHdr_ID) FROM VA046_ProductStickerHdr
+===========>     (SEVERE)   DB.GetSQLValue: [114]SELECT MAX( VA046_ProductStickerHdr_ID) FROM VA046_ProductStickerHdr => 42P01: relation "va046_productstickerhdr" does not exist
+
+POSITION: 46
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42P01: sequence "va046_productstickerhdr_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42P01: sequence "va046_productstickerhdr_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va046_productlog" does not exist
+
+POSITION: 39 [Query DR] SELECT MAX( VA046_ProductLog_ID) FROM VA046_ProductLog
+===========>     (SEVERE)   PostgreHelper.ExecuteReader: [114]42P01: relation "va046_productlog" does not exist
+
+POSITION: 39 [Query DR] SELECT MAX( VA046_ProductLog_ID) FROM VA046_ProductLog
+===========>     (SEVERE)   DB.GetSQLValue: [114]SELECT MAX( VA046_ProductLog_ID) FROM VA046_ProductLog => 42P01: relation "va046_productlog" does not exist
+
+POSITION: 39
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42P01: sequence "va046_productlog_seq" does not exist
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42P01: sequence "va046_productlog_seq" does not exist
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [114]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 103
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [114]Not insertedAD_Ref_Table
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [114]Get sql default: @SQL=SELECT COALESCE(MAX(VA046_Sequence),0)+10 AS DefaultValue FROM VA046_ProductStickerLine WHERE VA046_ProductStickerHdr_ID=@VA046_ProductStickerHdr_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@"
+
+POSITION: 46
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 46
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "y" does not exist
+
+POSITION: 46
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 46
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [114]Get sql default: @SQL=SELECT COALESCE(MAX(VA046_Sequence),0)+10 AS DefaultValue FROM VA046_ProductStickerLine WHERE VA046_ProductStickerHdr_ID=@VA046_ProductStickerHdr_ID@
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@#"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "y" does not exist
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@#"
+
+POSITION: 48
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 48
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "y" does not exist
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@#"
+
+POSITION: 32
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 32
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42601: syntax error at or near "=@#"
+
+POSITION: 29
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 29
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 42703: column "y" does not exist
+
+POSITION: 29
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 29
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [114]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [114] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [114]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.ImportNow: [114]Not insertedAD_Form_Access
+10:31:27.312    (INFO)     Env.Reset: [114]finalCall=False
+10:31:27.312    (INFO)     CacheMgt.Reset: [114]#23 (8036)
+10:31:27.312    (INFO)     Trx.Start: [114]**** VISPRO_ModIns639085626872299611System.Random
+10:31:27.312    (INFO)     Trx.Commit: [114]**C** VISPRO_ModIns639085626872299611System.Random
+10:31:28.312    (INFO)     MRole.Get: [37]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:31:28.312    (INFO)     MRole.Get: [37]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [37]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+10:31:28.312    (INFO)     MSession.Logout: [37]-07:57:06.112

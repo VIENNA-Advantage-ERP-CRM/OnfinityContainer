@@ -1,0 +1,168 @@
+09:42:02.422    (INFO)     Trx.Start: [38]**** VISPRO_ModIns638634157227009015System.Random
+09:42:02.422    (INFO)     Trx.Commit: [38]**C** VISPRO_ModIns638634157227009015System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "BYTE"
+
+POSITION: 105
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "BYTE"
+
+POSITION: 105
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42P07: relation "uniqeexportentry" already exists
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42P07: relation "uniqeexportentry" already exists
+09:42:08.428    (INFO)     MChangeLog.FillChangeLog: [15]#9
+09:42:08.428    (INFO)     Trx.Start: [15]**** ConnSH638634157288140310System.Random
+09:42:08.428    (INFO)     Trx.Commit: [15]**C** ConnSH638634157288140310System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  MSequence.CreateSequence: [15]Not insertedAD_Sequence
+09:42:10.421    (INFO)     Trx.Start: [15]**** ConnSH638634157309629847System.Random
+09:42:10.421    (INFO)     Trx.Commit: [15]**C** ConnSH638634157309629847System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  MSequence.CreateSequence: [15]Not insertedAD_Sequence
+09:42:12.421    (INFO)     Trx.Start: [15]**** ConnSH638634157326509568System.Random
+09:42:12.421    (INFO)     Trx.Commit: [15]**C** ConnSH638634157326509568System.Random
+09:42:12.421    (INFO)     Trx.Start: [15]**** ConnSH638634157327709548System.Random
+09:42:12.421    (INFO)     Trx.Commit: [15]**C** ConnSH638634157327709548System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [15]Not insertedAD_Window_Access
+09:42:12.421    (INFO)     Trx.Start: [15]**** ConnSH638634157328239544System.Random
+09:42:12.421    (INFO)     Trx.Commit: [15]**C** ConnSH638634157328239544System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  MSequence.CreateSequence: [15]Not insertedAD_Sequence
+09:42:14.421    (INFO)     Trx.Start: [15]**** ConnSH638634157341099335System.Random
+09:42:14.421    (INFO)     Trx.Commit: [15]**C** ConnSH638634157341099335System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - VISDBERRORCOLUMN: AD_CLIENT_ID,NAME
+----------->     (WARNING)  MSequence.CreateSequence: [15]Not insertedAD_Sequence
+09:42:16.421    (INFO)     Trx.Start: [15]**** ConnSH638634157365710659System.Random
+09:42:16.421    (INFO)     Trx.Commit: [15]**C** ConnSH638634157365710659System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [15]Not insertedAD_Process_Access
+09:42:16.421    (INFO)     Trx.Start: [15]**** ConnSH638634157366799248System.Random
+09:42:16.421    (INFO)     Trx.Commit: [15]**C** ConnSH638634157366799248System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_process_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Process_Access.ImportNow: [15]Not insertedAD_Process_Access
+09:42:16.421    (INFO)     CacheMgt.Reset: [15]AD_Ref_Table: #1 (3)
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [15]Get sql default: @SQL=SELECT NVL(MAX(AD_EntityType_ID),999999)+1 FROM AD_EntityType WHERE AD_EntityType_ID > 1000
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "=@"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42703: column "y" does not exist
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42703: column "u" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42703: column "u" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42703: column "u" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42703: column "u" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "=@#"
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "=@#"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42703: column "y" does not exist
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [15] => 42703: column "binarydata" of relation "ad_message" does not exist
+
+POSITION: 23
+----------->     (WARNING)  DB.ExecuteQuery: [15]DBExecuteError - 42703: column "binarydata" of relation "ad_message" does not exist
+
+POSITION: 23
+09:42:21.422    (INFO)     Env.Reset: [15]finalCall=False
+09:42:21.422    (INFO)     CacheMgt.Reset: [15]#21 (5472)
+09:42:21.422    (INFO)     Trx.Start: [15]**** VISPRO_ModIns638634157413703838System.Random
+09:42:21.422    (INFO)     Trx.Commit: [15]**C** VISPRO_ModIns638634157413703838System.Random
+09:42:46.424    (INFO)     MRole.Get: [15]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:42:46.424    (INFO)     MRole.Get: [15]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+09:42:46.424    (INFO)     MRole.Get: [15]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:42:46.424    (INFO)     MRole.Get: [15]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+09:42:46.424    (INFO)     MTree.Load: [15]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+09:42:46.424    (INFO)     Msg.InitMsg: [15]Records=4305 - en_US
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [15]PushNotif - Module VA074_ is not installed!
+09:43:11.431    (INFO)     MSession.Logout: [37]-07:58:40.22
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [15]SessionEventHandler  - Object reference not set to an instance of an object.
+09:45:13.451    (INFO)     MRole.Get: [31]AD_Role_ID=0, AD_User_ID=100, reload=True
+09:45:13.451    (INFO)     MRole.Get: [31]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+09:45:13.451    (INFO)     MTree.Load: [31]AD_Tree_ID=121, AD_User_ID=100, Editable=False, OnClient=True
+09:45:13.451    (INFO)     Trx.Start: [31]**** ConnSH638634159138291308System.Random
+09:45:13.451    (INFO)     Trx.Commit: [31]**C** ConnSH638634159138291308System.Random
+----------->     (WARNING)  PushNotification.SendNotificationToUser: [31]PushNotif - Module VA074_ is not installed!
+09:45:15.451    (INFO)     MSession.Logout: [15]-07:60:57.473
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [37]SessionEventHandler  - Object reference not set to an instance of an object.
+----------->     (WARNING)  SessionEventHandler.SessionEnd: [44]SessionEventHandler  - Object reference not set to an instance of an object.

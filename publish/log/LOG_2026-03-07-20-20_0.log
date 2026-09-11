@@ -1,0 +1,100 @@
+08:22:56.225    (INFO)     Trx.Start: [29]**** VISPRO_ModIns639085117765392035System.Random
+08:22:56.225    (INFO)     Trx.Commit: [29]**C** VISPRO_ModIns639085117765392035System.Random
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "BYTE"
+
+POSITION: 105
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "BYTE"
+
+POSITION: 105
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42P07: relation "uniqeexportentry" already exists
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42P07: relation "uniqeexportentry" already exists
+08:23:06.236    (INFO)     MChangeLog.FillChangeLog: [30]#10
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [30]Not insertedAD_Window_Access
+08:23:11.231    (INFO)     CacheMgt.Reset: [30]AD_Ref_Table: #1 (4)
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  MColumn.GetSQLDefaultValue: [30]Get sql default: @SQL=SELECT NVL(MAX(AD_EntityType_ID),999999)+1 FROM AD_EntityType WHERE AD_EntityType_ID > 1000
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "=@"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42703: column "y" does not exist
+
+POSITION: 35
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 35
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42703: column "u" does not exist
+
+POSITION: 37
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42703: column "u" does not exist
+
+POSITION: 37
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42703: column "u" does not exist
+
+POSITION: 44
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42703: column "u" does not exist
+
+POSITION: 44
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "=@#"
+
+POSITION: 41
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 41
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "=@#"
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42703: column "y" does not exist
+
+POSITION: 38
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 38
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "=@#"
+
+POSITION: 45
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 45
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42601: syntax error at or near "=@#"
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42601: syntax error at or near "=@#"
+
+POSITION: 42
+===========>     (SEVERE)   DB.ExecuteQuery: [30] => 42703: column "y" does not exist
+
+POSITION: 42
+----------->     (WARNING)  DB.ExecuteQuery: [30]DBExecuteError - 42703: column "y" does not exist
+
+POSITION: 42
+08:23:20.232    (INFO)     Env.Reset: [30]finalCall=False
+08:23:20.232    (INFO)     CacheMgt.Reset: [30]#22 (6575)

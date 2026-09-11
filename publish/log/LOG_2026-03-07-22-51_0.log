@@ -1,0 +1,169 @@
+10:52:15.521    (INFO)     Trx.Start: [66]**** VISPRO_ModIns639085207353060097System.Random
+10:52:15.521    (INFO)     Trx.Commit: [66]**C** VISPRO_ModIns639085207353060097System.Random
+10:52:19.521    (INFO)     MChangeLog.FillChangeLog: [47]#10
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [47]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 116
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [47]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_form_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Form_Access.AddWindowToMenu: [47]Not insertedAD_Form_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 42P01: relation "ad_valuepreference" does not exist
+
+POSITION: 13
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [47]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [47]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: AD_TABLE_ID,COLUMNNAME
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [47]Not insertedAD_Window_Access
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_window_access_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Window_Access.AddWindowToMenu: [47]Not insertedAD_Window_Access
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [47]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 103
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID
+10:52:27.522    (INFO)     CacheMgt.Reset: [47]AD_Ref_Table: #1 (3)
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "ad_ref_table_pkey"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  X_AD_Ref_Table.Add_AD_Ref_Tables: [47]Not insertedAD_Ref_Table
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 42601: syntax error at or near "=@"
+
+POSITION: 40
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 40
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 42601: syntax error at or near "=@"
+
+POSITION: 49
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 42601: syntax error at or near "=@"
+
+POSITION: 49
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 0A000: cannot alter type of a column used by a view or rule
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - 23505: duplicate key value violates unique constraint "pk1000820"
+
+DETAIL: Detail redacted as it may contain sensitive data. Specify 'Include Error Detail' in the connection string to include this information.
+===========>     (SEVERE)   DB.ExecuteQuery: [47] => VISDBERRORCOLUMN: VALUE
+----------->     (WARNING)  DB.ExecuteQuery: [47]DBExecuteError - VISDBERRORCOLUMN: VALUE
+10:52:30.523    (INFO)     Env.Reset: [47]finalCall=False
+10:52:30.523    (INFO)     CacheMgt.Reset: [47]#23 (6762)
+10:52:30.523    (INFO)     Trx.Start: [47]**** VISPRO_ModIns639085207509077635System.Random
+10:52:30.523    (INFO)     Trx.Commit: [47]**C** VISPRO_ModIns639085207509077635System.Random
+10:52:34.523    (INFO)     MRole.Get: [47]AD_Role_ID=0, AD_User_ID=100, reload=True
+10:52:34.523    (INFO)     MRole.Get: [47]MRole[0,System Administrator,UserLevel=S  ,AD_Client_ID=0,AD_Org_ID=0]
+===========>     (SEVERE)   PostgreHelper.ExecuteDataset: [47]42703: column a.basedon does not exist
+
+POSITION: 183 [Query D] =>SELECT a.*, r.AD_Table_ID 
+                       FROM AD_Alert a
+                       INNER JOIN AD_AlertRule r ON (a.AD_Alert_ID = r.AD_Alert_ID)
+                       WHERE a.BasedOn='E' AND a.IsActive='Y' AND a.IsValid='Y' 
+                         AND r.AD_Table_ID = 566
+                       AND a.AD_Client_ID=0 AND COALESCE(a.AD_Org_ID,0)=0 ORDER BY a.AD_Client_ID

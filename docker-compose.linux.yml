@@ -1,0 +1,30 @@
+# Runs on the DEDICATED LINUX HOST (or VM) that hosts the database.
+# The app (docker-compose.windows.yml) runs on a separate Windows host and
+# reaches this one over the network - see the deployment runbook for why
+# they can't be combined into one compose file on one machine: Windows
+# containers and Linux containers can't run under the same Docker engine at
+# once, and this app is a Windows container while official Postgres images
+# are Linux-only.
+services:
+
+  postgres:
+    image: postgres:15
+    container_name: onfinity-db
+    restart: always
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-viennacrmuser}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-changeme}
+      POSTGRES_DB: ${POSTGRES_DB:-onfinitydb}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      # Bind-mounted to the host so it can be backed up/restored directly
+      # with whatever tooling you already use.
+      #
+      # Note: db/onfinitycommunity.sql is intentionally NOT mounted into
+      # docker-entrypoint-initdb.d here - it's a pg_restore custom-format
+      # dump, and Postgres's own init mechanism only understands plain SQL
+      # (it will crash the container trying to run it through psql). The
+      # app container's docker-entrypoint.ps1, on the Windows host, imports
+      # it correctly with pg_restore once this database is reachable.
+      - ./data/postgres:/var/lib/postgresql/data

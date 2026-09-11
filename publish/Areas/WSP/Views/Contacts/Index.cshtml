@@ -1,0 +1,223 @@
+﻿<div class="wsp-header" style="height: 42px">
+
+    <div class="wsp-header-down" style="height: 100%">
+        <div class="wsp-contact-header">
+            <h3 id="headerContact_@ViewBag.WindowNumber" class="wsp-sale-order">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_Contacts")</h3>
+        </div>
+
+        <div class="wsp-header-down-right">
+            <div class="wsp-li-close-img" style="float: right">
+
+                <a id="btnClose_@ViewBag.WindowNumber" href="javascript:void(0)" class="vis-mainMenuIcons vis-icon-menuclose"></a>
+            </div>
+            <div style="width: auto; float: right">
+                <ul class="wsp-up-ul-li">
+                    <li id="liSetting_@ViewBag.WindowNumber" class="wsp-pretraga" ><a id="settings_@ViewBag.WindowNumber" class="anchor" href="javascript:void(0)"><span style="float: left" class="wsp-left_icon" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_GoogleSetting")">
+    <i class="vis vis-gmail-settings"></i></span></a></li>
+                    <li id="liImportContacts_@ViewBag.WindowNumber" class="wsp-pretraga" ><a id="ImportContacts_@ViewBag.WindowNumber" class="anchor" href="javascript:void(0)"><span style="float: left" class="wsp-left_icon" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "ImportContacts")">
+    @*<img src="~/Areas/WSP/Images/imaport-contacts.png">*@
+    <i class="vis vis-gmail-contacts-import"></i></span></li>
+                    <li id="liaddBPartner_@ViewBag.WindowNumber" class="wsp-pretraga" ><a id="HeaderaddBPartner_@ViewBag.WindowNumber" class="anchor" href="javascript:void(0)"><span style="float: left" class="wsp-left_icon" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_AddBusinessPartner")">
+                        <i class="vis vis-addbp"></i></span></a></li>
+                    <li id="liaddBPartner_1" class="wsp-pretraga" >
+                        <div style="border-right: rgba(var(--v-c-on-primary), 1); border-width: 2px; height: 25px;">
+                        </div>
+                    </li>
+                    <li id="liContactType_@ViewBag.WindowNumber" class="wsp-min-width wsp-dropdwn">
+                        <i class="fa fa-filter"></i><a id="contactType" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_ContactType")</a>
+                        <ul id="ulContactType_@ViewBag.WindowNumber" class="wsp-inner_ul">
+                            <li></li>
+                            <li id="lstCustomer_@ViewBag.WindowNumber" role="presentation"><a class="anchor" role="menuitem" tabindex="-1" style="opacity: 0.8;" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Customer")</a></li>
+                            <li id="lstVendor_@ViewBag.WindowNumber" role="presentation"><a class="anchor" role="menuitem" tabindex="-1" style="opacity: 0.8;" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Vendor")</a></li>
+                            <li id="lstEmployee_@ViewBag.WindowNumber" role="presentation"><a class="anchor" role="menuitem" tabindex="-1" style="opacity: 0.8;" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Employee")</a></li>
+                            <li id="lstProspect_@ViewBag.WindowNumber" role="presentation"><a class="anchor" role="menuitem" tabindex="-1" style="opacity: 0.8;" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "Prospect")</a></li>
+                            <li id="lstAll_@ViewBag.WindowNumber" role="presentation"><a class="anchor" role="menuitem" tabindex="-1" style="opacity: 0.8;" href="javascript:void(0)">@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "All")</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="wsp-pretraga wsp-cnt-topsearchwrp" >
+                        <div>
+                            <input id="txtSearch_@ViewBag.WindowNumber" class="wsp-contact-search-input" type="text">
+                            <button id="btnSearch_@ViewBag.WindowNumber" class="wsp-sear">
+                                <i class="vis vis-search"></i>
+                            </button>
+                        </div>
+                    </li>
+                    <li id="liadvanceSearch_@ViewBag.WindowNumber" class="wsp-pretraga" ><a id="advanceSearch_@ViewBag.WindowNumber" class="anchor" href="javascript:void(0)"><span style="float: left;" class="wsp-left_icon" title="@VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "AdvanceSearch")">
+                       <i class="vis vis-find"></i></span></a></li>
+                </ul>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+<div class="wsp-content-2">
+    <div class="wsp-content-2-inner">
+        <div class="wsp-content-menu">
+
+            <div class="wsp-clear-both"></div>
+        </div>
+        <!-- end of content-menu -->
+        <div id="wrapper">
+            <div  class="wsp-contact_main_container row scrollerHorizontal" id="scroller_@ViewBag.WindowNumber">
+
+                <ul id="mainUL_@ViewBag.WindowNumber">
+                </ul>
+
+
+            </div>
+        </div>
+        @{string[] strAlphabets = VAdvantage.Utility.Msg.GetMsg((string)ViewBag.culture, "WSP_NavigateAlphabets").Split(' ');}
+
+        <div class="wsp-character_nav_bar">
+            <ul id="ULNavigationBar_@ViewBag.WindowNumber">
+                @if (strAlphabets.Length > 1)
+                {
+                    for (int i = 0; i < strAlphabets.Length; i++)
+                    {
+                    <li>
+                        <a id="single-@strAlphabets[i].ToLower()_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[i]
+                        </a>
+                    </li>
+                    }
+                }
+@*    <li>
+                    <a id="single-b_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[1]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-c_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[2]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-d_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[3]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-e_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[4]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-f_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[5]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-g_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[6]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-h_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[7]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-i_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[8]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-j_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[9]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-k_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[10]
+                    </a>
+                </li>
+                <li>
+                    <a id="single-l_@ViewBag.WindowNumber" href="javascript:void(0)">@strAlphabets[11]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-m_@ViewBag.WindowNumber">@strAlphabets[12]
+                    </a>
+                </li>
+                <li>
+                    <a  href="javascript:void(0)" id="single-n_@ViewBag.WindowNumber">@strAlphabets[13]
+                    </a>
+                </li>
+                <li>
+                    <a  href="javascript:void(0)" id="single-o_@ViewBag.WindowNumber">@strAlphabets[14]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-p_@ViewBag.WindowNumber">@strAlphabets[15]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-q_@ViewBag.WindowNumber">@strAlphabets[16]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-r_@ViewBag.WindowNumber">@strAlphabets[17]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-s_@ViewBag.WindowNumber">@strAlphabets[18]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-t_@ViewBag.WindowNumber">@strAlphabets[19]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-u_@ViewBag.WindowNumber">@strAlphabets[20]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-v_@ViewBag.WindowNumber">@strAlphabets[21]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-w_@ViewBag.WindowNumber">@strAlphabets[22]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-x_@ViewBag.WindowNumber">@strAlphabets[23]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-y_@ViewBag.WindowNumber">@strAlphabets[24]
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0)" id="single-z_@ViewBag.WindowNumber">@strAlphabets[25]
+                    </a>
+                </li>
+                   <li>
+                    <a href="javascript:void(0)" id="single-Other_@ViewBag.WindowNumber">Other
+                    </a>
+                </li>*@
+            </ul>
+        </div>
+
+
+    </div>
+
+</div>
+
+<div id="busy_@ViewBag.WindowNumber" class="wsp-Busy" >
+    <img src="~/Areas/VIS/Images/busy.gif" />
+</div>
+
+
+
+
+
+
+<div  id="mainUserInfoDiv_@ViewBag.WindowNumber" class='wsp-view_profile_container sliderdiv' style="margin-top:-2px;">
+
+    <div  id="wsp-dots_@ViewBag.WindowNumber"  class="wsp-dots" >
+        <a href="javascript:void(0)">
+            @*<img src="~/Areas/WSP/Images/wsparrow.png" class="dots_a">*@
+           <i class="dots_a vis vis-arrow-right"></i>
+        </a>
+    </div>
+
+    <div class="wsp-user-info-div" id="divUserInfo_@ViewBag.WindowNumber"  >
+    </div>
+</div>

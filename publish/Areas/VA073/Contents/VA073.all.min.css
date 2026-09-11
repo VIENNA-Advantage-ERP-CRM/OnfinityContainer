@@ -1,0 +1,255 @@
+﻿/*Version 1.0.34.0*/
+.VA073-Distribution-leftcontainer {
+    height: 100%;
+    padding-top: 5px;
+    overflow: auto;
+}
+
+.VA073-Distribution-rightcontainer {
+    width: calc(100% - 250px);
+    height: 100%;
+    float: left;
+    /*padding: 10px 15px;*/
+    padding: 0px 0 10px 10px;
+}
+
+.VA073-Font-Btn {
+    font-weight: normal;
+}
+
+.VA073-Distribution-leftcontrols {
+    width: 100%;
+    float: left;
+    margin-bottom: 5px;
+}
+
+.VA073-createGlSec {
+    border-top: 1px solid rgba(var(--v-c-on-secondary), .2);
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.VA073-Distribution-inputlabels {
+    width: 100%;
+    float: left;
+}
+
+.VA073-Distribution-orgcmb, .VA073-Distribution-schemacmb {
+    width: 100%;
+    height: 30px;
+}
+
+.VA073-Distribution-element {
+    width: 91%;
+}
+
+.VA073-SenderDetail-div {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(var(--v-c-on-secondary), .4);
+}
+
+    .VA073-SenderDetail-div p, .VA073-ReceiverDetail-div p {
+        margin-bottom: 0;
+    }
+
+.VA073-ReceiverDetail-div {
+    width: 100%;
+    height: calc(50% - 50px);
+    /*display: flex;
+    flex-direction: column;*/
+    padding-bottom: 15px;
+}
+
+.VA073-SenderDetails-grid {
+    height: 100%;
+    flex: 1;
+}
+
+.VA073-ReceiverDetails-grid {
+    width: 100%;
+    height: 100%;
+}
+
+.VA073-change-picture-ico {
+    width: 25px;
+    height: 25px;
+    float: left;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+    background: transparent url("../Images/excelImport.png") no-repeat scroll 0% 0%;
+    cursor: pointer;
+}
+
+.VA073-Distribution-root {
+    width: 100%;
+    float: left;
+    /*position: absolute;*/
+    height: 100%;
+    background-color: #fff;
+}
+
+.VA073-VD-Margin {
+    margin-top: 3px !important;
+}
+
+/*Added new classes*/
+.VA073-leftpanel-wrapper {
+    background-color: rgb(241, 241, 241);
+    float: left;
+    height: 100%;
+    position: relative;
+    padding: 5px 10px 10px 10px;
+    border-right: 5px solid rgb(204, 204, 204);
+    width: 250px;
+}
+
+
+.VA073-Distribution-leftcontrols .panel-default > .panel-heading {
+    background-color: #e0e0e0;
+    background-image: none;
+    padding: 0;
+}
+
+.VA073-Distribution-leftcontrols .panel-title > a {
+    display: block;
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+    .VA073-Distribution-leftcontrols .panel-title > a:hover {
+        color: #1aa0ed !important;
+        text-decoration: none;
+    }
+
+.VA073-Distribution-leftcontrols .panel-group .panel {
+    background-color: #fdfdfd;
+    border: none;
+}
+
+.VA073-Distribution-leftcontrols .panel-title {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+/*-------------------*/
+
+@media (max-width: 1566px) {
+    .VA073-Distribution-element {
+        width: 90%;
+    }
+}
+
+@media (max-width: 1460) {
+    .VA073-Distribution-element {
+        width: 89%;
+    }
+
+    .VA073-Distribution-element {
+        width: 89%;
+    }
+}
+
+@media (max-width: 1366px) {
+    .VA073-Distribution-element {
+        width: 88%;
+    }
+}
+
+@media (max-width: 1152px) {
+    .VA073-Distribution-element {
+        width: 84%;
+    }
+}
+
+@media (max-width: 999px) {
+    .VA073-Distribution-element {
+        width: 82%;
+    }
+}
+
+@media (max-width: 900px) {
+    .VA073-Distribution-element {
+        width: 80%;
+    }
+}
+
+@media (max-height: 767px) {
+    .VA073-Distribution-root {
+        height: 100%;
+    }
+}
+
+
+.VA073-mainContainer .vis-pSelectInner {
+    height: auto;
+    padding-bottom: 0;
+}
+
+.VA073-contentWrap {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.VA073-gridWrap {
+    /*display: flex;*/
+    /*   flex: 1;*/
+    width: 100%;
+    height: 100%;
+}
+
+.VA073-contentWrap .VA073-leftBtnsWrap {
+    margin: 10px 0;
+}
+
+
+.VA073-leftBtnsWrap {
+    display: flex;
+    padding: 0 21px;
+    justify-content: flex-end;
+}
+
+.VA073-rightBtnsWrap {
+    display: flex;
+    padding: 0 50px;
+    justify-content: flex-end;
+}
+
+.VA073-leftBtnsWrap .VIS_Pref_btn-2 {
+    margin-top: 0;
+    margin-left: 10px;
+    transition-property: transform, box-shadow;
+    transition-duration: .6s;
+}
+
+.VA073-excelImportDiv {
+    float: left;
+    padding: 5px 4px;
+    border: 1px solid transparent;
+    margin-left: 8px;
+}
+
+    /* .VA073-excelImportDiv:hover {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        background-color: #eee;
+    }*/
+
+    .VA073-excelImportDiv img {
+        cursor: pointer;
+        margin-right: 11px;
+    }
+
+    .VA073-excelImportDiv label {
+        color: #fff;
+        font-weight: normal;
+    }
+
